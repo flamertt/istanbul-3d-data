@@ -209,9 +209,9 @@ const POI_THEMES: Record<TurkeyPoiKind, PoiTheme> = {
     subtitlePillBg: "bg-cyan-500/10",
     subtitlePillText: "text-cyan-200",
     extraLabel: "Detay",
-    extraPanelBorder: "border-cyan-500/20",
-    extraPanelBg: "bg-cyan-950/20",
-    extraText: "text-cyan-100",
+    extraPanelBorder: "border-blue-500/20",
+    extraPanelBg: "bg-blue-950/20",
+    extraText: "text-blue-100",
   },
 };
 

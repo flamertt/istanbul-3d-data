@@ -15,6 +15,7 @@ interface IsparkMapProps {
   onBusRouteClick?: (props: Record<string, unknown>) => void;
   onClearSelection?: () => void;
   extraLayers?: Layer[];
+  mapStyleUrl: string;
 }
 
 function isIsparkLot(obj: unknown): obj is IsparkLot {
@@ -32,6 +33,7 @@ export function IsparkMap({
   onBusRouteClick,
   onClearSelection,
   extraLayers,
+  mapStyleUrl,
 }: IsparkMapProps) {
   const zoom = viewState.zoom;
 
@@ -92,7 +94,7 @@ export function IsparkMap({
       onClick={handleClick}
       controller
     >
-      <Map mapStyle={"https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json"} />
+      <Map mapStyle={mapStyleUrl} />
     </DeckGL>
   );
 }

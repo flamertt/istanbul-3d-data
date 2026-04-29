@@ -558,14 +558,16 @@ export function createTurkeyOverlayLayers(
         stroked: true,
         filled: true,
         pickable: true,
-        autoHighlight: true,
-        lineWidthMinPixels: 1,
+        // Deniz katmanı için hover'da beyaza çeviren highlight'i kapatıyoruz.
+        autoHighlight: false,
+        lineWidthMinPixels: 2,
         getPolygon: (d) => [d.footprint],
         getElevation: () => 52,
-        getFillColor: [56, 189, 248, 230],
-        getLineColor: [56, 189, 248, 255],
-        getLineWidth: () => 1,
-        material: { ambient: 0.55, diffuse: 0.9, shininess: 30 },
+        // Deniz istasyonları: daha belirgin mavi ton
+        getFillColor: [20, 90, 220, 255],
+        getLineColor: [20, 90, 220, 255],
+        getLineWidth: () => 2,
+        material: { ambient: 0.9, diffuse: 0.85, shininess: 15 },
         highlightColor: [255, 255, 255, 120],
       }),
     );

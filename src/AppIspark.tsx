@@ -12,6 +12,7 @@ import { Header } from "./components/Header";
 import { IsparkLotDetailPanel } from "./components/IsparkLotDetailPanel";
 import { PoiDetailPanel } from "./components/PoiDetailPanel";
 import { BusRouteDetailPanel } from "./components/BusRouteDetailPanel";
+import { Sun, Moon } from "lucide-react";
 import type { GeoResult } from "./lib/geocode";
 import type { TurkeyOverlayFlags } from "./hooks/useTurkeyOverlays";
 import { useEffect } from "react";
@@ -139,6 +140,12 @@ function AppIspark() {
 
   const lots = isparkEnabled ? ispark.lots : [];
 
+  const DARK_MATTER_URL = "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json";
+  const LIGHT_POSITRON_URL = "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json";
+
+  const [mapTheme, setMapTheme] = useState<"light" | "dark">("light");
+  const mapStyleUrl = mapTheme === "light" ? LIGHT_POSITRON_URL : DARK_MATTER_URL;
+
   const toggleFlag = (key: keyof TurkeyOverlayFlags) => {
     setOverlayFlags((s) => ({ ...s, [key]: !s[key] }));
   };
@@ -161,20 +168,34 @@ function AppIspark() {
         </div>
       )}
 
-      <Header generated={ispark.lastUpdated} dateRange={null} blockCount={ispark.lots.length} />
+      <Header
+        generated={ispark.lastUpdated}
+        dateRange={null}
+        themeToggle={
+          <button
+            type="button"
+            onClick={() => setMapTheme((t) => (t === "light" ? "dark" : "light"))}
+            className="rounded-2xl bg-gray-950/88 backdrop-blur-md border border-gray-800/60 shadow-[0_12px_36px_rgba(0,0,0,0.28)] p-3 text-gray-200 hover:text-gray-50 transition-colors"
+            aria-label="Harita temasını değiştir"
+            title={mapTheme === "light" ? "Koyu temaya geç" : "Açık temaya geç"}
+          >
+            {mapTheme === "light" ? <Moon size={18} /> : <Sun size={18} />}
+          </button>
+        }
+      />
 
-      <div className="absolute top-16 left-4 z-30 w-72">
-        <div className="rounded-xl bg-gray-950/80 backdrop-blur-md border border-gray-800/50 shadow-[0_10px_35px_rgba(0,0,0,0.45)] overflow-hidden">
-          <div className="px-3 py-2 border-b border-gray-800/50 bg-gradient-to-r from-emerald-500/20 via-blue-500/10 to-transparent">
+      <div className="absolute top-32 left-4 z-30 w-80">
+        <div className="rounded-2xl bg-gray-950/82 backdrop-blur-md border border-gray-800/50 shadow-[0_10px_28px_rgba(0,0,0,0.22)] overflow-hidden">
+          <div className="px-4 py-4 border-b border-gray-800/50 bg-gradient-to-r from-emerald-500/20 via-blue-500/10 to-transparent">
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_20px_rgba(52,211,153,0.35)]" />
               <p className="text-[11px] text-gray-200 uppercase tracking-wider font-semibold">Katmanlar</p>
             </div>
           </div>
 
-          <div className="p-3">
-            <div className="space-y-1">
-              <label className="flex items-center justify-between gap-3 text-sm text-gray-200 px-2 py-2 rounded-lg hover:bg-gray-800/40 border border-transparent hover:border-gray-800/70 transition-colors cursor-pointer select-none">
+          <div className="max-h-[calc(100vh-11rem)] overflow-y-auto p-4">
+            <div className="space-y-2">
+              <label className="flex min-h-9 items-center justify-between gap-2 text-xs text-gray-200 px-3 py-2 rounded-xl bg-white/[0.03] hover:bg-gray-800/35 border border-transparent hover:border-gray-800/60 transition-colors cursor-pointer select-none">
                 <span className="font-medium">İSPARK otoparklar</span>
                 <input
                   type="checkbox"
@@ -184,9 +205,9 @@ function AppIspark() {
                 />
               </label>
 
-              <div className="h-px bg-white/5 my-2" />
+              <div className="h-px bg-white/5 my-3" />
 
-              <label className="flex items-center justify-between gap-3 text-sm text-gray-200 px-2 py-2 rounded-lg hover:bg-gray-800/40 border border-transparent hover:border-gray-800/70 transition-colors cursor-pointer select-none">
+              <label className="flex min-h-9 items-center justify-between gap-2 text-xs text-gray-200 px-3 py-2 rounded-xl bg-white/[0.03] hover:bg-gray-800/35 border border-transparent hover:border-gray-800/60 transition-colors cursor-pointer select-none">
                 <span className="font-medium">Otobüs hatları</span>
                 <input
                   type="checkbox"
@@ -196,7 +217,7 @@ function AppIspark() {
                 />
               </label>
 
-              <label className="flex items-center justify-between gap-3 text-sm text-gray-200 px-2 py-2 rounded-lg hover:bg-gray-800/40 border border-transparent hover:border-gray-800/70 transition-colors cursor-pointer select-none">
+              <label className="flex min-h-9 items-center justify-between gap-2 text-xs text-gray-200 px-3 py-2 rounded-xl bg-white/[0.03] hover:bg-gray-800/35 border border-transparent hover:border-gray-800/60 transition-colors cursor-pointer select-none">
                 <span className="font-medium">Otobüs durakları</span>
                 <input
                   type="checkbox"
@@ -206,7 +227,7 @@ function AppIspark() {
                 />
               </label>
 
-              <label className="flex items-center justify-between gap-3 text-sm text-gray-200 px-2 py-2 rounded-lg hover:bg-gray-800/40 border border-transparent hover:border-gray-800/70 transition-colors cursor-pointer select-none">
+              <label className="flex min-h-9 items-center justify-between gap-2 text-xs text-gray-200 px-3 py-2 rounded-xl bg-white/[0.03] hover:bg-gray-800/35 border border-transparent hover:border-gray-800/60 transition-colors cursor-pointer select-none">
                 <span className="font-medium">Raylı hatlar</span>
                 <input
                   type="checkbox"
@@ -216,7 +237,7 @@ function AppIspark() {
                 />
               </label>
 
-              <label className="flex items-center justify-between gap-3 text-sm text-gray-200 px-2 py-2 rounded-lg hover:bg-gray-800/40 border border-transparent hover:border-gray-800/70 transition-colors cursor-pointer select-none">
+              <label className="flex min-h-9 items-center justify-between gap-2 text-xs text-gray-200 px-3 py-2 rounded-xl bg-white/[0.03] hover:bg-gray-800/35 border border-transparent hover:border-gray-800/60 transition-colors cursor-pointer select-none">
                 <span className="font-medium">Raylı istasyonlar</span>
                 <input
                   type="checkbox"
@@ -226,7 +247,7 @@ function AppIspark() {
                 />
               </label>
 
-              <label className="flex items-center justify-between gap-3 text-sm text-gray-200 px-2 py-2 rounded-lg hover:bg-gray-800/40 border border-transparent hover:border-gray-800/70 transition-colors cursor-pointer select-none">
+              <label className="flex min-h-9 items-center justify-between gap-2 text-xs text-gray-200 px-3 py-2 rounded-xl bg-white/[0.03] hover:bg-gray-800/35 border border-transparent hover:border-gray-800/60 transition-colors cursor-pointer select-none">
                 <span className="font-medium">Bisiklet yolları</span>
                 <input
                   type="checkbox"
@@ -236,7 +257,7 @@ function AppIspark() {
                 />
               </label>
 
-              <label className="flex items-center justify-between gap-3 text-sm text-gray-200 px-2 py-2 rounded-lg hover:bg-gray-800/40 border border-transparent hover:border-gray-800/70 transition-colors cursor-pointer select-none">
+              <label className="flex min-h-9 items-center justify-between gap-2 text-xs text-gray-200 px-3 py-2 rounded-xl bg-white/[0.03] hover:bg-gray-800/35 border border-transparent hover:border-gray-800/60 transition-colors cursor-pointer select-none">
                 <span className="font-medium">Mikromobilite parkları</span>
                 <input
                   type="checkbox"
@@ -246,7 +267,7 @@ function AppIspark() {
                 />
               </label>
 
-              <label className="flex items-center justify-between gap-3 text-sm text-gray-200 px-2 py-2 rounded-lg hover:bg-gray-800/40 border border-transparent hover:border-gray-800/70 transition-colors cursor-pointer select-none">
+              <label className="flex min-h-9 items-center justify-between gap-2 text-xs text-gray-200 px-3 py-2 rounded-xl bg-white/[0.03] hover:bg-gray-800/35 border border-transparent hover:border-gray-800/60 transition-colors cursor-pointer select-none">
                 <span className="font-medium">Şarj istasyonları</span>
                 <input
                   type="checkbox"
@@ -256,7 +277,7 @@ function AppIspark() {
                 />
               </label>
 
-              <label className="flex items-center justify-between gap-3 text-sm text-gray-200 px-2 py-2 rounded-lg hover:bg-gray-800/40 border border-transparent hover:border-gray-800/70 transition-colors cursor-pointer select-none">
+              <label className="flex min-h-9 items-center justify-between gap-2 text-xs text-gray-200 px-3 py-2 rounded-xl bg-white/[0.03] hover:bg-gray-800/35 border border-transparent hover:border-gray-800/60 transition-colors cursor-pointer select-none">
                 <span className="font-medium">Yeşil alanlar</span>
                 <input
                   type="checkbox"
@@ -266,7 +287,7 @@ function AppIspark() {
                 />
               </label>
 
-              <label className="flex items-center justify-between gap-3 text-sm text-gray-200 px-2 py-2 rounded-lg hover:bg-gray-800/40 border border-transparent hover:border-gray-800/70 transition-colors cursor-pointer select-none">
+              <label className="flex min-h-9 items-center justify-between gap-2 text-xs text-gray-200 px-3 py-2 rounded-xl bg-white/[0.03] hover:bg-gray-800/35 border border-transparent hover:border-gray-800/60 transition-colors cursor-pointer select-none">
                 <span className="font-medium">Şehir tuvaletleri</span>
                 <input
                   type="checkbox"
@@ -276,7 +297,7 @@ function AppIspark() {
                 />
               </label>
 
-              <label className="flex items-center justify-between gap-3 text-sm text-gray-200 px-2 py-2 rounded-lg hover:bg-gray-800/40 border border-transparent hover:border-gray-800/70 transition-colors cursor-pointer select-none">
+              <label className="flex min-h-9 items-center justify-between gap-2 text-xs text-gray-200 px-3 py-2 rounded-xl bg-white/[0.03] hover:bg-gray-800/35 border border-transparent hover:border-gray-800/60 transition-colors cursor-pointer select-none">
                 <span className="font-medium">Taksi durakları</span>
                 <input
                   type="checkbox"
@@ -286,7 +307,7 @@ function AppIspark() {
                 />
               </label>
 
-              <label className="flex items-center justify-between gap-3 text-sm text-gray-200 px-2 py-2 rounded-lg hover:bg-gray-800/40 border border-transparent hover:border-gray-800/70 transition-colors cursor-pointer select-none">
+              <label className="flex min-h-9 items-center justify-between gap-2 text-xs text-gray-200 px-3 py-2 rounded-xl bg-white/[0.03] hover:bg-gray-800/35 border border-transparent hover:border-gray-800/60 transition-colors cursor-pointer select-none">
                 <span className="font-medium">Dolmuş durakları</span>
                 <input
                   type="checkbox"
@@ -296,7 +317,7 @@ function AppIspark() {
                 />
               </label>
 
-              <label className="flex items-center justify-between gap-3 text-sm text-gray-200 px-2 py-2 rounded-lg hover:bg-gray-800/40 border border-transparent hover:border-gray-800/70 transition-colors cursor-pointer select-none">
+              <label className="flex min-h-9 items-center justify-between gap-2 text-xs text-gray-200 px-3 py-2 rounded-xl bg-white/[0.03] hover:bg-gray-800/35 border border-transparent hover:border-gray-800/60 transition-colors cursor-pointer select-none">
                 <span className="font-medium">Minibüs hatları</span>
                 <input
                   type="checkbox"
@@ -306,7 +327,7 @@ function AppIspark() {
                 />
               </label>
 
-              <label className="flex items-center justify-between gap-3 text-sm text-gray-200 px-2 py-2 rounded-lg hover:bg-gray-800/40 border border-transparent hover:border-gray-800/70 transition-colors cursor-pointer select-none">
+              <label className="flex min-h-9 items-center justify-between gap-2 text-xs text-gray-200 px-3 py-2 rounded-xl bg-white/[0.03] hover:bg-gray-800/35 border border-transparent hover:border-gray-800/60 transition-colors cursor-pointer select-none">
                 <span className="font-medium">Minibüs durakları</span>
                 <input
                   type="checkbox"
@@ -316,7 +337,7 @@ function AppIspark() {
                 />
               </label>
 
-              <label className="flex items-center justify-between gap-3 text-sm text-gray-200 px-2 py-2 rounded-lg hover:bg-gray-800/40 border border-transparent hover:border-gray-800/70 transition-colors cursor-pointer select-none">
+              <label className="flex min-h-11 items-center justify-between gap-3 text-sm text-gray-200 px-4 py-3 rounded-xl bg-white/[0.02] hover:bg-gray-800/40 border border-transparent hover:border-gray-800/70 transition-colors cursor-pointer select-none">
                 <span className="font-medium">Deniz istasyonları</span>
                 <input
                   type="checkbox"
@@ -363,6 +384,7 @@ function AppIspark() {
           setSelectedBusRouteProps(null);
         }}
         extraLayers={extraLayers}
+        mapStyleUrl={mapStyleUrl}
       />
 
       <SearchBar
