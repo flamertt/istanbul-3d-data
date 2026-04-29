@@ -1,3 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+public/datas/* filter=lfs diff=lfs merge=lfs -text
+public/data/turkey_overlays/Bisiklet[[:space:]]ve[[:space:]]Mikromobilite[[:space:]]Park[[:space:]]Alanları filter=lfs diff=lfs merge=lfs -text
+public/data/turkey_overlays/micromobility_parks.geojson filter=lfs diff=lfs merge=lfs -text
 public/data/turkey_overlays/bus_routes.geojson filter=lfs diff=lfs merge=lfs -text
