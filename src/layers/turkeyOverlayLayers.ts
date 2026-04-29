@@ -239,16 +239,41 @@ export function createTurkeyOverlayLayers(
     return maybe;
   };
 
-  const getBusRouteMatchKey = (p: Record<string, unknown> | null | undefined): string | null => {
-    if (!p) return null;
-    const hatKodu = typeof p["HAT_KODU"] === "string" ? p["HAT_KODU"] : null;
-    const guzergahKodu = typeof p["GUZERGAH_KODU"] === "string" ? p["GUZERGAH_KODU"] : null;
-    const id = typeof p["ID"] === "string" || typeof p["ID"] === "number" ? String(p["ID"]) : null;
-    if (!hatKodu && !guzergahKodu && !id) return null;
-    return `${hatKodu ?? ""}|${guzergahKodu ?? ""}|${id ?? ""}`;
+  const stripDiacritics = (s: string): string => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
+  const normalizeKeyPart = (v: unknown): string | null => {
+    if (v == null) return null;
+    const s = String(v).trim();
+    if (!s) return null;
+    // Büyük/küçük + Türkçe karakter farklarını tolere et.
+    return stripDiacritics(s).toLowerCase();
   };
 
-  const selectedBusRouteKey = getBusRouteMatchKey(ui?.selectedBusRouteProps ?? null);
+  const selectedHatKodu = normalizeKeyPart(ui?.selectedBusRouteProps?.["HAT_KODU"]);
+  const selectedGuzergahKodu = normalizeKeyPart(ui?.selectedBusRouteProps?.["GUZERGAH_KODU"]);
+  const selectedId = normalizeKeyPart(ui?.selectedBusRouteProps?.["ID"]);
+
+  const matchesSelectedBusRoute = (p: Record<string, unknown> | null): boolean => {
+    if (!p) return false;
+    const hatKodu = normalizeKeyPart(p["HAT_KODU"]);
+    const guzergahKodu = normalizeKeyPart(p["GUZERGAH_KODU"]);
+    const id = normalizeKeyPart(p["ID"]);
+
+    // Seçimde hangi alanlar varsa, feature da aynı alanları taşımalı.
+    if (selectedHatKodu && selectedGuzergahKodu) {
+      return hatKodu === selectedHatKodu && guzergahKodu === selectedGuzergahKodu;
+    }
+    if (selectedHatKodu) {
+      return hatKodu === selectedHatKodu;
+    }
+    if (selectedGuzergahKodu) {
+      return guzergahKodu === selectedGuzergahKodu;
+    }
+    if (selectedId) {
+      return id === selectedId;
+    }
+    return false;
+  };
 
   // Polygons behind lines/points
   if (overlays.greenAreas && showPolygons) {
@@ -277,17 +302,19 @@ export function createTurkeyOverlayLayers(
         pickable: true,
         getLineColor: (f: unknown) => {
           const p = getFeatureProperties(f);
-          const key = getBusRouteMatchKey(p);
-          const isSelected = selectedBusRouteKey != null && key === selectedBusRouteKey;
-          return isSelected ? [239, 68, 68, 230] : [59, 130, 246, 160];
+          const isSelected = matchesSelectedBusRoute(p);
+          return isSelected ? [239, 68, 68, 255] : [59, 130, 246, 160];
         },
         // Tıklanabilirlik ve görünürlük için çizgi kalınlığını seçime göre değiştiriyoruz.
         lineWidthMinPixels: 2,
         getLineWidth: (f: unknown) => {
           const p = getFeatureProperties(f);
-          const key = getBusRouteMatchKey(p);
-          const isSelected = selectedBusRouteKey != null && key === selectedBusRouteKey;
-          return isSelected ? 8 : 3;
+          const isSelected = matchesSelectedBusRoute(p);
+          return isSelected ? 14 : 3;
+        },
+        updateTriggers: {
+          getLineColor: [selectedHatKodu, selectedGuzergahKodu, selectedId],
+          getLineWidth: [selectedHatKodu, selectedGuzergahKodu, selectedId],
         },
       }),
     );
