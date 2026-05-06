@@ -143,7 +143,7 @@ function AppIspark() {
   const DARK_MATTER_URL = "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json";
   const LIGHT_POSITRON_URL = "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json";
 
-  const [mapTheme, setMapTheme] = useState<"light" | "dark">("light");
+  const [mapTheme, setMapTheme] = useState<"light" | "dark">("dark");
   const mapStyleUrl = mapTheme === "light" ? LIGHT_POSITRON_URL : DARK_MATTER_URL;
 
   const toggleFlag = (key: keyof TurkeyOverlayFlags) => {
@@ -170,7 +170,6 @@ function AppIspark() {
 
       <Header
         generated={ispark.lastUpdated}
-        dateRange={null}
         themeToggle={
           <button
             type="button"

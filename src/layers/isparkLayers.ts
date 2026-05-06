@@ -1,4 +1,4 @@
-import { ColumnLayer, ScatterplotLayer } from "deck.gl";
+import { ColumnLayer, IconLayer, ScatterplotLayer } from "deck.gl";
 import type { Layer } from "deck.gl";
 import type { IsparkLot } from "../types";
 import { occupancyToRgb } from "../lib/colors";
@@ -32,10 +32,34 @@ function getParkTypeKey(lot: IsparkLot): "open" | "closed" | "road" | "other" {
   return "other";
 }
 
+function getColumnElevation(lot: IsparkLot, maxElevationMeters: number): number {
+  const occ = getOccupancyRatio(lot);
+  const parkKey = getParkTypeKey(lot);
+  // Veri yoksa bile görünür minimum yükseklik (görsel karışıklığı azaltır).
+  if (occ < 0) return parkKey === "closed" ? 65 : parkKey === "open" ? 55 : parkKey === "road" ? 45 : 55;
+
+  const baseByType = parkKey === "closed" ? 120 : parkKey === "open" ? 95 : parkKey === "road" ? 80 : 95;
+  const scaleByType = parkKey === "closed" ? 1.0 : parkKey === "open" ? 0.9 : parkKey === "road" ? 0.7 : 0.9;
+
+  // Always give a readable minimum height, then scale with occupancy.
+  const scaled = occ > 0 ? occ * maxElevationMeters * scaleByType : 0;
+  return baseByType + scaled;
+}
+
+const ISPARK_ICON_URL =
+  "data:image/svg+xml;utf8," +
+  encodeURIComponent(
+    `<svg xmlns="http://www.w3.org/2000/svg" width="112" height="112" viewBox="0 0 112 112">
+      <rect x="8" y="8" width="96" height="96" rx="24" fill="#1d4ed8" stroke="#e2e8f0" stroke-width="6"/>
+      <path d="M36 28h20c12 0 22 7 22 20s-10 20-22 20H46v16H36V28zm10 10v20h9c7 0 13-3 13-10s-6-10-13-10h-9z" fill="#ffffff"/>
+    </svg>`,
+  );
+
 export function createIsparkLayers(lots: IsparkLot[], zoom: number): Layer[] {
   // 264 adet kolon için GPU yükü yaratabiliyor; daha akıcı render için biraz aşağı çekiyoruz.
   const maxElevationMeters = 420;
   const showColumns = zoom >= 11;
+  const showColumnIcons = zoom >= 12;
 
   const layers: Layer[] = [];
 
@@ -54,19 +78,7 @@ export function createIsparkLayers(lots: IsparkLot[], zoom: number): Layer[] {
         // Stroke, fragment maliyetini artırıyor; performans için kapatıyoruz.
         stroked: false,
         getPosition: (d) => [d.lng, d.lat],
-        getElevation: (d) => {
-          const occ = getOccupancyRatio(d);
-          const parkKey = getParkTypeKey(d);
-          // Veri yoksa bile görünür minimum yükseklik (görsel karışıklığı azaltır).
-          if (occ < 0) return parkKey === "closed" ? 65 : parkKey === "open" ? 55 : parkKey === "road" ? 45 : 55;
-
-          const baseByType = parkKey === "closed" ? 120 : parkKey === "open" ? 95 : parkKey === "road" ? 80 : 95;
-          const scaleByType = parkKey === "closed" ? 1.0 : parkKey === "open" ? 0.9 : parkKey === "road" ? 0.7 : 0.9;
-
-          // Always give a readable minimum height, then scale with occupancy.
-          const scaled = occ > 0 ? occ * maxElevationMeters * scaleByType : 0;
-          return baseByType + scaled;
-        },
+        getElevation: (d) => getColumnElevation(d, maxElevationMeters),
         getFillColor: (d) => {
           const occ = getOccupancyRatio(d);
           if (occ < 0) return [107, 114, 128, 180];
@@ -88,6 +100,28 @@ export function createIsparkLayers(lots: IsparkLot[], zoom: number): Layer[] {
         updateTriggers: {},
       }),
     );
+    if (showColumnIcons) {
+      layers.push(
+        new IconLayer<IsparkLot>({
+          id: "ispark-column-icons",
+          data: lots,
+          pickable: true,
+          billboard: true,
+          sizeUnits: "meters",
+          getIcon: () => ({
+            url: ISPARK_ICON_URL,
+            width: 112,
+            height: 112,
+            anchorY: 112,
+          }),
+          getPosition: (d) => [d.lng, d.lat, getColumnElevation(d, maxElevationMeters) + 14],
+          getSize: 90,
+          getColor: (d) => (d.isOpen ? [255, 255, 255, 230] : [203, 213, 225, 180]),
+          updateTriggers: {},
+        }),
+      );
+    }
+
   } else {
     layers.push(
       new ScatterplotLayer<IsparkLot>({
