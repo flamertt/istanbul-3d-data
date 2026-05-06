@@ -12,7 +12,7 @@ import { Header } from "./components/Header";
 import { IsparkLotDetailPanel } from "./components/IsparkLotDetailPanel";
 import { PoiDetailPanel } from "./components/PoiDetailPanel";
 import { BusRouteDetailPanel } from "./components/BusRouteDetailPanel";
-import { Sun, Moon } from "lucide-react";
+import { Sun, Moon, LocateFixed } from "lucide-react";
 import type { GeoResult } from "./lib/geocode";
 import type { TurkeyOverlayFlags } from "./hooks/useTurkeyOverlays";
 import { useEffect } from "react";
@@ -31,19 +31,19 @@ function AppIspark() {
   const [overlayFlags, setOverlayFlags] = useState<TurkeyOverlayFlags>({
     // Otobüs hatları çok büyük veri olduğu için default kapalı (tıklanınca açıyoruz).
     busRoutes: false,
-    railLines: true,
-    bikeLanes: true,
+    railLines: false,
+    bikeLanes: false,
     greenAreas: true,
-    busStops: true,
-    railStations: true,
+    busStops: false,
+    railStations: false,
     evChargingStations: true,
-    micromobilityParks: true,
+    micromobilityParks: false,
     toilets: true,
-    taxiStops: true,
-    taxiDolmusStops: true,
-    minibusRoutes: true,
-    minibusStops: true,
-    seaStations: true,
+    taxiStops: false,
+    taxiDolmusStops: false,
+    minibusRoutes: false,
+    minibusStops: false,
+    seaStations: false,
   });
 
   // Sayfa her açılışta İstanbul merkezli başlasın (URL state/hmr kalıntıları olmasın diye).
@@ -150,6 +150,22 @@ function AppIspark() {
     setOverlayFlags((s) => ({ ...s, [key]: !s[key] }));
   };
 
+  const [locating, setLocating] = useState(false);
+  const handleLocateMe = useCallback(() => {
+    if (!navigator.geolocation) return;
+    setLocating(true);
+    navigator.geolocation.getCurrentPosition(
+      ({ coords }) => {
+        flyTo(coords.longitude, coords.latitude, 16.8);
+        setLocating(false);
+      },
+      () => {
+        setLocating(false);
+      },
+      { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 },
+    );
+  }, [flyTo]);
+
   return (
     <div className="relative h-screen w-screen overflow-hidden bg-gray-950">
       {(ispark.loading || turkeyOverlays.errors.length > 0) && (
@@ -171,15 +187,27 @@ function AppIspark() {
       <Header
         generated={ispark.lastUpdated}
         themeToggle={
-          <button
-            type="button"
-            onClick={() => setMapTheme((t) => (t === "light" ? "dark" : "light"))}
-            className="rounded-2xl bg-gray-950/88 backdrop-blur-md border border-gray-800/60 shadow-[0_12px_36px_rgba(0,0,0,0.28)] p-3 text-gray-200 hover:text-gray-50 transition-colors"
-            aria-label="Harita temasını değiştir"
-            title={mapTheme === "light" ? "Koyu temaya geç" : "Açık temaya geç"}
-          >
-            {mapTheme === "light" ? <Moon size={18} /> : <Sun size={18} />}
-          </button>
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={handleLocateMe}
+              disabled={locating}
+              className="rounded-2xl bg-gray-950/88 backdrop-blur-md border border-gray-800/60 shadow-[0_12px_36px_rgba(0,0,0,0.28)] p-3 text-gray-200 hover:text-gray-50 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+              aria-label="Konumuma git"
+              title={locating ? "Konum alınıyor..." : "Konumuma git"}
+            >
+              <LocateFixed size={18} />
+            </button>
+            <button
+              type="button"
+              onClick={() => setMapTheme((t) => (t === "light" ? "dark" : "light"))}
+              className="rounded-2xl bg-gray-950/88 backdrop-blur-md border border-gray-800/60 shadow-[0_12px_36px_rgba(0,0,0,0.28)] p-3 text-gray-200 hover:text-gray-50 transition-colors"
+              aria-label="Harita temasını değiştir"
+              title={mapTheme === "light" ? "Koyu temaya geç" : "Açık temaya geç"}
+            >
+              {mapTheme === "light" ? <Moon size={18} /> : <Sun size={18} />}
+            </button>
+          </div>
         }
       />
 
