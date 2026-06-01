@@ -201,7 +201,7 @@ export function ParkingMap({
       source,
       "source-layer": "building",
       type: "fill-extrusion",
-      minzoom: 11,
+      minzoom: 3,
       paint: {
         "fill-extrusion-color": mapTheme === "light" ? "#c8c0b8" : "#2a2a3a",
         "fill-extrusion-height": ["*", ["coalesce", ["get", "render_height"], 10], 2],
