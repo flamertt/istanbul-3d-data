@@ -1,5 +1,7 @@
 import { X } from "lucide-react";
 import type { IsparkLot } from "../types";
+import type { RouteMode, RouteState } from "../hooks/useRoute";
+import { DirectionsSection } from "./DirectionsSection";
 
 function formatNullableNumber(v: number | null | undefined) {
   if (v == null) return null;
@@ -7,7 +9,17 @@ function formatNullableNumber(v: number | null | undefined) {
   return v.toLocaleString();
 }
 
-export function IsparkLotDetailPanel({ lot, onClose }: { lot: IsparkLot; onClose: () => void }) {
+export function IsparkLotDetailPanel({
+  lot,
+  onClose,
+  onGetDirections,
+  route,
+}: {
+  lot: IsparkLot;
+  onClose: () => void;
+  onGetDirections?: (lat: number, lng: number, mode: RouteMode) => void;
+  route?: RouteState;
+}) {
   const isOpen = lot.isOpen;
   const statusPill = isOpen
     ? { bg: "bg-emerald-500/15", text: "text-emerald-200", border: "border-emerald-500/20" }
@@ -82,6 +94,8 @@ export function IsparkLotDetailPanel({ lot, onClose }: { lot: IsparkLot; onClose
             <div className="text-sm text-gray-100 mt-1 break-words">{lot.workHours}</div>
           </div>
         )}
+
+        <DirectionsSection lat={lot.lat} lng={lot.lng} onGetDirections={onGetDirections} route={route} />
       </div>
     </div>
   );

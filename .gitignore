@@ -9,3 +9,6 @@ coverage
 .idea
 .vscode
 
+# Valhalla routing data (large binary files)
+valhalla-data/
+

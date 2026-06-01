@@ -1,5 +1,7 @@
 import { X } from "lucide-react";
 import type { TurkeyPoiKind, TurkeyPoiPoint } from "../layers/turkeyOverlayLayers";
+import type { RouteMode, RouteState } from "../hooks/useRoute";
+import { DirectionsSection } from "./DirectionsSection";
 
 type PoiTheme = {
   label: string;
@@ -215,7 +217,17 @@ const POI_THEMES: Record<TurkeyPoiKind, PoiTheme> = {
   },
 };
 
-export function PoiDetailPanel({ poi, onClose }: { poi: TurkeyPoiPoint; onClose: () => void }) {
+export function PoiDetailPanel({
+  poi,
+  onClose,
+  onGetDirections,
+  route,
+}: {
+  poi: TurkeyPoiPoint;
+  onClose: () => void;
+  onGetDirections?: (lat: number, lng: number, mode: RouteMode) => void;
+  route?: RouteState;
+}) {
   const theme = POI_THEMES[poi.kind];
 
   return (
@@ -250,12 +262,15 @@ export function PoiDetailPanel({ poi, onClose }: { poi: TurkeyPoiPoint; onClose:
         </div>
       </div>
 
-      <div className="p-3">
+      <div className="p-3 space-y-2">
         {poi.extra && (
-          <div className={`mt-2 rounded-lg border border-white/5 ${theme.extraPanelBorder} ${theme.extraPanelBg} p-2`}>
+          <div className={`rounded-lg border border-white/5 ${theme.extraPanelBorder} ${theme.extraPanelBg} p-2`}>
             <div className={`text-[11px] uppercase tracking-wider font-semibold ${theme.extraText}`}>{theme.extraLabel}</div>
             <div className={`text-xs mt-1 break-words ${theme.extraText}`}>{poi.extra}</div>
           </div>
+        )}
+        {poi.position && (
+          <DirectionsSection lat={poi.position[1]} lng={poi.position[0]} onGetDirections={onGetDirections} route={route} />
         )}
       </div>
     </div>
