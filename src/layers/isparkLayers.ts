@@ -32,18 +32,15 @@ function getParkTypeKey(lot: IsparkLot): "open" | "closed" | "road" | "other" {
   return "other";
 }
 
-function getColumnElevation(lot: IsparkLot, maxElevationMeters: number): number {
-  const occ = getOccupancyRatio(lot);
+function getColumnElevation(lot: IsparkLot): number {
   const parkKey = getParkTypeKey(lot);
-  // Veri yoksa bile görünür minimum yükseklik (görsel karışıklığı azaltır).
-  if (occ < 0) return parkKey === "closed" ? 65 : parkKey === "open" ? 55 : parkKey === "road" ? 45 : 55;
+  // Base elevation based on type for visual distinction
+  const baseByType = parkKey === "closed" ? 50 : parkKey === "open" ? 40 : parkKey === "road" ? 30 : 40;
 
-  const baseByType = parkKey === "closed" ? 120 : parkKey === "open" ? 95 : parkKey === "road" ? 80 : 95;
-  const scaleByType = parkKey === "closed" ? 1.0 : parkKey === "open" ? 0.9 : parkKey === "road" ? 0.7 : 0.9;
+  // Kapasiteye göre yükseklik; katsayıyı 0.8'e çektik, sınırı 800m yaptık.
+  const capacityHeight = Math.min(lot.capacity * 0.8, 800);
 
-  // Always give a readable minimum height, then scale with occupancy.
-  const scaled = occ > 0 ? occ * maxElevationMeters * scaleByType : 0;
-  return baseByType + scaled;
+  return baseByType + capacityHeight;
 }
 
 const ISPARK_ICON_URL =
@@ -56,8 +53,6 @@ const ISPARK_ICON_URL =
   );
 
 export function createIsparkLayers(lots: IsparkLot[], zoom: number): Layer[] {
-  // 264 adet kolon için GPU yükü yaratabiliyor; daha akıcı render için biraz aşağı çekiyoruz.
-  const maxElevationMeters = 420;
   const showColumns = zoom >= 11;
   const showColumnIcons = zoom >= 12;
 
@@ -78,7 +73,7 @@ export function createIsparkLayers(lots: IsparkLot[], zoom: number): Layer[] {
         // Stroke, fragment maliyetini artırıyor; performans için kapatıyoruz.
         stroked: false,
         getPosition: (d) => [d.lng, d.lat],
-        getElevation: (d) => getColumnElevation(d, maxElevationMeters),
+        getElevation: (d) => getColumnElevation(d),
         getFillColor: (d) => {
           const occ = getOccupancyRatio(d);
           if (occ < 0) return [107, 114, 128, 180];
@@ -114,7 +109,7 @@ export function createIsparkLayers(lots: IsparkLot[], zoom: number): Layer[] {
             height: 112,
             anchorY: 112,
           }),
-          getPosition: (d) => [d.lng, d.lat, getColumnElevation(d, maxElevationMeters) + 14],
+          getPosition: (d) => [d.lng, d.lat, getColumnElevation(d) + 14],
           getSize: 90,
           getColor: (d) => (d.isOpen ? [255, 255, 255, 230] : [203, 213, 225, 180]),
           updateTriggers: {},

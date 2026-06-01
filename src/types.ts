@@ -127,6 +127,20 @@ export interface IsparkLot {
   workHours?: string | null;
 }
 
+export interface Landmark {
+  id: string;
+  name: string;
+  nameEn: string | null;
+  category: string;
+  coordinates: [number, number];
+}
+
+export interface LandmarkData {
+  generatedAt: string;
+  source: string;
+  landmarks: Landmark[];
+}
+
 /** Active visualization mode */
 export type ViewMode = "parking" | "bike" | "correlation";
 

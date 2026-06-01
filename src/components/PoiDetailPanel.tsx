@@ -1,7 +1,10 @@
-import { X } from "lucide-react";
+import { X, Navigation2, Info, Layers } from "lucide-react";
 import type { TurkeyPoiKind, TurkeyPoiPoint } from "../layers/turkeyOverlayLayers";
 import type { RouteMode, RouteState } from "../hooks/useRoute";
 import { DirectionsSection } from "./DirectionsSection";
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
+import { ScrollArea } from "./ui/scroll-area";
+import { cn } from "../lib/utils";
 
 type PoiTheme = {
   label: string;
@@ -231,49 +234,77 @@ export function PoiDetailPanel({
   const theme = POI_THEMES[poi.kind];
 
   return (
-    <div className="absolute top-16 right-4 z-30 w-80 rounded-xl bg-gray-950/90 backdrop-blur-md border border-gray-800/50 shadow-[0_10px_35px_rgba(0,0,0,0.45)] overflow-hidden">
-      <div className={`px-3 py-3 ${theme.headerStripe}`}>
-        <div className="flex items-start justify-between gap-3">
-          <div className="min-w-0">
-            {/* En üstte sabit 'POI' yazısı yerine POI türüne özel badge */}
-            <div className={`inline-flex items-center gap-2 px-2 py-1 rounded-full ${theme.pillBg} border border-white/5`}>
-              <span className={`w-2 h-2 rounded-full ${theme.dotBg}`} />
-              <span className={`text-[11px] font-semibold uppercase tracking-wider ${theme.pillText}`}>{theme.label}</span>
+    <Card className="absolute top-16 right-4 z-40 w-96 max-h-[calc(100vh-theme(spacing.20))] flex flex-col pointer-events-auto border-border/40 bg-background/90 backdrop-blur-md shadow-2xl overflow-hidden panel-slide-in">
+      <div className={cn("p-1", theme.headerStripe)}>
+        <CardHeader className="p-4 pb-2 space-y-0">
+          <div className="flex items-start justify-between gap-4">
+            <div className="flex-1 space-y-2.5 min-w-0">
+              <div className={cn("inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full border border-border/40", theme.pillBg)}>
+                <span className={cn("w-1.5 h-1.5 rounded-full scale-110", theme.dotBg)} />
+                <span className={cn("text-[10px] font-bold uppercase tracking-widest", theme.pillText)}>
+                  {theme.label}
+                </span>
+              </div>
+              
+              <CardTitle className={cn("text-lg font-bold leading-tight break-words", theme.titleText)}>
+                {poi.title || theme.label}
+              </CardTitle>
             </div>
 
-            <p className={`text-sm font-semibold mt-2 break-words ${theme.titleText}`}>{poi.title || theme.label}</p>
+            <button
+              onClick={onClose}
+              className="p-1.5 rounded-md hover:bg-accent/40 text-muted-foreground hover:text-foreground transition-all shrink-0"
+              aria-label="Kapat"
+            >
+              <X size={18} />
+            </button>
+          </div>
+        </CardHeader>
+      </div>
 
-            {poi.subtitle && (
-              <div className={`mt-2 rounded-lg border border-white/5 ${theme.subtitlePillBg} ${theme.subtitlePillText} p-2`}>
-                <div className="text-[11px] uppercase tracking-wider font-semibold">{theme.subtitleLabel}</div>
-                <div className="text-xs mt-1 break-words">{poi.subtitle}</div>
+      <ScrollArea className="flex-1">
+        <CardContent className="p-4 pt-2 space-y-4">
+          {poi.subtitle && (
+            <div className="space-y-1.5">
+              <div className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-muted-foreground/60">
+                <Info size={12} />
+                {theme.subtitleLabel}
               </div>
-            )}
-          </div>
+              <div className={cn("rounded-xl border border-border/40 p-3 text-sm bg-muted/20", theme.subtitlePillText)}>
+                {poi.subtitle}
+              </div>
+            </div>
+          )}
 
-          <button
-            onClick={onClose}
-            className="shrink-0 w-8 h-8 rounded-lg text-gray-400 hover:bg-gray-800/60 hover:text-gray-200 transition-colors flex items-center justify-center"
-            aria-label="Kapat"
-            type="button"
-          >
-            <X size={16} />
-          </button>
-        </div>
-      </div>
+          {poi.extra && (
+            <div className="space-y-1.5">
+              <div className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-muted-foreground/60">
+                <Layers size={12} />
+                {theme.extraLabel}
+              </div>
+              <div className={cn("rounded-xl border p-3 text-sm leading-relaxed", theme.extraPanelBorder, theme.extraPanelBg, theme.extraText)}>
+                {poi.extra}
+              </div>
+            </div>
+          )}
 
-      <div className="p-3 space-y-2">
-        {poi.extra && (
-          <div className={`rounded-lg border border-white/5 ${theme.extraPanelBorder} ${theme.extraPanelBg} p-2`}>
-            <div className={`text-[11px] uppercase tracking-wider font-semibold ${theme.extraText}`}>{theme.extraLabel}</div>
-            <div className={`text-xs mt-1 break-words ${theme.extraText}`}>{poi.extra}</div>
-          </div>
-        )}
-        {poi.position && (
-          <DirectionsSection lat={poi.position[1]} lng={poi.position[0]} onGetDirections={onGetDirections} route={route} />
-        )}
-      </div>
-    </div>
+          {poi.position && (
+            <div className="pt-2 border-t border-border/40">
+              <div className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-muted-foreground/60 mb-3">
+                <Navigation2 size={12} />
+                Ulaşım & Yol Tarifi
+              </div>
+              <DirectionsSection 
+                lat={poi.position[1]} 
+                lng={poi.position[0]} 
+                onGetDirections={onGetDirections} 
+                route={route} 
+              />
+            </div>
+          )}
+        </CardContent>
+      </ScrollArea>
+    </Card>
   );
 }
 

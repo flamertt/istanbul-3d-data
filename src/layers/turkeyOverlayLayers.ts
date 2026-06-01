@@ -1,6 +1,7 @@
 import { GeoJsonLayer, IconLayer, PolygonLayer } from "deck.gl";
 import type { Layer } from "deck.gl";
 import { POI_ICON_URLS } from "../lib/poiIcons";
+import { createCustom3DPoiLayer } from "./customMeshLayers";
 
 type FeatureCollection = GeoJSON.FeatureCollection<GeoJSON.Geometry, GeoJSON.GeoJsonProperties>;
 
@@ -282,6 +283,7 @@ export function createTurkeyOverlayLayers(
   zoom: number,
   ui?: {
     selectedBusRouteProps?: Record<string, unknown> | null;
+    onPoiClick?: (poi: TurkeyPoiPoint) => void;
   },
 ): Layer[] {
   const showLines = zoom >= 11;
@@ -344,11 +346,26 @@ export function createTurkeyOverlayLayers(
         data: overlays.greenAreas,
         stroked: true,
         filled: true,
-        pickable: false,
+        pickable: true,
         getFillColor: [34, 197, 94, 45],
         getLineColor: [34, 197, 94, 120],
         lineWidthMinPixels: 1,
         opacity: 1,
+        onClick: (info) => {
+          if (info.object && ui?.onPoiClick) {
+            const props = getFeatureProperties(info.object);
+            if (props) {
+              ui.onPoiClick({
+                kind: "green_area",
+                position: info.coordinate as [number, number],
+                title: readFirstString(props, ["AD", "ADI", "Name", "AD_TR"]),
+                subtitle: readFirstString(props, ["TURU", "TİPİ", "MAHALLE"]),
+                extra: readFirstString(props, ["ILCE", "İlçe"]),
+                footprint: [],
+              });
+            }
+          }
+        },
       }),
     );
   }
@@ -364,8 +381,8 @@ export function createTurkeyOverlayLayers(
         getLineColor: (f: unknown) => {
           const p = getFeatureProperties(f);
           const isSelected = matchesSelectedBusRoute(p);
-          if (isSelected) return [239, 68, 68, 255];
-          const n = (p["guzergahNo"] as number) ?? 1;
+          if (isSelected) return [255, 255, 255, 255]; // Selected route becomes white/bright
+          const n = (p?.["guzergahNo"] as number) ?? 1;
           // Az hat: mavi/serin → çok hat: turuncu/sıcak
           if (n <= 3)  return [99, 179, 237, 180];   // açık mavi
           if (n <= 8)  return [59, 130, 246, 190];   // mavi
@@ -378,18 +395,34 @@ export function createTurkeyOverlayLayers(
         getLineWidth: (f: unknown) => {
           const p = getFeatureProperties(f);
           const isSelected = matchesSelectedBusRoute(p);
-          if (isSelected) return 5;
-          const n = (p["guzergahNo"] as number) ?? 1;
-          if (n <= 3)  return 1;
-          if (n <= 8)  return 2;
-          if (n <= 15) return 3;
-          if (n <= 25) return 4;
-          return 5;
+          if (isSelected) return 12; // Daha da kalınlaştırdım (8 -> 12)
+          const n = (p?.["guzergahNo"] as number) ?? 1;
+          if (n <= 3)  return 2;
+          if (n <= 8)  return 3;
+          if (n <= 15) return 4;
+          if (n <= 25) return 5;
+          return 6;
         },
         updateTriggers: {
           getLineColor: [selectedHatKodu, selectedGuzergahKodu, selectedId],
           getLineWidth: [selectedHatKodu, selectedGuzergahKodu, selectedId],
         },
+        onClick: (info) => {
+          if (info.object && ui?.onPoiClick) {
+            const props = getFeatureProperties(info.object);
+            if (props) {
+              ui.onPoiClick({
+                kind: "bus_stop", // Using bus_stop as proxy for info panel
+                position: info.coordinate as [number, number],
+                title: readFirstString(props, ["HAT_KODU", "AD", "ADI"]) || "Otobüs Hattı",
+                subtitle: readFirstString(props, ["GUZERGAH_KODU", "HAT_ADI"]) || "İETT Güzergahı",
+                extra: `Sefer Sayısı: ${props["guzergahNo"] || "Bilinmiyor"}`,
+                footprint: [],
+                properties: props
+              });
+            }
+          }
+        }
       }),
     );
   }
@@ -401,9 +434,38 @@ export function createTurkeyOverlayLayers(
         data: overlays.railLines,
         stroked: true,
         filled: false,
-        pickable: false,
-        getLineColor: [168, 85, 247, 170],
+        pickable: true,
+        getLineColor: (f: unknown) => {
+          const p = getFeatureProperties(f);
+          const isSelected = selectedId === normalizeKeyPart(p?.["ID"] || p?.["id"] || p?.["OBJECTID"]);
+          return isSelected ? [255, 255, 255, 255] : [168, 85, 247, 180]; // Parlak mor
+        },
         lineWidthMinPixels: 1,
+        getLineWidth: (f: unknown) => {
+          const p = getFeatureProperties(f);
+          const isSelected = selectedId === normalizeKeyPart(p?.["ID"] || p?.["id"] || p?.["OBJECTID"]);
+          return isSelected ? 12 : 4; // Kalınlık artırıldı
+        },
+        updateTriggers: {
+          getLineColor: [selectedId],
+          getLineWidth: [selectedId],
+        },
+        onClick: (info) => {
+          if (info.object && ui?.onPoiClick) {
+            const props = getFeatureProperties(info.object);
+            if (props) {
+              ui.onPoiClick({
+                kind: "rail_station", // Info panel should handle this
+                position: info.coordinate as [number, number],
+                title: readFirstString(props, ["HAT_ADI", "AD", "ADI", "Name"]),
+                subtitle: "Raylı Sistem Hattı",
+                extra: readFirstString(props, ["DURUM", "TURU"]),
+                footprint: [],
+                properties: props
+              });
+            }
+          }
+        }
       }),
     );
   }
@@ -415,9 +477,38 @@ export function createTurkeyOverlayLayers(
         data: overlays.bikeLanes,
         stroked: true,
         filled: false,
-        pickable: false,
-        getLineColor: [20, 184, 166, 160],
+        pickable: true,
+        getLineColor: (f: unknown) => {
+          const p = getFeatureProperties(f);
+          const isSelected = selectedId === normalizeKeyPart(p?.["ID"] || p?.["id"] || p?.["OBJECTID"]);
+          return isSelected ? [255, 255, 255, 255] : [20, 184, 166, 180]; // Turkuaz
+        },
         lineWidthMinPixels: 1,
+        getLineWidth: (f: unknown) => {
+          const p = getFeatureProperties(f);
+          const isSelected = selectedId === normalizeKeyPart(p?.["ID"] || p?.["id"] || p?.["OBJECTID"]);
+          return isSelected ? 12 : 4; // Kalınlık artırıldı
+        },
+        updateTriggers: {
+          getLineColor: [selectedId],
+          getLineWidth: [selectedId],
+        },
+        onClick: (info) => {
+          if (info.object && ui?.onPoiClick) {
+            const props = getFeatureProperties(info.object);
+            if (props) {
+              ui.onPoiClick({
+                kind: "micromobility_park", // Map to similar type or generic
+                position: info.coordinate as [number, number],
+                title: readFirstString(props, ["YOL_ADI", "AD", "ADI", "Name"]) || "Bisiklet Yolu",
+                subtitle: "Bisiklet Yolu Ağı",
+                extra: readFirstString(props, ["YOL_TIPI", "MALZEME"]),
+                footprint: [],
+                properties: props
+              });
+            }
+          }
+        }
       }),
     );
   }
@@ -429,9 +520,38 @@ export function createTurkeyOverlayLayers(
         data: overlays.minibusRoutes,
         stroked: true,
         filled: false,
-        pickable: false,
-        getLineColor: [45, 212, 191, 170],
+        pickable: true,
+        getLineColor: (f: unknown) => {
+          const p = getFeatureProperties(f);
+          const isSelected = selectedId === normalizeKeyPart(p?.["ID"] || p?.["id"] || p?.["OBJECTID"]);
+          return isSelected ? [255, 255, 255, 255] : [245, 158, 11, 180]; // Kehribar (Amber)
+        },
         lineWidthMinPixels: 1,
+        getLineWidth: (f: unknown) => {
+          const p = getFeatureProperties(f);
+          const isSelected = selectedId === normalizeKeyPart(p?.["ID"] || p?.["id"] || p?.["OBJECTID"]);
+          return isSelected ? 12 : 4; // Kalınlık artırıldı
+        },
+        updateTriggers: {
+          getLineColor: [selectedId],
+          getLineWidth: [selectedId],
+        },
+        onClick: (info) => {
+          if (info.object && ui?.onPoiClick) {
+            const props = getFeatureProperties(info.object);
+            if (props) {
+              ui.onPoiClick({
+                kind: "minibus_stop",
+                position: info.coordinate as [number, number],
+                title: readFirstString(props, ["HAT_ADI", "AD", "ADI", "Name"]),
+                subtitle: "Minibüs Güzergahı",
+                extra: readFirstString(props, ["GUZERGAH", "ACIKLAMA"]),
+                footprint: [],
+                properties: props
+              });
+            }
+          }
+        }
       }),
     );
   }
@@ -440,228 +560,51 @@ export function createTurkeyOverlayLayers(
   // Not only height/radius; footprint geometry differs per POI type.
   if (overlays.busStops && showPoints) {
     const pts = extractBusStops(overlays.busStops);
-    const elevation = POI_SHAPE_CONFIG.bus_stop.elevationMeters;
-    layers.push(
-      new PolygonLayer<TurkeyPoiPoint>({
-        id: "turkey-bus-stops",
-        data: pts,
-        extruded: true,
-        stroked: true,
-        filled: true,
-        pickable: true,
-        autoHighlight: true,
-        lineWidthMinPixels: 1,
-        getPolygon: (d) => [d.footprint],
-        getElevation: () => elevation,
-        getFillColor: [59, 130, 246, 230],
-        getLineColor: [59, 130, 246, 255],
-        getLineWidth: () => 1,
-        material: { ambient: 0.55, diffuse: 0.9, shininess: 28 },
-        highlightColor: [255, 255, 255, 120],
-      }),
-    );
-    layers.push(createPoiIconLayer("turkey-bus-stops-icons", pts, POI_ICON_URLS.busStop, elevation, [255, 255, 255, 255]));
+    // 3D yapıyı kaldırdık, sadece ikon yeterli
+    layers.push(createPoiIconLayer("turkey-bus-stops-icons", pts, POI_ICON_URLS.busStop, 40, [255, 255, 255, 255]));
   }
 
   if (overlays.railStations && showPoints) {
     const pts = extractRailStations(overlays.railStations);
-    const elevation = POI_SHAPE_CONFIG.rail_station.elevationMeters;
-    layers.push(
-      new PolygonLayer<TurkeyPoiPoint>({
-        id: "turkey-rail-stations",
-        data: pts,
-        extruded: true,
-        stroked: true,
-        filled: true,
-        pickable: true,
-        autoHighlight: true,
-        lineWidthMinPixels: 1,
-        getPolygon: (d) => [d.footprint],
-        getElevation: () => elevation,
-        getFillColor: [168, 85, 247, 235],
-        getLineColor: [168, 85, 247, 255],
-        getLineWidth: () => 1,
-        material: { ambient: 0.55, diffuse: 0.9, shininess: 28 },
-        highlightColor: [255, 255, 255, 120],
-      }),
-    );
-    layers.push(createPoiIconLayer("turkey-rail-stations-icons", pts, POI_ICON_URLS.railStation, elevation, [255, 255, 255, 255]));
+    layers.push(createPoiIconLayer("turkey-rail-stations-icons", pts, POI_ICON_URLS.railStation, 60, [255, 255, 255, 255]));
+    layers.push(createCustom3DPoiLayer("turkey-rail-stations-3d", pts, "rail_station"));
   }
 
   if (overlays.evChargingStations && showPoints) {
     const pts = extractEvChargingStations(overlays.evChargingStations);
-    const elevation = POI_SHAPE_CONFIG.ev_charging_station.elevationMeters;
-    layers.push(
-      new PolygonLayer<TurkeyPoiPoint>({
-        id: "turkey-ev-charging",
-        data: pts,
-        extruded: true,
-        stroked: true,
-        filled: true,
-        pickable: true,
-        autoHighlight: true,
-        lineWidthMinPixels: 1,
-        getPolygon: (d) => [d.footprint],
-        getElevation: () => elevation,
-        getFillColor: [250, 204, 21, 230],
-        getLineColor: [250, 204, 21, 255],
-        getLineWidth: () => 1,
-        material: { ambient: 0.55, diffuse: 0.9, shininess: 28 },
-        highlightColor: [255, 255, 255, 120],
-      }),
-    );
-    layers.push(createPoiIconLayer("turkey-ev-charging-icons", pts, POI_ICON_URLS.evCharging, elevation, [255, 255, 255, 255]));
+    layers.push(createPoiIconLayer("turkey-ev-charging-icons", pts, POI_ICON_URLS.evCharging, 50, [255, 255, 255, 255]));
+    layers.push(createCustom3DPoiLayer("turkey-ev-charging-3d", pts, "ev_charging_station"));
   }
 
   if (overlays.micromobilityParks && showPoints) {
     const pts = extractMicromobilityParks(overlays.micromobilityParks);
-    const elevation = POI_SHAPE_CONFIG.micromobility_park.elevationMeters;
-    layers.push(
-      new PolygonLayer<TurkeyPoiPoint>({
-        id: "turkey-micromobility-parks",
-        data: pts,
-        extruded: true,
-        stroked: true,
-        filled: true,
-        pickable: true,
-        autoHighlight: true,
-        lineWidthMinPixels: 1,
-        getPolygon: (d) => [d.footprint],
-        getElevation: () => elevation,
-        getFillColor: [249, 115, 22, 230],
-        getLineColor: [249, 115, 22, 255],
-        getLineWidth: () => 1,
-        material: { ambient: 0.55, diffuse: 0.9, shininess: 28 },
-        highlightColor: [255, 255, 255, 120],
-      }),
-    );
-    layers.push(createPoiIconLayer("turkey-micromobility-parks-icons", pts, POI_ICON_URLS.micromobility, elevation, [255, 255, 255, 255]));
+    layers.push(createPoiIconLayer("turkey-micromobility-parks-icons", pts, POI_ICON_URLS.micromobility, 40, [255, 255, 255, 255]));
   }
 
   if (overlays.toilets && showPoints) {
     const pts = extractToilets(overlays.toilets);
-    const elevation = POI_SHAPE_CONFIG.toilet.elevationMeters;
-    layers.push(
-      new PolygonLayer<TurkeyPoiPoint>({
-        id: "turkey-toilets",
-        data: pts,
-        extruded: true,
-        stroked: true,
-        filled: true,
-        pickable: true,
-        autoHighlight: true,
-        lineWidthMinPixels: 1,
-        getPolygon: (d) => [d.footprint],
-        getElevation: () => elevation,
-        getFillColor: [244, 63, 94, 230],
-        getLineColor: [244, 63, 94, 255],
-        getLineWidth: () => 1,
-        material: { ambient: 0.55, diffuse: 0.9, shininess: 28 },
-        highlightColor: [255, 255, 255, 120],
-      }),
-    );
-    layers.push(createPoiIconLayer("turkey-toilets-icons", pts, POI_ICON_URLS.toilet, elevation, [255, 255, 255, 255]));
+    layers.push(createPoiIconLayer("turkey-toilets-icons", pts, POI_ICON_URLS.toilet, 30, [255, 255, 255, 255]));
   }
 
   if (overlays.taxiStops && showPoints) {
     const pts = extractTaxiStops(overlays.taxiStops);
-    const elevation = POI_SHAPE_CONFIG.taxi_stop.elevationMeters;
-    layers.push(
-      new PolygonLayer<TurkeyPoiPoint>({
-        id: "turkey-taxi-stops",
-        data: pts,
-        extruded: true,
-        stroked: true,
-        filled: true,
-        pickable: true,
-        autoHighlight: true,
-        lineWidthMinPixels: 1,
-        getPolygon: (d) => [d.footprint],
-        getElevation: () => elevation,
-        getFillColor: [217, 70, 239, 230],
-        getLineColor: [217, 70, 239, 255],
-        getLineWidth: () => 1,
-        material: { ambient: 0.55, diffuse: 0.9, shininess: 30 },
-        highlightColor: [255, 255, 255, 120],
-      }),
-    );
-    layers.push(createPoiIconLayer("turkey-taxi-stops-icons", pts, POI_ICON_URLS.taxi, elevation, [255, 255, 255, 255]));
+    layers.push(createPoiIconLayer("turkey-taxi-stops-icons", pts, POI_ICON_URLS.taxi, 40, [255, 255, 255, 255]));
   }
 
   if (overlays.taxiDolmusStops && showPoints) {
     const pts = extractTaxiDolmusStops(overlays.taxiDolmusStops);
-    const elevation = POI_SHAPE_CONFIG.taxi_dolmus_stop.elevationMeters;
-    layers.push(
-      new PolygonLayer<TurkeyPoiPoint>({
-        id: "turkey-taxi-dolmus-stops",
-        data: pts,
-        extruded: true,
-        stroked: true,
-        filled: true,
-        pickable: true,
-        autoHighlight: true,
-        lineWidthMinPixels: 1,
-        getPolygon: (d) => [d.footprint],
-        getElevation: () => elevation,
-        getFillColor: [244, 63, 94, 230],
-        getLineColor: [244, 63, 94, 255],
-        getLineWidth: () => 1,
-        material: { ambient: 0.55, diffuse: 0.9, shininess: 30 },
-        highlightColor: [255, 255, 255, 120],
-      }),
-    );
-    layers.push(createPoiIconLayer("turkey-taxi-dolmus-stops-icons", pts, POI_ICON_URLS.taxiDolmus, elevation, [255, 255, 255, 255]));
+    layers.push(createPoiIconLayer("turkey-taxi-dolmus-stops-icons", pts, POI_ICON_URLS.taxiDolmus, 40, [255, 255, 255, 255]));
   }
 
   if (overlays.minibusStops && showPoints) {
     const pts = extractMinibusStops(overlays.minibusStops);
     const elevation = POI_SHAPE_CONFIG.minibus_stop.elevationMeters;
-    layers.push(
-      new PolygonLayer<TurkeyPoiPoint>({
-        id: "turkey-minibus-stops",
-        data: pts,
-        extruded: true,
-        stroked: true,
-        filled: true,
-        pickable: true,
-        autoHighlight: true,
-        lineWidthMinPixels: 1,
-        getPolygon: (d) => [d.footprint],
-        getElevation: () => elevation,
-        getFillColor: [16, 185, 129, 230],
-        getLineColor: [16, 185, 129, 255],
-        getLineWidth: () => 1,
-        material: { ambient: 0.55, diffuse: 0.9, shininess: 30 },
-        highlightColor: [255, 255, 255, 120],
-      }),
-    );
     layers.push(createPoiIconLayer("turkey-minibus-stops-icons", pts, POI_ICON_URLS.minibus, elevation, [255, 255, 255, 255]));
   }
 
   if (overlays.seaStations && showPoints) {
     const pts = extractSeaStations(overlays.seaStations);
     const elevation = POI_SHAPE_CONFIG.sea_station.elevationMeters;
-    layers.push(
-      new PolygonLayer<TurkeyPoiPoint>({
-        id: "turkey-sea-stations",
-        data: pts,
-        extruded: true,
-        stroked: true,
-        filled: true,
-        pickable: true,
-        // Deniz katmanı için hover'da beyaza çeviren highlight'i kapatıyoruz.
-        autoHighlight: false,
-        lineWidthMinPixels: 2,
-        getPolygon: (d) => [d.footprint],
-        getElevation: () => elevation,
-        // Deniz istasyonları: daha belirgin mavi ton
-        getFillColor: [20, 90, 220, 255],
-        getLineColor: [20, 90, 220, 255],
-        getLineWidth: () => 2,
-        material: { ambient: 0.9, diffuse: 0.85, shininess: 15 },
-        highlightColor: [255, 255, 255, 120],
-      }),
-    );
     layers.push(createPoiIconLayer("turkey-sea-stations-icons", pts, POI_ICON_URLS.seaStation, elevation, [255, 255, 255, 255]));
   }
 

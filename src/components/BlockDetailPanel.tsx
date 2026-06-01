@@ -29,30 +29,40 @@ export function BlockDetailPanel({ block, timeSlot, onClose, comparing, referenc
   const slots = detail?.slots ?? block.slots;
 
   return (
-    <div className="absolute top-0 right-0 bottom-0 z-30 w-80 bg-gray-950/95 backdrop-blur-xl border-l border-gray-800/50 overflow-y-auto panel-slide-in">
+    <div className="absolute top-0 right-0 bottom-0 z-40 w-96 bg-background/90 backdrop-blur-xl border-l border-border/40 shadow-2xl flex flex-col panel-slide-in select-none">
       {/* Header */}
-      <div className="sticky top-0 bg-gray-950/95 backdrop-blur-xl border-b border-gray-800/30 px-4 py-3 flex items-start justify-between">
-        <div className="flex-1 min-w-0">
-          <h2 className="text-sm font-semibold truncate">{block.id}</h2>
-          {block.street && (
-            <p className="text-xs text-gray-400 truncate">{block.street}</p>
-          )}
+      <div className="p-6 pb-4 border-b border-border/40 space-y-4">
+        <div className="flex items-start justify-between">
+          <div className="space-y-1.5 min-w-0 flex-1">
+            <Badge variant="outline" className="bg-primary/5 text-primary border-primary/20 text-[10px] font-bold uppercase tracking-widest px-2 py-0.5">
+              Blok Detayı
+            </Badge>
+            <h2 className="text-xl font-bold tracking-tight truncate">{block.id}</h2>
+            {block.street && (
+              <p className="text-xs text-muted-foreground font-medium flex items-center gap-1.5 truncate">
+                <Info size={12} className="shrink-0" />
+                {block.street}
+              </p>
+            )}
+          </div>
+          <button
+            onClick={onClose}
+            className="p-2 rounded-md hover:bg-accent text-muted-foreground hover:text-foreground transition-all shrink-0"
+            aria-label="Kapat"
+          >
+            <X size={20} />
+          </button>
         </div>
-        <button
-          onClick={onClose}
-          className="ml-2 p-1 rounded-lg hover:bg-gray-800 transition-colors"
-          aria-label="Close"
-        >
-          <X size={16} className="text-gray-400" />
-        </button>
       </div>
 
-      {/* Current occupancy */}
-      <div className="px-4 py-3 border-b border-gray-800/30">
-        <div className="flex items-center gap-2 mb-2">
-          <Gauge size={14} className="text-gray-400" />
-          <span className="text-xs text-gray-400">Current Selection</span>
-        </div>
+      <ScrollArea className="flex-1">
+        <div className="p-6 space-y-8">
+          {/* Current occupancy */}
+          <div className="space-y-4">
+            <div className="flex items-center gap-2">
+              <Activity size={16} className="text-primary" />
+              <span className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Mevcut Durum</span>
+            </div>
         <div className="flex items-baseline gap-2">
           <span
             className="text-3xl font-bold"
@@ -206,13 +216,16 @@ function BestWorstTimes({ slots }: { slots: number[] }) {
         ))}
       </div>
       <div>
-        <p className="text-[10px] text-red-400 font-medium mb-1">Hardest Parking</p>
-        {worst.map((s, i) => (
-          <p key={i} className="text-xs text-gray-300">
-            {dayName(s.dow)} {formatHour(s.hour)} - {formatOccupancy(s.occ)}
-          </p>
-        ))}
+        <p className="text-[10px] text-red-500 font-bold uppercase tracking-widest mb-2 opacity-80">En Zor Park Saati</p>
+        <div className="space-y-1">
+          {worst.map((s, i) => (
+            <p key={i} className="text-xs text-muted-foreground font-medium">
+              {dayName(s.dow)} {formatHour(s.hour)} - <span className="text-foreground">{formatOccupancy(s.occ)}</span>
+            </p>
+          ))}
+        </div>
       </div>
     </div>
   );
 }
+

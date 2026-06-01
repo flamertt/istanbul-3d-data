@@ -1,0 +1,6116 @@
+{
+  "generatedAt": "2026-05-24T18:44:20.832Z",
+  "source": "OpenStreetMap via Overpass API (filtered to Istanbul bbox)",
+  "attribution": "© OpenStreetMap contributors",
+  "bbox": [
+    40.8,
+    28.5,
+    41.3,
+    29.4
+  ],
+  "skippedFeaturedOverlaps": 29,
+  "counts": {
+    "university": 48,
+    "museum": 162,
+    "theatre": 38,
+    "monument": 46,
+    "viewpoint": 30,
+    "castle": 12,
+    "mall": 23,
+    "stadium": 20,
+    "library": 15,
+    "mosque": 215
+  },
+  "landmarks": [
+    {
+      "id": "node/269715461",
+      "name": "İstanbul Üniversitesi",
+      "nameEn": "Istanbul University",
+      "category": "university",
+      "coordinates": [
+        28.963761,
+        41.013242
+      ]
+    },
+    {
+      "id": "node/554083364",
+      "name": "Sabancı Üniversitesi Sakıp Sabancı Müzesi",
+      "nameEn": "Sakıp Sabancı Museum",
+      "category": "museum",
+      "coordinates": [
+        29.055629,
+        41.106019
+      ]
+    },
+    {
+      "id": "node/654189927",
+      "name": "Garaj Istanbul",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        28.977454,
+        41.032377
+      ]
+    },
+    {
+      "id": "node/795683753",
+      "name": "Yunus Emre Kültür Merkezi",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        28.848308,
+        40.988607
+      ]
+    },
+    {
+      "id": "node/976476780",
+      "name": "Bahçelievler Evlendirme Dairesi&Kültür Merkezi",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        28.861633,
+        41
+      ]
+    },
+    {
+      "id": "node/1026149721",
+      "name": "Siyavuşpaşa Kasrı",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.851435,
+        41.000586
+      ]
+    },
+    {
+      "id": "node/1346157990",
+      "name": "Askeri Müze",
+      "nameEn": "Military Museum",
+      "category": "museum",
+      "coordinates": [
+        28.988243,
+        41.048876
+      ]
+    },
+    {
+      "id": "node/1352425761",
+      "name": "Miniatürk Müzesi",
+      "nameEn": "Miniature Park",
+      "category": "museum",
+      "coordinates": [
+        28.949068,
+        41.059005
+      ]
+    },
+    {
+      "id": "node/1426032250",
+      "name": "BJK 100 Yıl Kartal Heykeli",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        29.004197,
+        41.043547
+      ]
+    },
+    {
+      "id": "node/1483978540",
+      "name": "Boğaz Manzarası",
+      "nameEn": "Bosphorus View",
+      "category": "viewpoint",
+      "coordinates": [
+        29.039082,
+        41.071477
+      ]
+    },
+    {
+      "id": "node/1620494633",
+      "name": "Hatice Turhan Sultan Türbesi",
+      "nameEn": "Tomb of Hatice Turhan Sultan",
+      "category": "monument",
+      "coordinates": [
+        28.971905,
+        41.016202
+      ]
+    },
+    {
+      "id": "node/1697574719",
+      "name": "Petek",
+      "nameEn": null,
+      "category": "viewpoint",
+      "coordinates": [
+        29.048394,
+        41.083298
+      ]
+    },
+    {
+      "id": "node/1770612643",
+      "name": "Osmanlı Bankası Müzesi",
+      "nameEn": "Ottoman Bank Museum",
+      "category": "museum",
+      "coordinates": [
+        28.973617,
+        41.023836
+      ]
+    },
+    {
+      "id": "node/1807703751",
+      "name": "İstanbul Fotoğraf Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.967754,
+        41.00464
+      ]
+    },
+    {
+      "id": "node/2201696929",
+      "name": "Nejat Uygur Sahnesi",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        29.053785,
+        41.170706
+      ]
+    },
+    {
+      "id": "node/2201713283",
+      "name": "Garipçe Kalesi",
+      "nameEn": null,
+      "category": "castle",
+      "coordinates": [
+        29.110602,
+        41.214077
+      ]
+    },
+    {
+      "id": "node/2201720559",
+      "name": "Rumeli Kavağı Tabyaları",
+      "nameEn": null,
+      "category": "castle",
+      "coordinates": [
+        29.074666,
+        41.182028
+      ]
+    },
+    {
+      "id": "node/2246566959",
+      "name": "Istanbul Sapphire",
+      "nameEn": null,
+      "category": "viewpoint",
+      "coordinates": [
+        29.005955,
+        41.084973
+      ]
+    },
+    {
+      "id": "node/2278292048",
+      "name": "Best Point for Sea&Lake Sunset View",
+      "nameEn": null,
+      "category": "viewpoint",
+      "coordinates": [
+        28.62048,
+        41.012358
+      ]
+    },
+    {
+      "id": "node/2279581340",
+      "name": "İstanbul Üniversitesi-Cerrahpaşa Avcılar Yerleşkesi",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        28.726378,
+        40.986635
+      ]
+    },
+    {
+      "id": "node/2282062752",
+      "name": "Büyükçekmece Kervansaray (Kurşunlu Han)",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        28.57573,
+        41.021998
+      ]
+    },
+    {
+      "id": "node/2381740780",
+      "name": "Şehir Tiyatroları Gaziosmanpaşa Sahnesi",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        28.915976,
+        41.057616
+      ]
+    },
+    {
+      "id": "node/2449655754",
+      "name": "Ak'la Kara Tiyatro",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        29.027537,
+        40.985345
+      ]
+    },
+    {
+      "id": "node/2472730735",
+      "name": "Binbirdirek Sarnıcı",
+      "nameEn": "Cistern of Philoxenos",
+      "category": "museum",
+      "coordinates": [
+        28.974417,
+        41.007606
+      ]
+    },
+    {
+      "id": "node/2547264126",
+      "name": "Atlas Pasajı",
+      "nameEn": null,
+      "category": "mall",
+      "coordinates": [
+        28.979214,
+        41.034113
+      ]
+    },
+    {
+      "id": "node/2832656982",
+      "name": "Atatürk Anıtı",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        29.036932,
+        41.2465
+      ]
+    },
+    {
+      "id": "node/2852238747",
+      "name": "Atatürk Heykeli",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        29.190948,
+        40.959753
+      ]
+    },
+    {
+      "id": "node/2852239163",
+      "name": "Seyit Onbaşı Heykeli",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        29.191883,
+        40.959791
+      ]
+    },
+    {
+      "id": "node/3195027800",
+      "name": "Fransız Kültür Merkezi",
+      "nameEn": "French Institute in Istanbul",
+      "category": "museum",
+      "coordinates": [
+        28.984165,
+        41.036281
+      ]
+    },
+    {
+      "id": "node/3254396169",
+      "name": "Yıldız Seramik Fabrikası",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.018819,
+        41.048285
+      ]
+    },
+    {
+      "id": "node/3254468506",
+      "name": "Adam Mickiewicz Müzesi",
+      "nameEn": "Adam Mickiewicz Museum",
+      "category": "museum",
+      "coordinates": [
+        28.977147,
+        41.038782
+      ]
+    },
+    {
+      "id": "node/3279398393",
+      "name": "Masumiyet Müzesi",
+      "nameEn": "The Museum of Innocence",
+      "category": "museum",
+      "coordinates": [
+        28.979795,
+        41.030872
+      ]
+    },
+    {
+      "id": "node/3373094254",
+      "name": "Halı Müzesi",
+      "nameEn": "Carpet Museum",
+      "category": "museum",
+      "coordinates": [
+        28.978669,
+        41.005682
+      ]
+    },
+    {
+      "id": "node/3374678647",
+      "name": "Koca Sinan Paşa Külliyesi",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        28.969064,
+        41.008809
+      ]
+    },
+    {
+      "id": "node/3374678648",
+      "name": "Kara Mustafa Paşa Külliyesi",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        28.96776,
+        41.008716
+      ]
+    },
+    {
+      "id": "node/3374681017",
+      "name": "Atik Ali Paşa Medresesi",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        28.969981,
+        41.008408
+      ]
+    },
+    {
+      "id": "node/3383039241",
+      "name": "Bayram Paşa Külliyesi",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        28.942342,
+        41.008774
+      ]
+    },
+    {
+      "id": "node/3386270532",
+      "name": "Galatasaray Müzesi",
+      "nameEn": "Galatasaray Museum",
+      "category": "museum",
+      "coordinates": [
+        28.97694,
+        41.033482
+      ]
+    },
+    {
+      "id": "node/3400112453",
+      "name": "Yedi Kule Hisarı Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.923931,
+        40.993569
+      ]
+    },
+    {
+      "id": "node/3580821812",
+      "name": "Muzeum Adama Mickiewicza",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.977147,
+        41.038782
+      ]
+    },
+    {
+      "id": "node/3658718390",
+      "name": "View of the Bosphorus",
+      "nameEn": null,
+      "category": "viewpoint",
+      "coordinates": [
+        28.987046,
+        41.029894
+      ]
+    },
+    {
+      "id": "node/3811143694",
+      "name": "Kartonpiyer Müzesi",
+      "nameEn": "Stucco Museum",
+      "category": "museum",
+      "coordinates": [
+        28.978987,
+        41.029581
+      ]
+    },
+    {
+      "id": "node/3825439257",
+      "name": "Çayırbaşı Mahmut Sedat Özsoy Stadı",
+      "nameEn": null,
+      "category": "stadium",
+      "coordinates": [
+        29.030444,
+        41.156371
+      ]
+    },
+    {
+      "id": "node/4031869601",
+      "name": "Panorama Zafer Müzesi",
+      "nameEn": "Panoramic Victory Museum",
+      "category": "museum",
+      "coordinates": [
+        28.947846,
+        41.060751
+      ]
+    },
+    {
+      "id": "node/4042485225",
+      "name": "Çevre Tiyatrosu",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        28.930597,
+        41.006781
+      ]
+    },
+    {
+      "id": "node/4303108295",
+      "name": "Atatürk Anıtı",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        28.883196,
+        41.03741
+      ]
+    },
+    {
+      "id": "node/4317668391",
+      "name": "Kadıköy Theatron",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        29.027593,
+        40.990635
+      ]
+    },
+    {
+      "id": "node/4318815490",
+      "name": "McPro Productions",
+      "nameEn": null,
+      "category": "viewpoint",
+      "coordinates": [
+        28.645155,
+        41.005243
+      ]
+    },
+    {
+      "id": "node/4330819713",
+      "name": "Atatürk Anıtı",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        28.845345,
+        40.992281
+      ]
+    },
+    {
+      "id": "node/4367630391",
+      "name": "Özgüt Sokagi",
+      "nameEn": null,
+      "category": "viewpoint",
+      "coordinates": [
+        29.275227,
+        40.813367
+      ]
+    },
+    {
+      "id": "node/4390319091",
+      "name": "Dragos Sahili",
+      "nameEn": null,
+      "category": "viewpoint",
+      "coordinates": [
+        29.14115,
+        40.904076
+      ]
+    },
+    {
+      "id": "node/4467639090",
+      "name": "Dr. Kadir Topbaş Kültür Sanat Merkezi",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        28.882487,
+        41.035583
+      ]
+    },
+    {
+      "id": "node/4481332089",
+      "name": "Alibeyköy Mısır Heykeli",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        28.946762,
+        41.074849
+      ]
+    },
+    {
+      "id": "node/4540946906",
+      "name": "مقهى بيرلوتي",
+      "nameEn": null,
+      "category": "viewpoint",
+      "coordinates": [
+        28.933621,
+        41.05363
+      ]
+    },
+    {
+      "id": "node/4549090632",
+      "name": "Atatürk Heykeli",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        29.23999,
+        41.048203
+      ]
+    },
+    {
+      "id": "node/4580125160",
+      "name": "Saat Kulesi",
+      "nameEn": "Clock Tower",
+      "category": "monument",
+      "coordinates": [
+        29.128602,
+        40.874124
+      ]
+    },
+    {
+      "id": "node/4588972792",
+      "name": "Tiyatro Çocuk Atölye",
+      "nameEn": "Tiyatro Çocuk Atölye",
+      "category": "theatre",
+      "coordinates": [
+        28.705645,
+        40.989574
+      ]
+    },
+    {
+      "id": "node/4588974089",
+      "name": "Tiyatro Çocuk",
+      "nameEn": "Tiyatro Çocuk",
+      "category": "theatre",
+      "coordinates": [
+        28.70403,
+        40.988787
+      ]
+    },
+    {
+      "id": "node/4695996389",
+      "name": "Gotlar Sütunu",
+      "nameEn": "Column of the Goths",
+      "category": "monument",
+      "coordinates": [
+        28.985677,
+        41.014641
+      ]
+    },
+    {
+      "id": "node/4721808990",
+      "name": "Kapalı Carşı",
+      "nameEn": "Grand Bazaar",
+      "category": "museum",
+      "coordinates": [
+        28.969963,
+        41.010109
+      ]
+    },
+    {
+      "id": "node/4833359922",
+      "name": "Baba Sahne",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        29.027924,
+        40.98733
+      ]
+    },
+    {
+      "id": "node/4889905032",
+      "name": "SALT Galata",
+      "nameEn": "SALT Galata",
+      "category": "museum",
+      "coordinates": [
+        28.973474,
+        41.023872
+      ]
+    },
+    {
+      "id": "node/4889905033",
+      "name": "Bükücüler Han",
+      "nameEn": "Bükücüler Han",
+      "category": "monument",
+      "coordinates": [
+        29.01438,
+        41.009633
+      ]
+    },
+    {
+      "id": "node/4889958232",
+      "name": "Borusan Sanat",
+      "nameEn": "Borusan Art",
+      "category": "museum",
+      "coordinates": [
+        28.97545,
+        41.030347
+      ]
+    },
+    {
+      "id": "node/4889958234",
+      "name": "ISTANBUL'74",
+      "nameEn": "ISTANBUL'74",
+      "category": "museum",
+      "coordinates": [
+        28.97959,
+        41.033289
+      ]
+    },
+    {
+      "id": "node/4889959132",
+      "name": "Hasan Paşa Kulesi",
+      "nameEn": null,
+      "category": "castle",
+      "coordinates": [
+        29.107452,
+        41.2137
+      ]
+    },
+    {
+      "id": "node/4889959431",
+      "name": "ARTER",
+      "nameEn": "ARTER contemporary art museum",
+      "category": "museum",
+      "coordinates": [
+        28.975755,
+        41.030439
+      ]
+    },
+    {
+      "id": "node/4889959432",
+      "name": "AK Bank Sanat Galerisi",
+      "nameEn": "AK Bank Sanat Galerisi",
+      "category": "museum",
+      "coordinates": [
+        28.98311,
+        41.035938
+      ]
+    },
+    {
+      "id": "node/4889959434",
+      "name": "Dogançay Müzesi",
+      "nameEn": "Dogançay Müzesi",
+      "category": "museum",
+      "coordinates": [
+        28.978371,
+        41.03577
+      ]
+    },
+    {
+      "id": "node/4889959435",
+      "name": "Türvak Türker Inanoglu Vakfi",
+      "nameEn": "Cinema Museum",
+      "category": "museum",
+      "coordinates": [
+        28.977722,
+        41.032642
+      ]
+    },
+    {
+      "id": "node/4959676224",
+      "name": "Büyükçekmece Atatürk Kültür Merkezi",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        28.592477,
+        41.017799
+      ]
+    },
+    {
+      "id": "node/4990028128",
+      "name": "Halı Müzesi",
+      "nameEn": "Carpet Museum",
+      "category": "museum",
+      "coordinates": [
+        28.980956,
+        41.008732
+      ]
+    },
+    {
+      "id": "node/5001163522",
+      "name": "M.K. Atatürk & Salvador Allende",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        29.125911,
+        40.990449
+      ]
+    },
+    {
+      "id": "node/5081442512",
+      "name": "Rezan Has Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.958433,
+        41.02528
+      ]
+    },
+    {
+      "id": "node/5100825061",
+      "name": "Bezmiâlem Vakıf Üniversitesi",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        28.936494,
+        41.018214
+      ]
+    },
+    {
+      "id": "node/5103810789",
+      "name": "Hamidiye Kültür Ve Eğitim Vakfı Topkapı Nusret",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.927784,
+        41.019625
+      ]
+    },
+    {
+      "id": "node/5107247591",
+      "name": "Semaver Kumpanya Çevre Tiyatrosu",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        28.930409,
+        41.006741
+      ]
+    },
+    {
+      "id": "node/5108828006",
+      "name": "Lions Rug and kilims Art Gallery",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.977892,
+        41.012871
+      ]
+    },
+    {
+      "id": "node/5108828680",
+      "name": "İstanbul Demiryolu Müzesi",
+      "nameEn": "İstanbul Railway Museum",
+      "category": "museum",
+      "coordinates": [
+        28.976683,
+        41.015199
+      ]
+    },
+    {
+      "id": "node/5108828689",
+      "name": "Sarayburnu Manzarası",
+      "nameEn": null,
+      "category": "viewpoint",
+      "coordinates": [
+        28.985746,
+        41.017543
+      ]
+    },
+    {
+      "id": "node/5108837436",
+      "name": "Hodjapasta",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.975689,
+        41.014271
+      ]
+    },
+    {
+      "id": "node/5108837437",
+      "name": "Hodjapasha",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        28.975652,
+        41.014184
+      ]
+    },
+    {
+      "id": "node/5108837438",
+      "name": "Tasciri Spettacolo",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.975613,
+        41.014044
+      ]
+    },
+    {
+      "id": "node/5111212264",
+      "name": "Cesme",
+      "nameEn": null,
+      "category": "viewpoint",
+      "coordinates": [
+        28.97194,
+        41.011657
+      ]
+    },
+    {
+      "id": "node/5112732265",
+      "name": "II. Bayezid Türk Hamam Kültürü Müzesi",
+      "nameEn": "II. Bayezid Turkish Bath Culture Museum",
+      "category": "museum",
+      "coordinates": [
+        28.961554,
+        41.009946
+      ]
+    },
+    {
+      "id": "node/5113500256",
+      "name": "Türk ve İslam Eserleri Müzesi",
+      "nameEn": "Turkish and Islamic Arts Museum",
+      "category": "museum",
+      "coordinates": [
+        28.974915,
+        41.00628
+      ]
+    },
+    {
+      "id": "node/5113620695",
+      "name": "İslam bilim ve teknoloji tarihi müzesi",
+      "nameEn": "Museum of The History of Science and Technology in Islam",
+      "category": "museum",
+      "coordinates": [
+        28.978968,
+        41.013219
+      ]
+    },
+    {
+      "id": "node/5115939961",
+      "name": "Beyazıt Devlet Kütüphanesi",
+      "nameEn": null,
+      "category": "library",
+      "coordinates": [
+        28.965825,
+        41.010871
+      ]
+    },
+    {
+      "id": "node/5120269825",
+      "name": "Agora hotel terrace",
+      "nameEn": "Agora hotel terrace",
+      "category": "viewpoint",
+      "coordinates": [
+        28.976193,
+        41.010543
+      ]
+    },
+    {
+      "id": "node/5184094322",
+      "name": "Cumhuriyet Meydanı",
+      "nameEn": "Republic Square",
+      "category": "monument",
+      "coordinates": [
+        28.873895,
+        40.98124
+      ]
+    },
+    {
+      "id": "node/5209904925",
+      "name": "Abdulmecit Efendi Köşkü",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.041546,
+        41.028241
+      ]
+    },
+    {
+      "id": "node/5244801843",
+      "name": "Marmara Üniversitesi Cumhuriyet Müzesi ve Sanat Galerisi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.974389,
+        41.005186
+      ]
+    },
+    {
+      "id": "node/5244801844",
+      "name": "İstanbul Cumhuriyet Eğitim Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.973933,
+        41.00496
+      ]
+    },
+    {
+      "id": "node/5244807623",
+      "name": "Türkiye Gazeteciler Cemiyeti Basın Müzesi",
+      "nameEn": "TGC Press Media Museum",
+      "category": "museum",
+      "coordinates": [
+        28.972216,
+        41.008562
+      ]
+    },
+    {
+      "id": "node/5244807883",
+      "name": "Yahya Kemal Museum",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.967614,
+        41.008741
+      ]
+    },
+    {
+      "id": "node/5244807938",
+      "name": "Nuruosmaniye Kutuphanesi",
+      "nameEn": null,
+      "category": "library",
+      "coordinates": [
+        28.97101,
+        41.010589
+      ]
+    },
+    {
+      "id": "node/5244812070",
+      "name": "Dostlar Tiyatrosu",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        28.964817,
+        41.018978
+      ]
+    },
+    {
+      "id": "node/5285477246",
+      "name": "Rum Ortodoks Ruhban Okulu",
+      "nameEn": "Halki seminary",
+      "category": "university",
+      "coordinates": [
+        29.094697,
+        40.881881
+      ]
+    },
+    {
+      "id": "node/5329319826",
+      "name": "Çınar",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        29.296855,
+        40.952233
+      ]
+    },
+    {
+      "id": "node/5450459404",
+      "name": "Köşe",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        29.027802,
+        40.995201
+      ]
+    },
+    {
+      "id": "node/5506396363",
+      "name": "500. Yıl Vakfı Türk Musevileri Müzesi",
+      "nameEn": "The Jewish Museum of Turkey",
+      "category": "museum",
+      "coordinates": [
+        28.972728,
+        41.026787
+      ]
+    },
+    {
+      "id": "node/5601212240",
+      "name": "Apartman Sahne",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        29.030865,
+        41.002161
+      ]
+    },
+    {
+      "id": "node/5640069827",
+      "name": "İstanbul Modern Sanat Müzesi",
+      "nameEn": "Istanbul Museum of Modern Art",
+      "category": "museum",
+      "coordinates": [
+        28.982812,
+        41.025911
+      ]
+    },
+    {
+      "id": "node/5645608922",
+      "name": "Pireci Studio",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.237918,
+        41.052695
+      ]
+    },
+    {
+      "id": "node/5653363122",
+      "name": "İŞ Sanat",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        29.012044,
+        41.082005
+      ]
+    },
+    {
+      "id": "node/5678948221",
+      "name": "City Viewpoint",
+      "nameEn": "City Viewpoint",
+      "category": "viewpoint",
+      "coordinates": [
+        28.98307,
+        41.029051
+      ]
+    },
+    {
+      "id": "node/5872511485",
+      "name": "Borusan Holding",
+      "nameEn": "Borusan contemporary",
+      "category": "museum",
+      "coordinates": [
+        29.056572,
+        41.089253
+      ]
+    },
+    {
+      "id": "node/5989714589",
+      "name": "good view on the Bosphorus",
+      "nameEn": "good view on the Bosphorus",
+      "category": "viewpoint",
+      "coordinates": [
+        29.02646,
+        41.033229
+      ]
+    },
+    {
+      "id": "node/6045554486",
+      "name": "صيرفة",
+      "nameEn": null,
+      "category": "viewpoint",
+      "coordinates": [
+        28.890048,
+        41.010975
+      ]
+    },
+    {
+      "id": "node/6171043314",
+      "name": "Şehit Uğur Taşçı Anıtı",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        29.040127,
+        41.132599
+      ]
+    },
+    {
+      "id": "node/6180706492",
+      "name": "Saray Koleksiyonları Müzesi",
+      "nameEn": "Palace Collections Museum",
+      "category": "museum",
+      "coordinates": [
+        29.004119,
+        41.04121
+      ]
+    },
+    {
+      "id": "node/6185937305",
+      "name": "Sabancı Üniversitesi Kasa Galerisi",
+      "nameEn": "Sabancı University Vault Gallery",
+      "category": "museum",
+      "coordinates": [
+        28.975081,
+        41.023843
+      ]
+    },
+    {
+      "id": "node/6410833306",
+      "name": "Zosia Teyze'nin Anı Evi",
+      "nameEn": "Aunt Zosia's Memorial House",
+      "category": "museum",
+      "coordinates": [
+        29.209987,
+        41.110014
+      ]
+    },
+    {
+      "id": "node/6432240559",
+      "name": "Ortaoyuncular Tiyatrosu",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        28.979189,
+        41.034367
+      ]
+    },
+    {
+      "id": "node/6439176686",
+      "name": "Dolphins",
+      "nameEn": "Dolphins",
+      "category": "viewpoint",
+      "coordinates": [
+        28.981397,
+        41.002675
+      ]
+    },
+    {
+      "id": "node/6525497699",
+      "name": "Oyun Atölyesi",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        29.025773,
+        40.986326
+      ]
+    },
+    {
+      "id": "node/6697339286",
+      "name": "Bosphorus view",
+      "nameEn": "Bosphorus view",
+      "category": "viewpoint",
+      "coordinates": [
+        29.0388,
+        41.073033
+      ]
+    },
+    {
+      "id": "node/6715538421",
+      "name": "Camlica Hill",
+      "nameEn": "Camlica Hill",
+      "category": "viewpoint",
+      "coordinates": [
+        29.067974,
+        41.027492
+      ]
+    },
+    {
+      "id": "node/6783390887",
+      "name": "The Hippodrome Exhibition",
+      "nameEn": "The Hippodrome Exhibition",
+      "category": "museum",
+      "coordinates": [
+        28.975188,
+        41.004134
+      ]
+    },
+    {
+      "id": "node/6861167471",
+      "name": "Tarihi Sütun",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        29.055087,
+        41.012088
+      ]
+    },
+    {
+      "id": "node/6872755505",
+      "name": "Kerem Yılmazer Sahnesi",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        29.023806,
+        41.017057
+      ]
+    },
+    {
+      "id": "node/7033014485",
+      "name": "Jurassic land",
+      "nameEn": "Jurassic land",
+      "category": "museum",
+      "coordinates": [
+        28.898768,
+        41.047179
+      ]
+    },
+    {
+      "id": "node/7112413418",
+      "name": "Ali Poyrazoğlu Tiyatrosu",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        28.987252,
+        41.061841
+      ]
+    },
+    {
+      "id": "node/7132870066",
+      "name": "Eyüboğlu Eğitim Kurumları Tiyatrosu",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        29.087941,
+        41.01677
+      ]
+    },
+    {
+      "id": "node/7389731686",
+      "name": "şişecam paşabahçe tuzla",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        29.31346,
+        40.839816
+      ]
+    },
+    {
+      "id": "node/7580601342",
+      "name": "Discovery Museum",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.691469,
+        41.067365
+      ]
+    },
+    {
+      "id": "node/7651602485",
+      "name": "Büyükçekmece Atatürk Anıtı",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        28.583237,
+        41.01913
+      ]
+    },
+    {
+      "id": "node/7651620473",
+      "name": "Şampiyonlar Anıtı",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        28.585973,
+        41.02071
+      ]
+    },
+    {
+      "id": "node/7656296101",
+      "name": "BKM",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        29.006098,
+        41.043308
+      ]
+    },
+    {
+      "id": "node/7737183091",
+      "name": "Overlook over the East",
+      "nameEn": "Overlook over the East",
+      "category": "viewpoint",
+      "coordinates": [
+        28.982143,
+        41.008981
+      ]
+    },
+    {
+      "id": "node/8050489585",
+      "name": "MSGSÜ Istanbul Resim ve Heykel Müzesi",
+      "nameEn": "Museum Of Painting And Sculpture",
+      "category": "museum",
+      "coordinates": [
+        28.984281,
+        41.02744
+      ]
+    },
+    {
+      "id": "node/8071687535",
+      "name": "İstanbul Havalimanı Müzesi",
+      "nameEn": "Istanbul Airport Museum",
+      "category": "museum",
+      "coordinates": [
+        28.741836,
+        41.261316
+      ]
+    },
+    {
+      "id": "node/8088572819",
+      "name": "Taht Istanbul",
+      "nameEn": "Taht Istanbul",
+      "category": "viewpoint",
+      "coordinates": [
+        28.966293,
+        41.015821
+      ]
+    },
+    {
+      "id": "node/8205092817",
+      "name": "Tombs Museum",
+      "nameEn": "Tombs Museum",
+      "category": "museum",
+      "coordinates": [
+        28.985107,
+        41.015448
+      ]
+    },
+    {
+      "id": "node/8277311717",
+      "name": "Harmony hotel teras",
+      "nameEn": "Harmony hotel terrace",
+      "category": "viewpoint",
+      "coordinates": [
+        28.973571,
+        41.002641
+      ]
+    },
+    {
+      "id": "node/8520247746",
+      "name": "Tuzla Belediyesi Tuzla Sahil Sahnesi",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        29.303595,
+        40.816233
+      ]
+    },
+    {
+      "id": "node/8680809215",
+      "name": "İnadiye Çeşmesi",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        29.018202,
+        41.016868
+      ]
+    },
+    {
+      "id": "node/8699169212",
+      "name": "PTT Müzesi",
+      "nameEn": "Post Museum",
+      "category": "museum",
+      "coordinates": [
+        28.973899,
+        41.014715
+      ]
+    },
+    {
+      "id": "node/9071551524",
+      "name": "Madentepe Manzarası",
+      "nameEn": null,
+      "category": "viewpoint",
+      "coordinates": [
+        28.768245,
+        41.147309
+      ]
+    },
+    {
+      "id": "node/9111940917",
+      "name": "Kınalı Ada Gözlem Noktası (m&h)",
+      "nameEn": null,
+      "category": "viewpoint",
+      "coordinates": [
+        29.056417,
+        40.907708
+      ]
+    },
+    {
+      "id": "node/9166929212",
+      "name": "Şerife Bacı Anıtı",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        28.998184,
+        41.115819
+      ]
+    },
+    {
+      "id": "node/9206305917",
+      "name": "Beyazit Kulesi",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        28.964682,
+        41.011394
+      ]
+    },
+    {
+      "id": "node/9217070484",
+      "name": "Türk Eczacılık Tarihi İhtisas Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.963116,
+        41.010849
+      ]
+    },
+    {
+      "id": "node/9217099231",
+      "name": "İstanbul Üniversitesi Rıdvan Çelikel Arkeoloji Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.960116,
+        41.009856
+      ]
+    },
+    {
+      "id": "node/9217147447",
+      "name": "Cam Teras",
+      "nameEn": null,
+      "category": "viewpoint",
+      "coordinates": [
+        28.992561,
+        40.863612
+      ]
+    },
+    {
+      "id": "node/9252958276",
+      "name": "Bizans Zindanları",
+      "nameEn": "Byzantine Dungeons",
+      "category": "museum",
+      "coordinates": [
+        28.993018,
+        40.865014
+      ]
+    },
+    {
+      "id": "node/9252958337",
+      "name": "Henry Bulwer Şatosu",
+      "nameEn": null,
+      "category": "castle",
+      "coordinates": [
+        28.995782,
+        40.864794
+      ]
+    },
+    {
+      "id": "node/9255335169",
+      "name": "BKM Mutfak",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        29.005755,
+        41.043164
+      ]
+    },
+    {
+      "id": "node/9366981517",
+      "name": "Арнавуткёй у босфора, побывать!",
+      "nameEn": null,
+      "category": "viewpoint",
+      "coordinates": [
+        29.04192,
+        41.068101
+      ]
+    },
+    {
+      "id": "node/9437906781",
+      "name": "Alaiye Anıtı",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        28.513169,
+        41.273833
+      ]
+    },
+    {
+      "id": "node/9482768518",
+      "name": "Jet Uçağı Anıtı",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        29.054151,
+        40.985386
+      ]
+    },
+    {
+      "id": "node/9597969110",
+      "name": "İllüzyon Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.97493,
+        41.02917
+      ]
+    },
+    {
+      "id": "node/9698150917",
+      "name": "ARTER",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.978764,
+        41.040899
+      ]
+    },
+    {
+      "id": "node/9708710318",
+      "name": "tab ilaç",
+      "nameEn": null,
+      "category": "castle",
+      "coordinates": [
+        28.629867,
+        41.072148
+      ]
+    },
+    {
+      "id": "node/9806141079",
+      "name": "Altkat Sanat",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        29.025408,
+        40.987792
+      ]
+    },
+    {
+      "id": "node/9833781318",
+      "name": "Çözüm Noktasi",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        28.984349,
+        41.036387
+      ]
+    },
+    {
+      "id": "node/9866890847",
+      "name": "Müjdat Gezen Tiyatrosu",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        29.028357,
+        40.989848
+      ]
+    },
+    {
+      "id": "node/9889913269",
+      "name": "Üsküdar Üniversitesi Güney Yerleşkesi",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        29.040152,
+        41.021734
+      ]
+    },
+    {
+      "id": "node/9893991878",
+      "name": "İstanbul Esenyurt Üniversitesi",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        28.687336,
+        41.020384
+      ]
+    },
+    {
+      "id": "node/9906506917",
+      "name": "Plaj",
+      "nameEn": "Beach",
+      "category": "viewpoint",
+      "coordinates": [
+        29.282609,
+        40.812689
+      ]
+    },
+    {
+      "id": "node/9909824529",
+      "name": "Orhan Kemal Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.983601,
+        41.030519
+      ]
+    },
+    {
+      "id": "node/9933668478",
+      "name": "Kâğıthane Belediyesi Sadabad Kültür Merkezi ve Nikâh Sarayı",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        28.971742,
+        41.079609
+      ]
+    },
+    {
+      "id": "node/9933672047",
+      "name": "Kâğıthane Belediyesi Şehir Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.972284,
+        41.081078
+      ]
+    },
+    {
+      "id": "node/9967219116",
+      "name": "Sait Faik Abasıyanık Müzesi",
+      "nameEn": "Sait Faik Abasıyanık Museum",
+      "category": "museum",
+      "coordinates": [
+        29.067455,
+        40.88103
+      ]
+    },
+    {
+      "id": "node/9967223417",
+      "name": "İsmet İnönü Evi Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.093536,
+        40.878156
+      ]
+    },
+    {
+      "id": "node/10029601210",
+      "name": "Üsküp Saat Kulesi",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        28.910191,
+        41.031666
+      ]
+    },
+    {
+      "id": "node/10032971940",
+      "name": "Müze Girişi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.070835,
+        41.035202
+      ]
+    },
+    {
+      "id": "node/10118890033",
+      "name": "İTÜ Yabancı Diller Yüsekokulu",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        28.9951,
+        41.044681
+      ]
+    },
+    {
+      "id": "node/10284696709",
+      "name": "Topkapi Sarayı",
+      "nameEn": "Topkapi Palace",
+      "category": "museum",
+      "coordinates": [
+        28.983203,
+        41.011344
+      ]
+    },
+    {
+      "id": "node/10285668491",
+      "name": "İçerenköy Kavşağı Heykeli",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        29.108388,
+        40.971777
+      ]
+    },
+    {
+      "id": "node/10302254341",
+      "name": "Fenerbahçe Üniversitesi",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        29.120566,
+        40.994666
+      ]
+    },
+    {
+      "id": "node/10543470929",
+      "name": "Hababam Sınıfı Müzesi",
+      "nameEn": "Hababam School Museum",
+      "category": "museum",
+      "coordinates": [
+        29.041953,
+        41.013616
+      ]
+    },
+    {
+      "id": "node/10690434505",
+      "name": "Can Bartu heykeli",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        29.034122,
+        40.98723
+      ]
+    },
+    {
+      "id": "node/10931260134",
+      "name": "Sancaktepe Saat Kulesi",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        29.229672,
+        40.985598
+      ]
+    },
+    {
+      "id": "node/10936628562",
+      "name": "Süleymaniye Kütüphanesi",
+      "nameEn": null,
+      "category": "library",
+      "coordinates": [
+        28.962701,
+        41.015541
+      ]
+    },
+    {
+      "id": "node/10945908788",
+      "name": "X Media Art Müsesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.125336,
+        40.993222
+      ]
+    },
+    {
+      "id": "node/11008622106",
+      "name": "Best view point",
+      "nameEn": "Best view point",
+      "category": "viewpoint",
+      "coordinates": [
+        28.983184,
+        41.028757
+      ]
+    },
+    {
+      "id": "node/11108374405",
+      "name": "Nice wiew",
+      "nameEn": "Nice wiew",
+      "category": "viewpoint",
+      "coordinates": [
+        28.974073,
+        41.024448
+      ]
+    },
+    {
+      "id": "node/11143992097",
+      "name": "Terrace",
+      "nameEn": null,
+      "category": "viewpoint",
+      "coordinates": [
+        28.976532,
+        41.009989
+      ]
+    },
+    {
+      "id": "node/11247845637",
+      "name": "Nice view",
+      "nameEn": "Nice view",
+      "category": "viewpoint",
+      "coordinates": [
+        29.080222,
+        40.874278
+      ]
+    },
+    {
+      "id": "node/11867279469",
+      "name": "Ayasofya Tarih ve Deneyim Müzesi",
+      "nameEn": "Hagia Sophia History and Experience Museum",
+      "category": "museum",
+      "coordinates": [
+        28.975367,
+        41.006455
+      ]
+    },
+    {
+      "id": "node/11968975869",
+      "name": "Pray Tiyatro - ADT Sahne",
+      "nameEn": "Pray Theater - ADT",
+      "category": "theatre",
+      "coordinates": [
+        29.000476,
+        41.071555
+      ]
+    },
+    {
+      "id": "node/11985288314",
+      "name": "Ara Güler Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.980379,
+        41.058312
+      ]
+    },
+    {
+      "id": "node/11992305500",
+      "name": "TiyArt",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        28.994073,
+        41.057719
+      ]
+    },
+    {
+      "id": "node/12229653001",
+      "name": "Hüseyin Rahmi Gürpınar",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        29.100898,
+        40.876519
+      ]
+    },
+    {
+      "id": "node/12243524937",
+      "name": "Fethiye Müzesi",
+      "nameEn": "Fethiye Museum",
+      "category": "museum",
+      "coordinates": [
+        28.946518,
+        41.02921
+      ]
+    },
+    {
+      "id": "node/12244864779",
+      "name": "Duru Tiyatro",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        29.10013,
+        40.996898
+      ]
+    },
+    {
+      "id": "node/12248507560",
+      "name": "Dolmabahçe Saat Müzesi",
+      "nameEn": "Dolmabahçe Clock Museum",
+      "category": "museum",
+      "coordinates": [
+        28.996341,
+        41.03769
+      ]
+    },
+    {
+      "id": "node/12347693517",
+      "name": "Türkiye İş Bankası Resim Heykel Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.975902,
+        41.031512
+      ]
+    },
+    {
+      "id": "node/12395478630",
+      "name": "İstanbul Robot Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.728549,
+        40.982545
+      ]
+    },
+    {
+      "id": "node/12456058886",
+      "name": "Düştepe Oyun Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.112441,
+        40.993609
+      ]
+    },
+    {
+      "id": "node/12539082030",
+      "name": "Uçak",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        28.598948,
+        41.010844
+      ]
+    },
+    {
+      "id": "node/12539082031",
+      "name": "Uçak",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        28.59917,
+        41.010569
+      ]
+    },
+    {
+      "id": "node/12561201962",
+      "name": "Ulusal Bağımsızlık ve Kuruluş Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.582747,
+        41.017908
+      ]
+    },
+    {
+      "id": "node/12561204075",
+      "name": "Atatürk Devrimleri Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.582647,
+        41.018189
+      ]
+    },
+    {
+      "id": "node/12768472401",
+      "name": "Padişah Mahfili - Yeni Cami",
+      "nameEn": "Sultans Pavillion - the new Mosque",
+      "category": "castle",
+      "coordinates": [
+        28.972777,
+        41.016893
+      ]
+    },
+    {
+      "id": "node/12997285701",
+      "name": "Museum of Turkish & Islamic Arts",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.070826,
+        41.034314
+      ]
+    },
+    {
+      "id": "node/13325707342",
+      "name": "250. Yıl Anıtı",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        29.023388,
+        41.102917
+      ]
+    },
+    {
+      "id": "node/13340183461",
+      "name": "İstanbul Üniversitesi-Cerrahpaşa Orman Fakültesi",
+      "nameEn": "Istanbul University-Cerrahpaşa Faculty of Forestry",
+      "category": "university",
+      "coordinates": [
+        28.991038,
+        41.175892
+      ]
+    },
+    {
+      "id": "node/13449988311",
+      "name": "Cafe Theatre",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        29.035788,
+        41.011618
+      ]
+    },
+    {
+      "id": "node/13528861701",
+      "name": "Bahçelievler Tiyatrosu Nurettin Topçu Sahnesi",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        28.851297,
+        40.997837
+      ]
+    },
+    {
+      "id": "node/13598331749",
+      "name": "DasDas",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        29.12492,
+        40.994104
+      ]
+    },
+    {
+      "id": "node/13633237834",
+      "name": "Polonezköy Ağaç Oyma Heykel Sergisi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.211139,
+        41.109841
+      ]
+    },
+    {
+      "id": "node/13817954307",
+      "name": "Jolly Joker",
+      "nameEn": null,
+      "category": "theatre",
+      "coordinates": [
+        28.771453,
+        41.050906
+      ]
+    },
+    {
+      "id": "node/13849744569",
+      "name": "Zamba Oyuncak Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.267739,
+        41.04505
+      ]
+    },
+    {
+      "id": "way/24234971",
+      "name": "Mısır Çarşısı",
+      "nameEn": "Egyptian (Spice) Bazaar",
+      "category": "mall",
+      "coordinates": [
+        28.971098,
+        41.016463
+      ]
+    },
+    {
+      "id": "way/24533505",
+      "name": "Orhan Kemal Müzesi",
+      "nameEn": "Orhan Kemal Museum",
+      "category": "museum",
+      "coordinates": [
+        28.983608,
+        41.03058
+      ]
+    },
+    {
+      "id": "way/24533753",
+      "name": "Yıldız Teknik Üniversitesi",
+      "nameEn": "Yıldız Technical University",
+      "category": "university",
+      "coordinates": [
+        29.010545,
+        41.052309
+      ]
+    },
+    {
+      "id": "way/24805675",
+      "name": "İTÜ Gümüşsuyu Yerleşkesi",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        28.991582,
+        41.03813
+      ]
+    },
+    {
+      "id": "way/24838258",
+      "name": "Mimar Sinan Güzel Sanatlar Üniversitesi",
+      "nameEn": "Mimar Sinan Fine Art University",
+      "category": "university",
+      "coordinates": [
+        28.989062,
+        41.030037
+      ]
+    },
+    {
+      "id": "way/35411079",
+      "name": "Recep Tayyip Erdoğan Stadyumu",
+      "nameEn": null,
+      "category": "stadium",
+      "coordinates": [
+        28.972393,
+        41.032793
+      ]
+    },
+    {
+      "id": "way/41731417",
+      "name": "Boğaziçi Üniversitesi Güney Yerleşkesi",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        29.050988,
+        41.083361
+      ]
+    },
+    {
+      "id": "way/44794009",
+      "name": "Büyük Beşiktaş Çarşısı",
+      "nameEn": null,
+      "category": "mall",
+      "coordinates": [
+        29.005227,
+        41.042708
+      ]
+    },
+    {
+      "id": "way/46962419",
+      "name": "İstanbul Cevahir Alışveriş ve Eğlence Merkezi",
+      "nameEn": "Istanbul Cevahir Shopping and Entertainment Center",
+      "category": "mall",
+      "coordinates": [
+        28.992856,
+        41.062576
+      ]
+    },
+    {
+      "id": "way/48733129",
+      "name": "Maslak Kasrı",
+      "nameEn": "Maslak Pavilion",
+      "category": "museum",
+      "coordinates": [
+        29.026128,
+        41.119176
+      ]
+    },
+    {
+      "id": "way/49501440",
+      "name": "Galatasaray Üniversitesi",
+      "nameEn": "Galatasaray University",
+      "category": "university",
+      "coordinates": [
+        29.019845,
+        41.045995
+      ]
+    },
+    {
+      "id": "way/51815600",
+      "name": "Tepe Nautilus Alışveriş Merkezi",
+      "nameEn": null,
+      "category": "mall",
+      "coordinates": [
+        29.031499,
+        40.999609
+      ]
+    },
+    {
+      "id": "way/53604318",
+      "name": "Sağlık Bilimleri Üniversitesi Hamidiye Yerleşkesi",
+      "nameEn": "University of Health Sciences Hamidiye Campus",
+      "category": "university",
+      "coordinates": [
+        29.019645,
+        41.004163
+      ]
+    },
+    {
+      "id": "way/61736367",
+      "name": "Beylerbeyi Sarayı",
+      "nameEn": "Beylerbeyi Palace",
+      "category": "museum",
+      "coordinates": [
+        29.040036,
+        41.042718
+      ]
+    },
+    {
+      "id": "way/61736405",
+      "name": "Yalı Köşkü",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.038943,
+        41.042401
+      ]
+    },
+    {
+      "id": "way/61736406",
+      "name": "Beylerbeyi Sarayı Haremlik Sahil Köşkü",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.040646,
+        41.043364
+      ]
+    },
+    {
+      "id": "way/66321024",
+      "name": "Chobani Stadyumu",
+      "nameEn": "Chobani Stadium",
+      "category": "stadium",
+      "coordinates": [
+        29.036943,
+        40.987632
+      ]
+    },
+    {
+      "id": "way/66909411",
+      "name": "T.C. Maltepe Üniversitesi",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        29.185554,
+        40.959781
+      ]
+    },
+    {
+      "id": "way/87522379",
+      "name": "Tavaşı-Süleymanağa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.96349,
+        41.003702
+      ]
+    },
+    {
+      "id": "way/90843319",
+      "name": "Geylani Tekke Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.930937,
+        41.015645
+      ]
+    },
+    {
+      "id": "way/90845402",
+      "name": "Mustafa Çavuş Mescidi",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.928415,
+        41.017372
+      ]
+    },
+    {
+      "id": "way/99141973",
+      "name": "Sabancı Üniversitesi",
+      "nameEn": "Sabancı University",
+      "category": "university",
+      "coordinates": [
+        29.378936,
+        40.892977
+      ]
+    },
+    {
+      "id": "way/102190093",
+      "name": "Sultan Mustafa İskele Camii",
+      "nameEn": "Sultan Mustafa İskele Mosque",
+      "category": "mosque",
+      "coordinates": [
+        29.023821,
+        40.990818
+      ]
+    },
+    {
+      "id": "way/102190099",
+      "name": "Osman Ağa Cami",
+      "nameEn": "Osman Ağa Mosque",
+      "category": "mosque",
+      "coordinates": [
+        29.026123,
+        40.990839
+      ]
+    },
+    {
+      "id": "way/103339339",
+      "name": "Çinili Köşk",
+      "nameEn": "Tiled Kiosk",
+      "category": "museum",
+      "coordinates": [
+        28.981238,
+        41.012022
+      ]
+    },
+    {
+      "id": "way/103339340",
+      "name": "Eski Şark Eserleri Müzesi",
+      "nameEn": "Museum Of Ancient Orient",
+      "category": "museum",
+      "coordinates": [
+        28.980402,
+        41.011393
+      ]
+    },
+    {
+      "id": "way/103456084",
+      "name": "Helvacıbaşı İskenderağa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.97273,
+        41.004856
+      ]
+    },
+    {
+      "id": "way/104061375",
+      "name": "Zeynep Sultan Camii",
+      "nameEn": "Zeynep Sultan Mosque",
+      "category": "mosque",
+      "coordinates": [
+        28.978401,
+        41.010077
+      ]
+    },
+    {
+      "id": "way/106620854",
+      "name": "Güzelce Kasımpaşa Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.968654,
+        41.03301
+      ]
+    },
+    {
+      "id": "way/109980654",
+      "name": "Ahi Çelebi Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.96841,
+        41.018949
+      ]
+    },
+    {
+      "id": "way/110234143",
+      "name": "İstanbul Üniversitesi Merkez Kütüphanesi",
+      "nameEn": "Istanbul University Central Library",
+      "category": "library",
+      "coordinates": [
+        28.962208,
+        41.009935
+      ]
+    },
+    {
+      "id": "way/110234148",
+      "name": "Türk Vakıf Hat Sanatları Müzesi",
+      "nameEn": "The Museum of Turkish Calligraphic Art",
+      "category": "museum",
+      "coordinates": [
+        28.963217,
+        41.01
+      ]
+    },
+    {
+      "id": "way/110239778",
+      "name": "İBB Kütüphane Troleybüs",
+      "nameEn": null,
+      "category": "library",
+      "coordinates": [
+        28.962205,
+        41.012044
+      ]
+    },
+    {
+      "id": "way/110314231",
+      "name": "Kalenderhane Camii",
+      "nameEn": "Theotokos Kyriotissa (Kalenderhane)",
+      "category": "mosque",
+      "coordinates": [
+        28.960368,
+        41.013146
+      ]
+    },
+    {
+      "id": "way/111002436",
+      "name": "Vefa Kilise Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.96033,
+        41.01628
+      ]
+    },
+    {
+      "id": "way/111002508",
+      "name": "Gazi Atik Ali Paşa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.970545,
+        41.008742
+      ]
+    },
+    {
+      "id": "way/111148008",
+      "name": "Katip Şemsettin Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.962834,
+        41.01784
+      ]
+    },
+    {
+      "id": "way/111861690",
+      "name": "Aynül Hayat Hatun Mescidi",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.96805,
+        41.004188
+      ]
+    },
+    {
+      "id": "way/111861701",
+      "name": "Behram Çavuş Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.966857,
+        41.004295
+      ]
+    },
+    {
+      "id": "way/111862615",
+      "name": "Vezir Hanı",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.972005,
+        41.009257
+      ]
+    },
+    {
+      "id": "way/112174257",
+      "name": "İshak Paşa Cami",
+      "nameEn": "İshak Paşa Mosque",
+      "category": "mosque",
+      "coordinates": [
+        28.981625,
+        41.00637
+      ]
+    },
+    {
+      "id": "way/112174316",
+      "name": "Akbıyık Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.979426,
+        41.003252
+      ]
+    },
+    {
+      "id": "way/112174319",
+      "name": "Sepetçiler Kasrı",
+      "nameEn": "Sepetçiler Pavilion",
+      "category": "museum",
+      "coordinates": [
+        28.981645,
+        41.016328
+      ]
+    },
+    {
+      "id": "way/112659195",
+      "name": "Tahtakale Hamamı",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        28.967969,
+        41.017623
+      ]
+    },
+    {
+      "id": "way/112676117",
+      "name": "Pera Müzesi",
+      "nameEn": "Pera Museum",
+      "category": "museum",
+      "coordinates": [
+        28.975204,
+        41.031804
+      ]
+    },
+    {
+      "id": "way/121462312",
+      "name": "Atatürk Olimpiyat Stadyumu",
+      "nameEn": "Atatürk Olympic Stadium",
+      "category": "stadium",
+      "coordinates": [
+        28.765661,
+        41.074474
+      ]
+    },
+    {
+      "id": "way/132270015",
+      "name": "Kamer Hatun Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.974978,
+        41.035045
+      ]
+    },
+    {
+      "id": "way/136456159",
+      "name": "Fethiye Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.9464,
+        41.029081
+      ]
+    },
+    {
+      "id": "way/137519649",
+      "name": "Zeyrek Molla Camii",
+      "nameEn": "Molla Zeyrek Mosque",
+      "category": "mosque",
+      "coordinates": [
+        28.957247,
+        41.019718
+      ]
+    },
+    {
+      "id": "way/145342395",
+      "name": "İTÜ Mustafa İnan Kütüphanesi",
+      "nameEn": "ITU Mustafa Inan Library",
+      "category": "library",
+      "coordinates": [
+        29.021151,
+        41.103665
+      ]
+    },
+    {
+      "id": "way/152827180",
+      "name": "Akmerkez",
+      "nameEn": null,
+      "category": "mall",
+      "coordinates": [
+        29.026739,
+        41.076635
+      ]
+    },
+    {
+      "id": "way/154206547",
+      "name": "Yeditepe Üniversitesi",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        29.150447,
+        40.971374
+      ]
+    },
+    {
+      "id": "way/156817069",
+      "name": "Astoria",
+      "nameEn": "Astoria tommy",
+      "category": "mall",
+      "coordinates": [
+        29.005869,
+        41.068592
+      ]
+    },
+    {
+      "id": "way/156828034",
+      "name": "Sapphire",
+      "nameEn": null,
+      "category": "mall",
+      "coordinates": [
+        29.00605,
+        41.084961
+      ]
+    },
+    {
+      "id": "way/159932934",
+      "name": "Maltepe Hasan Polat Stadyumu",
+      "nameEn": null,
+      "category": "stadium",
+      "coordinates": [
+        29.131345,
+        40.920438
+      ]
+    },
+    {
+      "id": "way/162064941",
+      "name": "Ataköy Galleria Alışveriş Merkezi",
+      "nameEn": "Ataköy Galleria Shopping Mall",
+      "category": "mall",
+      "coordinates": [
+        28.869422,
+        40.974401
+      ]
+    },
+    {
+      "id": "way/162139987",
+      "name": "Carousel Alışveriş ve Yaşam Merkezi",
+      "nameEn": null,
+      "category": "mall",
+      "coordinates": [
+        28.873417,
+        40.977725
+      ]
+    },
+    {
+      "id": "way/162142036",
+      "name": "Ahmet Cömert Sport Salonu",
+      "nameEn": "Ahmet Cömert Sport Hall",
+      "category": "stadium",
+      "coordinates": [
+        28.852709,
+        40.989484
+      ]
+    },
+    {
+      "id": "way/163625174",
+      "name": "İstinyePark",
+      "nameEn": null,
+      "category": "mall",
+      "coordinates": [
+        29.03263,
+        41.110321
+      ]
+    },
+    {
+      "id": "way/163629174",
+      "name": "Trump Alışveriş Merkezi",
+      "nameEn": null,
+      "category": "mall",
+      "coordinates": [
+        28.9923,
+        41.068488
+      ]
+    },
+    {
+      "id": "way/165484023",
+      "name": "Kemankeş Karamustafa Paşa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.976712,
+        41.022732
+      ]
+    },
+    {
+      "id": "way/165484607",
+      "name": "Bahçeşehir Üniversitesi Galata Kampusü",
+      "nameEn": "Bahcesehir University Galata Campus",
+      "category": "university",
+      "coordinates": [
+        28.976983,
+        41.024538
+      ]
+    },
+    {
+      "id": "way/165521220",
+      "name": "Makbul İbrahim Paşa Camii",
+      "nameEn": "Makbul Ibrahim Pasa Mosque",
+      "category": "mosque",
+      "coordinates": [
+        28.971572,
+        41.022265
+      ]
+    },
+    {
+      "id": "way/165574748",
+      "name": "Kılıç Ali Paşa Camii",
+      "nameEn": "Kılıç Ali Pasha Mosque",
+      "category": "mosque",
+      "coordinates": [
+        28.980947,
+        41.026417
+      ]
+    },
+    {
+      "id": "way/165718178",
+      "name": "Galata Mevlevihanesi Müzesi",
+      "nameEn": "Galata Dervish House Museum",
+      "category": "museum",
+      "coordinates": [
+        28.975114,
+        41.028013
+      ]
+    },
+    {
+      "id": "way/175517661",
+      "name": "Mahmut Paşa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.971377,
+        41.011186
+      ]
+    },
+    {
+      "id": "way/175518494",
+      "name": "Rüstem Paşa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.968718,
+        41.01768
+      ]
+    },
+    {
+      "id": "way/175518809",
+      "name": "Arap Camii",
+      "nameEn": "Arap Mosque",
+      "category": "mosque",
+      "coordinates": [
+        28.971066,
+        41.024342
+      ]
+    },
+    {
+      "id": "way/175523076",
+      "name": "Resim Müzesi",
+      "nameEn": "National Palaces Painting Museum;Painting Museum",
+      "category": "museum",
+      "coordinates": [
+        29.002723,
+        41.039662
+      ]
+    },
+    {
+      "id": "way/183279512",
+      "name": "Altunizade Camii",
+      "nameEn": "Altunizade Mosque",
+      "category": "mosque",
+      "coordinates": [
+        29.045474,
+        41.020559
+      ]
+    },
+    {
+      "id": "way/186454752",
+      "name": "Bahçeşehir Üniversitesi Beşiktaş Kampusü",
+      "nameEn": "BAU University",
+      "category": "university",
+      "coordinates": [
+        29.00967,
+        41.041891
+      ]
+    },
+    {
+      "id": "way/198768798",
+      "name": "Bodrum Camii",
+      "nameEn": "Myrelaion (Bodrum Mosque)",
+      "category": "mosque",
+      "coordinates": [
+        28.955707,
+        41.008498
+      ]
+    },
+    {
+      "id": "way/201141056",
+      "name": "Kızılminare Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.950636,
+        41.01241
+      ]
+    },
+    {
+      "id": "way/203119824",
+      "name": "Cihangir Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.987148,
+        41.030121
+      ]
+    },
+    {
+      "id": "way/218513250",
+      "name": "Marmara Park",
+      "nameEn": null,
+      "category": "mall",
+      "coordinates": [
+        28.65959,
+        41.009709
+      ]
+    },
+    {
+      "id": "way/218997336",
+      "name": "İstanbul Üniversitesi-Cerrahpaşa Avcılar Yerleşkesi",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        28.725259,
+        40.990606
+      ]
+    },
+    {
+      "id": "way/219002350",
+      "name": "Buyukcekmece Kervansaray",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.575876,
+        41.021887
+      ]
+    },
+    {
+      "id": "way/224685435",
+      "name": "Institut français d'études anatoliennes",
+      "nameEn": "French Institute of Anatolian Studies",
+      "category": "library",
+      "coordinates": [
+        28.976724,
+        41.031573
+      ]
+    },
+    {
+      "id": "way/225610547",
+      "name": "Karabaş Mustafa Ağa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.98029,
+        41.027272
+      ]
+    },
+    {
+      "id": "way/225989341",
+      "name": "Yeraltı Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.976658,
+        41.022364
+      ]
+    },
+    {
+      "id": "way/229412479",
+      "name": "Gebze Teknik Üniversitesi",
+      "nameEn": "Gebze Technical University",
+      "category": "university",
+      "coordinates": [
+        29.356273,
+        40.811447
+      ]
+    },
+    {
+      "id": "way/230152867",
+      "name": "Adnan Menderes Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.994312,
+        40.864052
+      ]
+    },
+    {
+      "id": "way/230152881",
+      "name": "27 Mayıs Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.994798,
+        40.865554
+      ]
+    },
+    {
+      "id": "way/230687140",
+      "name": "Küçüksu Kasrı",
+      "nameEn": "Kucuksu Pavilion",
+      "category": "museum",
+      "coordinates": [
+        29.064885,
+        41.078412
+      ]
+    },
+    {
+      "id": "way/234411332",
+      "name": "Canfeda Hatun Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.941191,
+        41.026398
+      ]
+    },
+    {
+      "id": "way/235271667",
+      "name": "Barış Manço Evi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.024932,
+        40.981745
+      ]
+    },
+    {
+      "id": "way/235398424",
+      "name": "Galip Paşa Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.069535,
+        40.965939
+      ]
+    },
+    {
+      "id": "way/235463553",
+      "name": "Fenerbahçe Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.040385,
+        40.972516
+      ]
+    },
+    {
+      "id": "way/235463557",
+      "name": "Zühtüpaşa Camii",
+      "nameEn": "Zühtüpaşa Mosque",
+      "category": "mosque",
+      "coordinates": [
+        29.04004,
+        40.98414
+      ]
+    },
+    {
+      "id": "way/236504054",
+      "name": "Cafer Ağa Camii",
+      "nameEn": "Cafer Ağa Mosque",
+      "category": "mosque",
+      "coordinates": [
+        29.024701,
+        40.989353
+      ]
+    },
+    {
+      "id": "way/237058773",
+      "name": "Moda Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.025628,
+        40.982629
+      ]
+    },
+    {
+      "id": "way/237058776",
+      "name": "Söğütlüçeşme Camii",
+      "nameEn": "Söğütlüçeşme Mosque",
+      "category": "mosque",
+      "coordinates": [
+        29.033284,
+        40.992277
+      ]
+    },
+    {
+      "id": "way/237176264",
+      "name": "Tüccar Başı Böcekli Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.084435,
+        40.978463
+      ]
+    },
+    {
+      "id": "way/237684224",
+      "name": "Büyük Selimiye Camii",
+      "nameEn": "Selimiye Mosque",
+      "category": "mosque",
+      "coordinates": [
+        29.016338,
+        41.009661
+      ]
+    },
+    {
+      "id": "way/237833975",
+      "name": "Salacak Fatih Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.007959,
+        41.020975
+      ]
+    },
+    {
+      "id": "way/237833983",
+      "name": "Şemsi Paşa Camii",
+      "nameEn": "The Şemsi Pasha Mosque",
+      "category": "mosque",
+      "coordinates": [
+        29.011362,
+        41.025942
+      ]
+    },
+    {
+      "id": "way/238027309",
+      "name": "Çinili Cami",
+      "nameEn": "Çinili Mosque",
+      "category": "mosque",
+      "coordinates": [
+        29.029246,
+        41.019896
+      ]
+    },
+    {
+      "id": "way/238749538",
+      "name": "Hızır Çavuş Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.946316,
+        41.031863
+      ]
+    },
+    {
+      "id": "way/246596928",
+      "name": "Okan Üniversitesi",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        29.390425,
+        40.951847
+      ]
+    },
+    {
+      "id": "way/247442912",
+      "name": "Masumiyet Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.979833,
+        41.030853
+      ]
+    },
+    {
+      "id": "way/247443009",
+      "name": "Muhyiddin Molla Fenari Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.981063,
+        41.031976
+      ]
+    },
+    {
+      "id": "way/252180113",
+      "name": "Zihnipaşa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.076977,
+        40.971903
+      ]
+    },
+    {
+      "id": "way/252473066",
+      "name": "Havuzlu Atatürk anıtı",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        28.674474,
+        41.155567
+      ]
+    },
+    {
+      "id": "way/254031521",
+      "name": "Acıbadem Üniversitesi Kerem Aydınlar Yerleşkesi",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        29.110327,
+        40.978359
+      ]
+    },
+    {
+      "id": "way/260976707",
+      "name": "Türkiye İş Bankası Müzesi",
+      "nameEn": "İşbank Museum",
+      "category": "museum",
+      "coordinates": [
+        28.972601,
+        41.016094
+      ]
+    },
+    {
+      "id": "way/261821356",
+      "name": "Eyüp Sultan Camii",
+      "nameEn": "Eyüp Sultan Mosque",
+      "category": "mosque",
+      "coordinates": [
+        28.93374,
+        41.048015
+      ]
+    },
+    {
+      "id": "way/263949137",
+      "name": "Dolmabahçe Sarayı Harem Bölümü",
+      "nameEn": "Dolmabahce Palace",
+      "category": "museum",
+      "coordinates": [
+        29.001599,
+        41.039789
+      ]
+    },
+    {
+      "id": "way/263949162",
+      "name": "Dolmabahçe Sarayı Muayede Salonu",
+      "nameEn": "Dolmabahce Palace",
+      "category": "museum",
+      "coordinates": [
+        29.000546,
+        41.03913
+      ]
+    },
+    {
+      "id": "way/264995270",
+      "name": "Hacı Beşir Ağa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.977338,
+        41.010655
+      ]
+    },
+    {
+      "id": "way/264998558",
+      "name": "Cezeri Kasımpaşa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.97436,
+        41.010058
+      ]
+    },
+    {
+      "id": "way/265741308",
+      "name": "Şişli Merkez Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.987738,
+        41.061432
+      ]
+    },
+    {
+      "id": "way/276463550",
+      "name": "Şenlikköy Stadyumu",
+      "nameEn": null,
+      "category": "stadium",
+      "coordinates": [
+        28.791677,
+        40.980195
+      ]
+    },
+    {
+      "id": "way/276848799",
+      "name": "Suna Kıraç Kütüphanesi",
+      "nameEn": "Suna Kıraç Library",
+      "category": "library",
+      "coordinates": [
+        29.073316,
+        41.205804
+      ]
+    },
+    {
+      "id": "way/286321642",
+      "name": "Gazhane Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.042909,
+        40.996725
+      ]
+    },
+    {
+      "id": "way/301906863",
+      "name": "Mecidiye Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.831313,
+        40.960542
+      ]
+    },
+    {
+      "id": "way/301906885",
+      "name": "Kumbarhane Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.943093,
+        41.046085
+      ]
+    },
+    {
+      "id": "way/303179753",
+      "name": "Küçük Ayasofya Camii",
+      "nameEn": "Little Hagia Sophia",
+      "category": "mosque",
+      "coordinates": [
+        28.972201,
+        41.002743
+      ]
+    },
+    {
+      "id": "way/303491953",
+      "name": "Alay Köşkü",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.978391,
+        41.011043
+      ]
+    },
+    {
+      "id": "way/307167463",
+      "name": "Ali Kethüda Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.057871,
+        41.169002
+      ]
+    },
+    {
+      "id": "way/307332872",
+      "name": "Yerebatan Üskübi İbrahim Ağa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.977444,
+        41.009091
+      ]
+    },
+    {
+      "id": "way/308038550",
+      "name": "Hadım İbrahim Paşa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.922727,
+        41.006025
+      ]
+    },
+    {
+      "id": "way/308711450",
+      "name": "Serbostani Mustafa Ağa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.092391,
+        41.133751
+      ]
+    },
+    {
+      "id": "way/309046220",
+      "name": "Hacı İlyas Yatağan Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.942108,
+        41.035643
+      ]
+    },
+    {
+      "id": "way/309046228",
+      "name": "Hoca Ali Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.943304,
+        41.036006
+      ]
+    },
+    {
+      "id": "way/309052088",
+      "name": "Mesih Ali Paşa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.943468,
+        41.02198
+      ]
+    },
+    {
+      "id": "way/309052097",
+      "name": "Bali Paşa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.943988,
+        41.019017
+      ]
+    },
+    {
+      "id": "way/309191786",
+      "name": "Cezer-i Kasım Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.936183,
+        41.043493
+      ]
+    },
+    {
+      "id": "way/311681431",
+      "name": "Sağlık Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.97529,
+        41.008314
+      ]
+    },
+    {
+      "id": "way/312484207",
+      "name": "Ihlamur Kasrı (Merasim Köşkü)",
+      "nameEn": "Ceremony Pavilion",
+      "category": "museum",
+      "coordinates": [
+        29.001195,
+        41.050725
+      ]
+    },
+    {
+      "id": "way/312748715",
+      "name": "Hekimoğlu Alipaşa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.935016,
+        41.006189
+      ]
+    },
+    {
+      "id": "way/312748721",
+      "name": "İskender Paşa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.948005,
+        41.016619
+      ]
+    },
+    {
+      "id": "way/314202173",
+      "name": "Kemal Sunal Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.057815,
+        40.970891
+      ]
+    },
+    {
+      "id": "way/314676669",
+      "name": "Şeb Sefa Hatun Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.958859,
+        41.019359
+      ]
+    },
+    {
+      "id": "way/315614039",
+      "name": "Stadyum",
+      "nameEn": null,
+      "category": "stadium",
+      "coordinates": [
+        28.697848,
+        41.024072
+      ]
+    },
+    {
+      "id": "way/315619036",
+      "name": "Bağcılar Stadyumu",
+      "nameEn": null,
+      "category": "stadium",
+      "coordinates": [
+        28.819783,
+        41.058852
+      ]
+    },
+    {
+      "id": "way/315742592",
+      "name": "Atik Ali Paşa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.941777,
+        41.024907
+      ]
+    },
+    {
+      "id": "way/315745065",
+      "name": "Öküz Mehmet Paşa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.938249,
+        41.024259
+      ]
+    },
+    {
+      "id": "way/315747282",
+      "name": "Odabaşı Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.931153,
+        41.012011
+      ]
+    },
+    {
+      "id": "way/316903985",
+      "name": "Aksaray Valide Sultan Camii",
+      "nameEn": "Pertevniyal Valide Sultan Mosque",
+      "category": "mosque",
+      "coordinates": [
+        28.95289,
+        41.010035
+      ]
+    },
+    {
+      "id": "way/316903986",
+      "name": "Muratpasa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.948947,
+        41.010323
+      ]
+    },
+    {
+      "id": "way/316903989",
+      "name": "Cerrahpaşa Camii",
+      "nameEn": "Cerrah Pasha Mosque",
+      "category": "mosque",
+      "coordinates": [
+        28.945057,
+        41.007712
+      ]
+    },
+    {
+      "id": "way/317507205",
+      "name": "Arnavutköy Osmanlı Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.74206,
+        41.188175
+      ]
+    },
+    {
+      "id": "way/319020883",
+      "name": "İstanbul Arkeoloji Müzesi",
+      "nameEn": "Istanbul Archaeological Museum",
+      "category": "museum",
+      "coordinates": [
+        28.981372,
+        41.011643
+      ]
+    },
+    {
+      "id": "way/319030569",
+      "name": "İmrahor Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.010253,
+        41.021396
+      ]
+    },
+    {
+      "id": "way/324022454",
+      "name": "Büyük Mabeyn Köşkü",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.010926,
+        41.050267
+      ]
+    },
+    {
+      "id": "way/324173876",
+      "name": "Set Köşkü",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.010636,
+        41.050102
+      ]
+    },
+    {
+      "id": "way/326354955",
+      "name": "Şehir Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.013158,
+        41.051484
+      ]
+    },
+    {
+      "id": "way/326370631",
+      "name": "Saray Tiyatrosu ve Sahne Sanatları Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.012019,
+        41.051401
+      ]
+    },
+    {
+      "id": "way/326372295",
+      "name": "Yıldız Sarayı Müze Müdürlüğü",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.011589,
+        41.049995
+      ]
+    },
+    {
+      "id": "way/327560146",
+      "name": "Şale Kasrı",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.012613,
+        41.052099
+      ]
+    },
+    {
+      "id": "way/329087345",
+      "name": "Sümbül Efendi Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.928682,
+        41.003357
+      ]
+    },
+    {
+      "id": "way/329089871",
+      "name": "Aziz Mahmud Hüdayi Vakfı Gazanfer Ağa Medresesi Eğitim ve Kültür Merkezi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.955439,
+        41.016348
+      ]
+    },
+    {
+      "id": "way/329093497",
+      "name": "Üç Mihraplı Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.963407,
+        41.020242
+      ]
+    },
+    {
+      "id": "way/329094469",
+      "name": "Amcazade Külliyesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.95206,
+        41.015274
+      ]
+    },
+    {
+      "id": "way/329095050",
+      "name": "Molla Fenari İsa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.943826,
+        41.015067
+      ]
+    },
+    {
+      "id": "way/329233909",
+      "name": "Hz. Cabir Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.944121,
+        41.038594
+      ]
+    },
+    {
+      "id": "way/329234516",
+      "name": "Hirami Ahmet Paşa Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.945904,
+        41.027963
+      ]
+    },
+    {
+      "id": "way/329264309",
+      "name": "Şeyh Süleyman Mescidi",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.955366,
+        41.019212
+      ]
+    },
+    {
+      "id": "way/329350072",
+      "name": "Sancaktar Hayrettin Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.934645,
+        41.002768
+      ]
+    },
+    {
+      "id": "way/330343768",
+      "name": "Mimar Acem Örümceksiz Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.926484,
+        41.013612
+      ]
+    },
+    {
+      "id": "way/330345672",
+      "name": "Kapıağası Mahmutağa Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.976704,
+        41.003266
+      ]
+    },
+    {
+      "id": "way/330346061",
+      "name": "Hasan Ağa Nakilbent Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.974916,
+        41.00392
+      ]
+    },
+    {
+      "id": "way/330346210",
+      "name": "Dizdariye Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.971806,
+        41.006131
+      ]
+    },
+    {
+      "id": "way/330502465",
+      "name": "Keçeçizade Fuat Paşa Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.973034,
+        41.006546
+      ]
+    },
+    {
+      "id": "way/330643681",
+      "name": "Sanki Yedim Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.953255,
+        41.018777
+      ]
+    },
+    {
+      "id": "way/330645373",
+      "name": "Gül Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.956381,
+        41.026766
+      ]
+    },
+    {
+      "id": "way/330646707",
+      "name": "Hacı İsa Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.944841,
+        41.033198
+      ]
+    },
+    {
+      "id": "way/330647165",
+      "name": "Hz. Kab Mescidi",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.940702,
+        41.039792
+      ]
+    },
+    {
+      "id": "way/330649507",
+      "name": "Katip Sinan Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.960823,
+        41.007902
+      ]
+    },
+    {
+      "id": "way/330650365",
+      "name": "Katip Kasım Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.956625,
+        41.005874
+      ]
+    },
+    {
+      "id": "way/330650398",
+      "name": "Nalbant Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.960352,
+        41.004509
+      ]
+    },
+    {
+      "id": "way/330653214",
+      "name": "Bezmialem Valide Sultan Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.935012,
+        41.017646
+      ]
+    },
+    {
+      "id": "way/330653600",
+      "name": "Bayezid Ağa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.927798,
+        41.020552
+      ]
+    },
+    {
+      "id": "way/330774062",
+      "name": "Hacı Evhaddin Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.923901,
+        40.996696
+      ]
+    },
+    {
+      "id": "way/330779839",
+      "name": "Çivicizade Mescidi",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.926678,
+        41.017214
+      ]
+    },
+    {
+      "id": "way/330787127",
+      "name": "Mimar Sinan Mescidi",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.940158,
+        41.019132
+      ]
+    },
+    {
+      "id": "way/330787764",
+      "name": "Mesih Mehmet Paşa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.939452,
+        41.025613
+      ]
+    },
+    {
+      "id": "way/330787973",
+      "name": "Keçeçi Piri Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.936338,
+        41.026439
+      ]
+    },
+    {
+      "id": "way/330900993",
+      "name": "Ramazan Efendi Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.931595,
+        41.004855
+      ]
+    },
+    {
+      "id": "way/330901209",
+      "name": "Vezir Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.976502,
+        41.01464
+      ]
+    },
+    {
+      "id": "way/330902180",
+      "name": "Vilayet Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.975728,
+        41.012629
+      ]
+    },
+    {
+      "id": "way/330902933",
+      "name": "Hidayet Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.973833,
+        41.016668
+      ]
+    },
+    {
+      "id": "way/330906436",
+      "name": "Arakiyeci Mehmed Ağa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.925315,
+        41.012068
+      ]
+    },
+    {
+      "id": "way/330938341",
+      "name": "Şehsuvarbey Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.968584,
+        41.003115
+      ]
+    },
+    {
+      "id": "way/331194094",
+      "name": "Kemalpaşa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.955259,
+        41.01177
+      ]
+    },
+    {
+      "id": "way/331196574",
+      "name": "Burmalı Mescid",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.956364,
+        41.014518
+      ]
+    },
+    {
+      "id": "way/331401901",
+      "name": "İsmailağa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.947856,
+        41.026579
+      ]
+    },
+    {
+      "id": "way/331669964",
+      "name": "Mimar Hayrettin Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.969108,
+        41.0084
+      ]
+    },
+    {
+      "id": "way/331670339",
+      "name": "Bostani Ali Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.970203,
+        41.004929
+      ]
+    },
+    {
+      "id": "way/331897879",
+      "name": "Bereketzade Ali Efendi Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.974197,
+        41.025039
+      ]
+    },
+    {
+      "id": "way/333122079",
+      "name": "Çorlulu Ali Paşa Camii",
+      "nameEn": "Çorlulu Ali Paşa Mosque",
+      "category": "mosque",
+      "coordinates": [
+        28.968357,
+        41.009255
+      ]
+    },
+    {
+      "id": "way/333931123",
+      "name": "Mihrimah Sultan Camii",
+      "nameEn": "Mihrimah Sultan Mosque",
+      "category": "mosque",
+      "coordinates": [
+        29.015967,
+        41.026783
+      ]
+    },
+    {
+      "id": "way/333931792",
+      "name": "Rum Mehmet Paşa Camii",
+      "nameEn": "Rum Mehmed Pasha Mosque",
+      "category": "mosque",
+      "coordinates": [
+        29.010844,
+        41.024645
+      ]
+    },
+    {
+      "id": "way/333931795",
+      "name": "Ayazma Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.008847,
+        41.022603
+      ]
+    },
+    {
+      "id": "way/334023059",
+      "name": "Kurban Nasuh Baba Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.019704,
+        41.018639
+      ]
+    },
+    {
+      "id": "way/334023718",
+      "name": "Ahmediye Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.016562,
+        41.020461
+      ]
+    },
+    {
+      "id": "way/334049178",
+      "name": "ArmoniPark Alışveriş Merkezi",
+      "nameEn": null,
+      "category": "mall",
+      "coordinates": [
+        28.797297,
+        41.006903
+      ]
+    },
+    {
+      "id": "way/335374188",
+      "name": "İstanbul Arkeoloji Müzeleri",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.981213,
+        41.011694
+      ]
+    },
+    {
+      "id": "way/335415778",
+      "name": "Topkapı Sarayı",
+      "nameEn": "Topkapı Palace",
+      "category": "castle",
+      "coordinates": [
+        28.984015,
+        41.01281
+      ]
+    },
+    {
+      "id": "way/342794933",
+      "name": "Avcılar Stadyumu",
+      "nameEn": null,
+      "category": "stadium",
+      "coordinates": [
+        28.699546,
+        41.01386
+      ]
+    },
+    {
+      "id": "way/342828509",
+      "name": "RAMS Park",
+      "nameEn": "RAMS Park",
+      "category": "stadium",
+      "coordinates": [
+        28.990951,
+        41.103378
+      ]
+    },
+    {
+      "id": "way/347505178",
+      "name": "Palais Yeniköy",
+      "nameEn": "Palais Yeniköy",
+      "category": "castle",
+      "coordinates": [
+        29.07032,
+        41.126086
+      ]
+    },
+    {
+      "id": "way/349521414",
+      "name": "Edebiyat Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.01114,
+        41.048804
+      ]
+    },
+    {
+      "id": "way/355941429",
+      "name": "Sancaklar Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.601487,
+        41.089142
+      ]
+    },
+    {
+      "id": "way/366275754",
+      "name": "İstanbul Yeni Yüzyıl Üniversitesi",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        28.906603,
+        41.015943
+      ]
+    },
+    {
+      "id": "way/366439346",
+      "name": "Marmara İlahiyat Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.037573,
+        41.020745
+      ]
+    },
+    {
+      "id": "way/375933331",
+      "name": "Bostancı Kuloğlu Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.093862,
+        40.955078
+      ]
+    },
+    {
+      "id": "way/376849515",
+      "name": "Levent Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.017608,
+        41.079145
+      ]
+    },
+    {
+      "id": "way/388925021",
+      "name": "Olivium Outlet Center",
+      "nameEn": null,
+      "category": "mall",
+      "coordinates": [
+        28.909765,
+        40.995372
+      ]
+    },
+    {
+      "id": "way/397789973",
+      "name": "santralistanbul Kampüsü",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        28.945959,
+        41.066663
+      ]
+    },
+    {
+      "id": "way/397810544",
+      "name": "Istanbul Kültür Üniversitesi",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        28.832048,
+        40.991224
+      ]
+    },
+    {
+      "id": "way/401282988",
+      "name": "Sarı Köşk",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.041103,
+        41.041508
+      ]
+    },
+    {
+      "id": "way/401781146",
+      "name": "Forum İstanbul Alışveriş ve Yaşam Merkezi",
+      "nameEn": "Forum Istanbul Shopping and Life Center",
+      "category": "mall",
+      "coordinates": [
+        28.897651,
+        41.046855
+      ]
+    },
+    {
+      "id": "way/405937623",
+      "name": "Maltepe Park",
+      "nameEn": null,
+      "category": "mall",
+      "coordinates": [
+        29.163926,
+        40.919101
+      ]
+    },
+    {
+      "id": "way/421026097",
+      "name": "Rasim Paşa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.030107,
+        40.996357
+      ]
+    },
+    {
+      "id": "way/428733515",
+      "name": "Piri Reis Üniversitesi Deniz Kampüsü",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        29.290116,
+        40.814633
+      ]
+    },
+    {
+      "id": "way/437709811",
+      "name": "Yıldız Hamidiye Camii",
+      "nameEn": "Yıldız Hamidiye Mosque",
+      "category": "mosque",
+      "coordinates": [
+        29.009981,
+        41.049408
+      ]
+    },
+    {
+      "id": "way/440570165",
+      "name": "Milli Savunma Üniversitesi",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        29.014343,
+        41.101388
+      ]
+    },
+    {
+      "id": "way/444944499",
+      "name": "Silahtar Abrurrahman Ağa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.022333,
+        41.031572
+      ]
+    },
+    {
+      "id": "way/457941709",
+      "name": "Kaşgari Murtaza Efendi Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.932267,
+        41.052003
+      ]
+    },
+    {
+      "id": "way/458053894",
+      "name": "Sokullu Mehmet Paşa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.57615,
+        41.022116
+      ]
+    },
+    {
+      "id": "way/459849112",
+      "name": "Fikret Otyam Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.107175,
+        40.947052
+      ]
+    },
+    {
+      "id": "way/463029418",
+      "name": "Defterdar İbrahim Paşa Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.033247,
+        41.051029
+      ]
+    },
+    {
+      "id": "way/474605708",
+      "name": "İBB Atatürk Kitaplığı",
+      "nameEn": null,
+      "category": "library",
+      "coordinates": [
+        28.989522,
+        41.039137
+      ]
+    },
+    {
+      "id": "way/475513360",
+      "name": "Mimar Sinan Güzel Sanatlar Üniversitesi Dolmabahçe Yerleşkesi",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        29.000633,
+        41.041051
+      ]
+    },
+    {
+      "id": "way/483746408",
+      "name": "Osmanlı Arşivi Daire Başkanlığı",
+      "nameEn": "Ottoman State Archives",
+      "category": "library",
+      "coordinates": [
+        28.965512,
+        41.068829
+      ]
+    },
+    {
+      "id": "way/489743779",
+      "name": "Eski Açık Tribün",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.995391,
+        41.03855
+      ]
+    },
+    {
+      "id": "way/491168432",
+      "name": "Gürpınar Stadyumu",
+      "nameEn": null,
+      "category": "stadium",
+      "coordinates": [
+        28.598377,
+        40.996103
+      ]
+    },
+    {
+      "id": "way/498348921",
+      "name": "Rumelifeneri Yeni Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.111552,
+        41.233764
+      ]
+    },
+    {
+      "id": "way/498785039",
+      "name": "Ferruh Kethuda Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.945728,
+        41.034471
+      ]
+    },
+    {
+      "id": "way/498837526",
+      "name": "Feriköy Stadı",
+      "nameEn": null,
+      "category": "stadium",
+      "coordinates": [
+        28.978352,
+        41.052895
+      ]
+    },
+    {
+      "id": "way/498861672",
+      "name": "Tevfikiye Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.045161,
+        41.067894
+      ]
+    },
+    {
+      "id": "way/498861770",
+      "name": "Küçük Mecidiye Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.016911,
+        41.04536
+      ]
+    },
+    {
+      "id": "way/498861861",
+      "name": "Çırağan Sarayı",
+      "nameEn": "Ciragan Palace",
+      "category": "castle",
+      "coordinates": [
+        29.01531,
+        41.043466
+      ]
+    },
+    {
+      "id": "way/498861869",
+      "name": "Deniz Müzesi",
+      "nameEn": "Naval Museum",
+      "category": "museum",
+      "coordinates": [
+        29.005676,
+        41.041069
+      ]
+    },
+    {
+      "id": "way/498861870",
+      "name": "Abbasağa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.005844,
+        41.044883
+      ]
+    },
+    {
+      "id": "way/498861874",
+      "name": "Bezmialem Valide Sultan Camii",
+      "nameEn": "Dolmabahçe Mosque",
+      "category": "mosque",
+      "coordinates": [
+        28.995263,
+        41.036757
+      ]
+    },
+    {
+      "id": "way/498861882",
+      "name": "Nusretiye Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.983101,
+        41.027401
+      ]
+    },
+    {
+      "id": "way/498861884",
+      "name": "MSGSÜ Kültür ve Sanat Merkezi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.981595,
+        41.027647
+      ]
+    },
+    {
+      "id": "way/498861887",
+      "name": "Azapkapı Sokullu Mehmet Paşa Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.967809,
+        41.025051
+      ]
+    },
+    {
+      "id": "way/498861900",
+      "name": "Piyale Paşa Camii",
+      "nameEn": "Piyale Pasha Mosque",
+      "category": "mosque",
+      "coordinates": [
+        28.966001,
+        41.044565
+      ]
+    },
+    {
+      "id": "way/499172486",
+      "name": "Şakirin Cami",
+      "nameEn": "Şakirin Mosque",
+      "category": "mosque",
+      "coordinates": [
+        29.024277,
+        41.013038
+      ]
+    },
+    {
+      "id": "way/499172507",
+      "name": "Beylerbeyi Camii",
+      "nameEn": "Beylerbeyi Mosque",
+      "category": "mosque",
+      "coordinates": [
+        29.045735,
+        41.04514
+      ]
+    },
+    {
+      "id": "way/499944875",
+      "name": "Hırka-i Şerif Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.941644,
+        41.021873
+      ]
+    },
+    {
+      "id": "way/499944896",
+      "name": "Şeyh Ebül Vefa Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.959563,
+        41.016986
+      ]
+    },
+    {
+      "id": "way/506677468",
+      "name": "Altınbaş Üniversitesi",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        28.820765,
+        41.057363
+      ]
+    },
+    {
+      "id": "way/520334251",
+      "name": "Alipaşa Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.966145,
+        41.012738
+      ]
+    },
+    {
+      "id": "way/520447847",
+      "name": "Haseki Sultan Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.941929,
+        41.008584
+      ]
+    },
+    {
+      "id": "way/522063062",
+      "name": "Kaliçeçi Hasanağa Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.967339,
+        41.008718
+      ]
+    },
+    {
+      "id": "way/522510648",
+      "name": "Ragıp Paşa Kütüphanesi",
+      "nameEn": "Ragip Pasa Library",
+      "category": "library",
+      "coordinates": [
+        28.958682,
+        41.009182
+      ]
+    },
+    {
+      "id": "way/523095348",
+      "name": "Abdi Çelebi Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.932614,
+        41.00137
+      ]
+    },
+    {
+      "id": "way/523879940",
+      "name": "Ahmediye Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.946699,
+        41.014973
+      ]
+    },
+    {
+      "id": "way/523880279",
+      "name": "Dülgerzade Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.951515,
+        41.016011
+      ]
+    },
+    {
+      "id": "way/523880524",
+      "name": "Molla Hüsrev Camii",
+      "nameEn": "Molla Hüsrev Camii",
+      "category": "mosque",
+      "coordinates": [
+        28.948732,
+        41.013432
+      ]
+    },
+    {
+      "id": "way/524726363",
+      "name": "Zehrakiri Kemal Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.929394,
+        41.009408
+      ]
+    },
+    {
+      "id": "way/524939969",
+      "name": "Akbaba Mehmet Efendi Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.937966,
+        41.010283
+      ]
+    },
+    {
+      "id": "way/525823002",
+      "name": "İMÇ Çarşısı",
+      "nameEn": null,
+      "category": "mall",
+      "coordinates": [
+        28.957593,
+        41.017281
+      ]
+    },
+    {
+      "id": "way/525963959",
+      "name": "Eski İmaret Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.955011,
+        41.021622
+      ]
+    },
+    {
+      "id": "way/525964267",
+      "name": "Piri Mehmet Paşa Camii, Zeyrek",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.958388,
+        41.019999
+      ]
+    },
+    {
+      "id": "way/526163285",
+      "name": "Salih Paşa Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.9587,
+        41.022745
+      ]
+    },
+    {
+      "id": "way/526163616",
+      "name": "Üsküplü Çakırağa Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.958757,
+        41.024357
+      ]
+    },
+    {
+      "id": "way/526527048",
+      "name": "Emin Sinan Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.969484,
+        41.00667
+      ]
+    },
+    {
+      "id": "way/527156399",
+      "name": "Köprülü Kütüphanesi",
+      "nameEn": null,
+      "category": "library",
+      "coordinates": [
+        28.972523,
+        41.008137
+      ]
+    },
+    {
+      "id": "way/530509386",
+      "name": "Karaki Hüseyin Çelebi Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.977935,
+        41.013064
+      ]
+    },
+    {
+      "id": "way/530509576",
+      "name": "Tekfur Sarayı",
+      "nameEn": "Palace of the Porphyrogenitus",
+      "category": "museum",
+      "coordinates": [
+        28.940477,
+        41.0337
+      ]
+    },
+    {
+      "id": "way/531426146",
+      "name": "Ilyas bey camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.928685,
+        40.996128
+      ]
+    },
+    {
+      "id": "way/533352553",
+      "name": "Defterdar Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.937638,
+        41.041972
+      ]
+    },
+    {
+      "id": "way/534079986",
+      "name": "Emir Buhari Tekkesi Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.941613,
+        41.038562
+      ]
+    },
+    {
+      "id": "way/539314469",
+      "name": "Vaniköy Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.055223,
+        41.064098
+      ]
+    },
+    {
+      "id": "way/543479410",
+      "name": "Tütüncü Mehmet Efendi Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.066225,
+        40.978902
+      ]
+    },
+    {
+      "id": "way/544489366",
+      "name": "MEF Üniversitesi",
+      "nameEn": "MEF University",
+      "category": "university",
+      "coordinates": [
+        29.008696,
+        41.108092
+      ]
+    },
+    {
+      "id": "way/546190146",
+      "name": "Hilmi Abbas Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.234325,
+        40.881162
+      ]
+    },
+    {
+      "id": "way/548723193",
+      "name": "Kazasker Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.085721,
+        40.969182
+      ]
+    },
+    {
+      "id": "way/549595422",
+      "name": "Suadiye Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.079517,
+        40.962391
+      ]
+    },
+    {
+      "id": "way/549717756",
+      "name": "İstanbul Teknik Üniversitesi",
+      "nameEn": "Istanbul Technical University",
+      "category": "university",
+      "coordinates": [
+        29.026138,
+        41.104876
+      ]
+    },
+    {
+      "id": "way/550086138",
+      "name": "Kazım Karabekir Paşa Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.078593,
+        40.968269
+      ]
+    },
+    {
+      "id": "way/551917593",
+      "name": "Sadabad Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.962883,
+        41.069988
+      ]
+    },
+    {
+      "id": "way/552205507",
+      "name": "Saçlı Abdülkadir Efendi Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.933519,
+        41.047027
+      ]
+    },
+    {
+      "id": "way/566346994",
+      "name": "belgradkapı camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.91817,
+        41.000401
+      ]
+    },
+    {
+      "id": "way/569707977",
+      "name": "Cat Museum",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.974995,
+        41.026528
+      ]
+    },
+    {
+      "id": "way/573564519",
+      "name": "İstanbul Oyuncak Müzesi",
+      "nameEn": "İstanbul Toy Museum",
+      "category": "museum",
+      "coordinates": [
+        29.070707,
+        40.975953
+      ]
+    },
+    {
+      "id": "way/582310548",
+      "name": "Riva Kalesi",
+      "nameEn": null,
+      "category": "castle",
+      "coordinates": [
+        29.21718,
+        41.223941
+      ]
+    },
+    {
+      "id": "way/616526115",
+      "name": "Fenerbahçe Ülker Spor ve Etkinlik Salonu",
+      "nameEn": null,
+      "category": "stadium",
+      "coordinates": [
+        29.104827,
+        40.992886
+      ]
+    },
+    {
+      "id": "way/655013017",
+      "name": "Vadistanbul Alışveriş Merkezi",
+      "nameEn": "Vadistanbul Shopping Mall",
+      "category": "mall",
+      "coordinates": [
+        28.987415,
+        41.107413
+      ]
+    },
+    {
+      "id": "way/666081501",
+      "name": "Yıldız Teknik Üniversitesi Davutpaşa Yerleşkesi",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        28.891712,
+        41.025501
+      ]
+    },
+    {
+      "id": "way/685291099",
+      "name": "santralistanbul Enerji Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.946664,
+        41.066586
+      ]
+    },
+    {
+      "id": "way/694653950",
+      "name": "İBB Özgen Berkol Doğan Kütüphanesi",
+      "nameEn": null,
+      "category": "library",
+      "coordinates": [
+        29.030812,
+        40.984096
+      ]
+    },
+    {
+      "id": "way/697224044",
+      "name": "Teşvikiye Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.994303,
+        41.049382
+      ]
+    },
+    {
+      "id": "way/698165879",
+      "name": "Atatürk Müzesi",
+      "nameEn": "Atatürk Museum, Şişli",
+      "category": "museum",
+      "coordinates": [
+        28.987213,
+        41.056404
+      ]
+    },
+    {
+      "id": "way/707608848",
+      "name": "İbrahim Ağa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.029666,
+        41.001404
+      ]
+    },
+    {
+      "id": "way/709908145",
+      "name": "Defterdar Tahir Efendi Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.012907,
+        41.009215
+      ]
+    },
+    {
+      "id": "way/710990096",
+      "name": "Hasanpaşa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.039228,
+        40.994873
+      ]
+    },
+    {
+      "id": "way/717160694",
+      "name": "İnegöl Fort",
+      "nameEn": null,
+      "category": "castle",
+      "coordinates": [
+        29.200036,
+        41.211881
+      ]
+    },
+    {
+      "id": "way/725791290",
+      "name": "İBB Bayrampaşa Stadı",
+      "nameEn": null,
+      "category": "stadium",
+      "coordinates": [
+        28.88634,
+        41.064702
+      ]
+    },
+    {
+      "id": "way/727029990",
+      "name": "Maarifi Sultan Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.190645,
+        40.888328
+      ]
+    },
+    {
+      "id": "way/729921210",
+      "name": "Bilim Üsküdar",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.064233,
+        40.99746
+      ]
+    },
+    {
+      "id": "way/733805502",
+      "name": "Malatyalı İsmail Ağa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.016776,
+        41.018646
+      ]
+    },
+    {
+      "id": "way/733805754",
+      "name": "Tavaşi Hasanağa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.017547,
+        41.017936
+      ]
+    },
+    {
+      "id": "way/733806141",
+      "name": "Nalçacı Halil Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.019911,
+        41.016489
+      ]
+    },
+    {
+      "id": "way/733808427",
+      "name": "Ahmet Çelebi Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.013492,
+        41.02172
+      ]
+    },
+    {
+      "id": "way/733808431",
+      "name": "Aziz Mahmut Hüdayi Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.014266,
+        41.022264
+      ]
+    },
+    {
+      "id": "way/733841841",
+      "name": "Karakadı Alaattin Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.018415,
+        41.024065
+      ]
+    },
+    {
+      "id": "way/734552094",
+      "name": "Hacı Hesna Hatun Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.019112,
+        41.027873
+      ]
+    },
+    {
+      "id": "way/734735976",
+      "name": "Paşabahçe Stadyumu",
+      "nameEn": null,
+      "category": "stadium",
+      "coordinates": [
+        29.100974,
+        41.123645
+      ]
+    },
+    {
+      "id": "way/738177370",
+      "name": "Heritage Museum",
+      "nameEn": "Heritage Museum",
+      "category": "museum",
+      "coordinates": [
+        29.052888,
+        41.084367
+      ]
+    },
+    {
+      "id": "way/738210620",
+      "name": "Şah Sultan Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.935908,
+        41.053446
+      ]
+    },
+    {
+      "id": "way/740107550",
+      "name": "Boğazköy Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.772033,
+        41.180715
+      ]
+    },
+    {
+      "id": "way/741851828",
+      "name": "Fenai Ali Efendi Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.027901,
+        41.017619
+      ]
+    },
+    {
+      "id": "way/746788646",
+      "name": "Aşiyan Müzesi",
+      "nameEn": "Aşiyan Museum",
+      "category": "museum",
+      "coordinates": [
+        29.053452,
+        41.082658
+      ]
+    },
+    {
+      "id": "way/766654075",
+      "name": "Abdülhakim Sancak Camii",
+      "nameEn": "Abdulhakim Sanjak Mosque",
+      "category": "mosque",
+      "coordinates": [
+        29.030621,
+        41.106308
+      ]
+    },
+    {
+      "id": "way/791438790",
+      "name": "İbn Haldun Üniversitesi",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        28.799523,
+        41.137622
+      ]
+    },
+    {
+      "id": "way/808535276",
+      "name": "Demokrasi ve Özgürlük Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.993224,
+        40.865035
+      ]
+    },
+    {
+      "id": "way/815893478",
+      "name": "Emirgan Hamid-i Evvel Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.056264,
+        41.104549
+      ]
+    },
+    {
+      "id": "way/862789216",
+      "name": "Türk-Alman Üniversitesi",
+      "nameEn": "Turkish-German University",
+      "category": "university",
+      "coordinates": [
+        29.10151,
+        41.143762
+      ]
+    },
+    {
+      "id": "way/865322627",
+      "name": "Taksim Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.984006,
+        41.036935
+      ]
+    },
+    {
+      "id": "way/866022515",
+      "name": "Capitol Alışveriş Merkezi",
+      "nameEn": "Capitol Shopping Center",
+      "category": "mall",
+      "coordinates": [
+        29.0395,
+        41.020949
+      ]
+    },
+    {
+      "id": "way/880807812",
+      "name": "İklim Müzesi",
+      "nameEn": "Climate Museum",
+      "category": "museum",
+      "coordinates": [
+        29.041814,
+        40.996329
+      ]
+    },
+    {
+      "id": "way/882196032",
+      "name": "Feridun Paşa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.033218,
+        41.005471
+      ]
+    },
+    {
+      "id": "way/894905719",
+      "name": "Kanlıca Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.065966,
+        41.099954
+      ]
+    },
+    {
+      "id": "way/895150392",
+      "name": "Çırağan Sarayı Geçidi",
+      "nameEn": null,
+      "category": "castle",
+      "coordinates": [
+        29.01515,
+        41.044271
+      ]
+    },
+    {
+      "id": "way/900754731",
+      "name": "MSGSÜ Bomonti Kampüsü",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        28.980063,
+        41.057597
+      ]
+    },
+    {
+      "id": "way/904391120",
+      "name": "İZÜ Stadyumu",
+      "nameEn": null,
+      "category": "stadium",
+      "coordinates": [
+        28.787595,
+        41.03028
+      ]
+    },
+    {
+      "id": "way/913996258",
+      "name": "29 Mayıs Üniversitesi",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        29.098736,
+        41.032525
+      ]
+    },
+    {
+      "id": "way/914394417",
+      "name": "Dolmabahçe Sarayı İç Hazine Dairesi",
+      "nameEn": "Clock Museum",
+      "category": "museum",
+      "coordinates": [
+        29.000449,
+        41.040479
+      ]
+    },
+    {
+      "id": "way/928019621",
+      "name": "Selmanağa Camii",
+      "nameEn": "Selman Ağa Mosque",
+      "category": "mosque",
+      "coordinates": [
+        29.01594,
+        41.025623
+      ]
+    },
+    {
+      "id": "way/936365265",
+      "name": "Hâfız İsa Ağa Çeşmesi",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        29.022952,
+        41.009422
+      ]
+    },
+    {
+      "id": "way/936646276",
+      "name": "Aşçıbaşı Camii",
+      "nameEn": "Aşçıbaşı Mosque",
+      "category": "mosque",
+      "coordinates": [
+        29.020657,
+        41.013757
+      ]
+    },
+    {
+      "id": "way/936748766",
+      "name": "Şehid Süleyman Paşa Çeşmesi",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        29.015905,
+        41.015555
+      ]
+    },
+    {
+      "id": "way/936868781",
+      "name": "Haşım Baba açık türbesi",
+      "nameEn": null,
+      "category": "monument",
+      "coordinates": [
+        29.01849,
+        41.016756
+      ]
+    },
+    {
+      "id": "way/967221756",
+      "name": "Sabahattin Zaim Üniversitesi",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        28.783996,
+        41.030861
+      ]
+    },
+    {
+      "id": "way/968294812",
+      "name": "Rami Kütüphanesi",
+      "nameEn": "Rami Library",
+      "category": "library",
+      "coordinates": [
+        28.9155,
+        41.049217
+      ]
+    },
+    {
+      "id": "way/972288159",
+      "name": "Kartal Belediyesi Masal Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.220311,
+        40.916746
+      ]
+    },
+    {
+      "id": "way/988346544",
+      "name": "Rahmi M. Koç Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.949288,
+        41.041651
+      ]
+    },
+    {
+      "id": "way/997569007",
+      "name": "Kartal Cemevi",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.189014,
+        40.901419
+      ]
+    },
+    {
+      "id": "way/1000250944",
+      "name": "Adalar Müzesi",
+      "nameEn": "Museum of the Princes' Islands",
+      "category": "museum",
+      "coordinates": [
+        29.125142,
+        40.856433
+      ]
+    },
+    {
+      "id": "way/1002590674",
+      "name": "Su Sarnıcı",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.995289,
+        40.864993
+      ]
+    },
+    {
+      "id": "way/1002590675",
+      "name": "Oramiral Sadık Altıncan Kütüphanesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.992797,
+        40.864733
+      ]
+    },
+    {
+      "id": "way/1037217033",
+      "name": "Ertuğrul Tekke Camii",
+      "nameEn": "Ertuğrul Tekke Mosque",
+      "category": "mosque",
+      "coordinates": [
+        29.008545,
+        41.04567
+      ]
+    },
+    {
+      "id": "way/1039829488",
+      "name": "İstinye Üniversitesi Topkapı Kampüsü",
+      "nameEn": "İstinye Univercity",
+      "category": "university",
+      "coordinates": [
+        28.905099,
+        41.014905
+      ]
+    },
+    {
+      "id": "way/1043098713",
+      "name": "Mimar Sinan Güzel Sanatlar Üniversitesi İstanbul Devlet Konservatuarı",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        29.002932,
+        41.040664
+      ]
+    },
+    {
+      "id": "way/1043098721",
+      "name": "Mimar Sinan Güzel Sanatlar Üniversitesi SEM (Sürekli Eğitim Merkezi)",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        29.00843,
+        41.041914
+      ]
+    },
+    {
+      "id": "way/1059149610",
+      "name": "Baruthane Müze",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.859495,
+        40.97563
+      ]
+    },
+    {
+      "id": "way/1069354101",
+      "name": "Haldun Taner Müze Evi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.047222,
+        40.976222
+      ]
+    },
+    {
+      "id": "way/1087432624",
+      "name": "Sinematek",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.03268,
+        40.986484
+      ]
+    },
+    {
+      "id": "way/1087468138",
+      "name": "Haci Bedel Mustafa Efendi Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.018937,
+        41.019808
+      ]
+    },
+    {
+      "id": "way/1090586094",
+      "name": "Tuğlacıbaşı Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.047828,
+        40.98465
+      ]
+    },
+    {
+      "id": "way/1093125525",
+      "name": "Recai Yahya Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.047451,
+        40.979812
+      ]
+    },
+    {
+      "id": "way/1096889355",
+      "name": "Mihrişah Valide Sultan Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.065681,
+        41.078079
+      ]
+    },
+    {
+      "id": "way/1111166502",
+      "name": "Tabaklar Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.020494,
+        41.01764
+      ]
+    },
+    {
+      "id": "way/1112073568",
+      "name": "Ural Ataman Klasik Otomobil Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.047842,
+        41.128109
+      ]
+    },
+    {
+      "id": "way/1112132469",
+      "name": "Sadberk Hanım Müzesi",
+      "nameEn": "Sadberk Hanım Museum",
+      "category": "museum",
+      "coordinates": [
+        29.048164,
+        41.163005
+      ]
+    },
+    {
+      "id": "way/1112685777",
+      "name": "Cam ve Billur Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.103969,
+        41.13851
+      ]
+    },
+    {
+      "id": "way/1114859805",
+      "name": "Hafıza 15 Temmuz Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.041552,
+        41.037184
+      ]
+    },
+    {
+      "id": "way/1115171156",
+      "name": "Florya Atatürk Deniz Köşkü",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.782501,
+        40.972658
+      ]
+    },
+    {
+      "id": "way/1116243283",
+      "name": "Halit Kıvanç Stadyumu",
+      "nameEn": "Halit Kıvanç Stadium",
+      "category": "stadium",
+      "coordinates": [
+        28.916436,
+        41.087737
+      ]
+    },
+    {
+      "id": "way/1120852417",
+      "name": "Theodosius Dikilitaşı",
+      "nameEn": "Obelisk of Theodosius",
+      "category": "monument",
+      "coordinates": [
+        28.9754,
+        41.005928
+      ]
+    },
+    {
+      "id": "way/1120852418",
+      "name": "Örme Dikilitaş",
+      "nameEn": "The Walled Obelisk",
+      "category": "monument",
+      "coordinates": [
+        28.974842,
+        41.005405
+      ]
+    },
+    {
+      "id": "way/1120989069",
+      "name": "Evrensel Değerler Çocuk Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.145792,
+        40.990183
+      ]
+    },
+    {
+      "id": "way/1123203498",
+      "name": "Beykent Üniversitesi Ayazağa - Maslak Yerleşkesi",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        29.00354,
+        41.1174
+      ]
+    },
+    {
+      "id": "way/1125690996",
+      "name": "Narmanlı Han",
+      "nameEn": null,
+      "category": "mall",
+      "coordinates": [
+        28.974732,
+        41.029252
+      ]
+    },
+    {
+      "id": "way/1137037079",
+      "name": "İstanbul Arel Üniversitesi Tepekent Kemal Gözükara Yerleşkesi",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        28.500504,
+        41.054862
+      ]
+    },
+    {
+      "id": "way/1143925673",
+      "name": "Ertuğrul Tekke Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.008471,
+        41.043674
+      ]
+    },
+    {
+      "id": "way/1153649968",
+      "name": "Panorama 1453 Tarih Müzesi",
+      "nameEn": "Panorama 1453 History Museum",
+      "category": "museum",
+      "coordinates": [
+        28.92041,
+        41.018155
+      ]
+    },
+    {
+      "id": "way/1153684927",
+      "name": "Çemberlitaş Sütunu",
+      "nameEn": "Column of Constantine",
+      "category": "monument",
+      "coordinates": [
+        28.971283,
+        41.008553
+      ]
+    },
+    {
+      "id": "way/1153966162",
+      "name": "Büyük Saray Mozaikleri Müzesi",
+      "nameEn": "Great Palace Mosaic Museum",
+      "category": "museum",
+      "coordinates": [
+        28.977433,
+        41.004295
+      ]
+    },
+    {
+      "id": "way/1154702450",
+      "name": "Şerefiye Sarnıcı",
+      "nameEn": "Theodosia Cistern",
+      "category": "museum",
+      "coordinates": [
+        28.972395,
+        41.007415
+      ]
+    },
+    {
+      "id": "way/1183800508",
+      "name": "Atatürk Evi Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.714271,
+        40.971793
+      ]
+    },
+    {
+      "id": "way/1189625114",
+      "name": "İBB Taş Mektep Kütüphanesi",
+      "nameEn": null,
+      "category": "library",
+      "coordinates": [
+        29.124409,
+        40.869028
+      ]
+    },
+    {
+      "id": "way/1209843521",
+      "name": "Mermer Köşk",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.040211,
+        41.040846
+      ]
+    },
+    {
+      "id": "way/1209845848",
+      "name": "Ahır Köşkü",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.038854,
+        41.040954
+      ]
+    },
+    {
+      "id": "way/1210692521",
+      "name": "Biruni Üniversitesi Merkez Kampüs",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        28.916722,
+        41.017544
+      ]
+    },
+    {
+      "id": "way/1211940084",
+      "name": "Vehbi Koç Evi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        29.052798,
+        41.165268
+      ]
+    },
+    {
+      "id": "way/1217159413",
+      "name": "Takkeci Ibrahim Ağa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.919646,
+        41.021476
+      ]
+    },
+    {
+      "id": "way/1218140801",
+      "name": "Atirus",
+      "nameEn": null,
+      "category": "mall",
+      "coordinates": [
+        28.583762,
+        41.021195
+      ]
+    },
+    {
+      "id": "way/1243524836",
+      "name": "Sanat Evi ve Kent Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.821179,
+        40.955989
+      ]
+    },
+    {
+      "id": "way/1282378824",
+      "name": "Isman Reis Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.062179,
+        41.114552
+      ]
+    },
+    {
+      "id": "way/1301847586",
+      "name": "Selahi Mehmet Efendi Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.935447,
+        41.044558
+      ]
+    },
+    {
+      "id": "way/1317515398",
+      "name": "Murat Reis Camii",
+      "nameEn": "Murat Reis Mosque",
+      "category": "mosque",
+      "coordinates": [
+        29.027617,
+        41.018444
+      ]
+    },
+    {
+      "id": "way/1318917043",
+      "name": "Altınbaş Üniversitesi Gayrettepe Sosyal Bilimler Yerleşkesi",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        29.01282,
+        41.069998
+      ]
+    },
+    {
+      "id": "way/1320333141",
+      "name": "Merkezefendi Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.919734,
+        41.015752
+      ]
+    },
+    {
+      "id": "way/1322131348",
+      "name": "Bebek Cami",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.044054,
+        41.076805
+      ]
+    },
+    {
+      "id": "way/1322491041",
+      "name": "Kırmızı Minare Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.950804,
+        41.041959
+      ]
+    },
+    {
+      "id": "way/1322881661",
+      "name": "Kürkçübaşı Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.945665,
+        41.007151
+      ]
+    },
+    {
+      "id": "way/1323107762",
+      "name": "Kefeli Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.941585,
+        41.029527
+      ]
+    },
+    {
+      "id": "way/1324981833",
+      "name": "Sultan Mustafa Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.968941,
+        41.013263
+      ]
+    },
+    {
+      "id": "way/1328815936",
+      "name": "Tüpraş Stadyumu",
+      "nameEn": null,
+      "category": "stadium",
+      "coordinates": [
+        28.994607,
+        41.039459
+      ]
+    },
+    {
+      "id": "way/1335767641",
+      "name": "Tekfur Sarayı Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.940673,
+        41.033927
+      ]
+    },
+    {
+      "id": "way/1364794831",
+      "name": "Halep Mollası ve Müderris Abdülbaki Efendi Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        29.020382,
+        41.027524
+      ]
+    },
+    {
+      "id": "way/1365047639",
+      "name": "Şamlar Köyü Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.735929,
+        41.123979
+      ]
+    },
+    {
+      "id": "way/1377155301",
+      "name": "Fatih Camii, Küçükçekmece",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.770619,
+        40.991541
+      ]
+    },
+    {
+      "id": "way/1377852887",
+      "name": "Cankurtaran Mescidi",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.980788,
+        41.004915
+      ]
+    },
+    {
+      "id": "way/1377881422",
+      "name": "Yedekçiler Mescidi",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.987406,
+        41.013492
+      ]
+    },
+    {
+      "id": "way/1377906859",
+      "name": "Üçler Mescidi",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.974331,
+        41.005526
+      ]
+    },
+    {
+      "id": "way/1379168992",
+      "name": "Katip Sinan Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.970777,
+        41.005963
+      ]
+    },
+    {
+      "id": "way/1382271689",
+      "name": "Ese Kapı Camii",
+      "nameEn": null,
+      "category": "mosque",
+      "coordinates": [
+        28.936668,
+        41.004805
+      ]
+    },
+    {
+      "id": "way/1388626967",
+      "name": "Hastane Müze",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.864246,
+        40.987632
+      ]
+    },
+    {
+      "id": "way/1423624917",
+      "name": "Camlı Köşk",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.99951,
+        41.040127
+      ]
+    },
+    {
+      "id": "way/1453039278",
+      "name": "İTÜ Stadyumu",
+      "nameEn": "ITU Stadium",
+      "category": "stadium",
+      "coordinates": [
+        29.023341,
+        41.101483
+      ]
+    },
+    {
+      "id": "way/1459319721",
+      "name": "İstanbul Gedik Üniversitesi Kartal Kampüsü",
+      "nameEn": null,
+      "category": "university",
+      "coordinates": [
+        29.219652,
+        40.901871
+      ]
+    },
+    {
+      "id": "way/1467139675",
+      "name": "Açık Hava Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.965155,
+        41.072016
+      ]
+    },
+    {
+      "id": "way/1467663783",
+      "name": "ÖzdilekPark İstanbul",
+      "nameEn": null,
+      "category": "mall",
+      "coordinates": [
+        29.010927,
+        41.077305
+      ]
+    },
+    {
+      "id": "way/1491971480",
+      "name": "Koç Üniversitesi",
+      "nameEn": "Koç University",
+      "category": "university",
+      "coordinates": [
+        29.073642,
+        41.206061
+      ]
+    },
+    {
+      "id": "way/1508373585",
+      "name": "İstanbul Havacılık Müzesi",
+      "nameEn": "Istanbul Aviation Museum",
+      "category": "museum",
+      "coordinates": [
+        28.825507,
+        40.964203
+      ]
+    },
+    {
+      "id": "way/1510748500",
+      "name": "Ulusal Bağımsızlık ve Kuruluş Müzesi ve Atatürk Devrimleri Müzesi",
+      "nameEn": null,
+      "category": "museum",
+      "coordinates": [
+        28.582762,
+        41.018026
+      ]
+    }
+  ]
+}
