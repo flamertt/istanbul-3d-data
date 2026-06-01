@@ -288,7 +288,7 @@ export function createTurkeyOverlayLayers(
 ): Layer[] {
   const showLines = zoom >= 11;
   const showPolygons = zoom >= 10.5;
-  const showPoints = zoom >= 13.2;
+  const showPoints = zoom >= 13;
 
   const layers: Layer[] = [];
 

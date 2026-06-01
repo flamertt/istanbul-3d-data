@@ -223,7 +223,7 @@ export function createBusSimLayers(
       }),
       getSize: 28,
       // Uzaktan soluk, yakınlaştıkça belirginleşir
-      getColor: [255, 255, 255, Math.round(60 + Math.max(0, Math.min(1, (zoom - 9) / 5)) * 195)],
+      getColor: zoom < 9 ? [0, 0, 0, 0] : [255, 255, 255, Math.round(40 + Math.max(0, Math.min(1, (zoom - 10) / 4)) * 215)],
       onClick: (info) => {
         if (info.object && onBusClick) onBusClick(info.object);
       },
