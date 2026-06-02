@@ -34,6 +34,7 @@ export function useMapView(initialOverrides?: Partial<MapViewState>) {
     pitch: initialPitch,
   });
 
+
   // Track previous zoom tier for auto-pitch on tier crossing
   const prevTierRef = useRef<ZoomTier>(getZoomTier(viewState.zoom));
   // Track whether user has manually interacted (pitch or bearing)

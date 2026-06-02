@@ -3,6 +3,50 @@
  * dark circle (#030712) + colored stroke border + white SVG icon inside.
  * Icons are 24×24 viewBox paths, scaled to fit the circle.
  */
+/**
+ * Compute heading (degrees, clockwise from north) from a path at a given progress (0-1).
+ * deck.gl getAngle uses degrees, clockwise from north.
+ */
+export function computeHeading(progress: number, path: [number, number][]): number {
+  if (path.length < 2) return 0;
+
+  // Total length
+  let totalLen = 0;
+  const segLens: number[] = [];
+  for (let i = 0; i < path.length - 1; i++) {
+    const dx = path[i + 1][0] - path[i][0];
+    const dy = path[i + 1][1] - path[i][1];
+    const l = Math.sqrt(dx * dx + dy * dy);
+    segLens.push(l);
+    totalLen += l;
+  }
+
+  if (totalLen === 0) return 0;
+
+  // Find the segment at current progress
+  let target = Math.max(0, Math.min(1, progress)) * totalLen;
+  for (let i = 0; i < segLens.length; i++) {
+    if (target <= segLens[i] || i === segLens.length - 1) {
+      const dx = path[i + 1][0] - path[i][0]; // longitude diff
+      const dy = path[i + 1][1] - path[i][1]; // latitude diff
+      // atan2(east, north) = bearing clockwise from north
+      const bearing = Math.atan2(dx, dy) * (180 / Math.PI);
+      return (bearing + 360) % 360;
+    }
+    target -= segLens[i];
+  }
+  return 0;
+}
+
+/** Direction arrow icon — small white chevron pointing up (north), rotated by getAngle */
+export function buildArrowIcon(colorHex: string): string {
+  return "data:image/svg+xml;utf8," + encodeURIComponent(
+    `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+      <polygon points="20,2 30,30 20,24 10,30" fill="${colorHex}" stroke="#030712" stroke-width="2" stroke-linejoin="round"/>
+    </svg>`
+  );
+}
+
 export function buildCircleIcon(svgPath: string, colorHex: string, scale = 2.2): string {
   const offset = 50 - scale * 12; // center 24×24 icon
   return "data:image/svg+xml;utf8," + encodeURIComponent(

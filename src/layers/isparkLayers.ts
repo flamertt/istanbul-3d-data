@@ -35,10 +35,10 @@ function getParkTypeKey(lot: IsparkLot): "open" | "closed" | "road" | "other" {
 function getColumnElevation(lot: IsparkLot): number {
   const parkKey = getParkTypeKey(lot);
   // Base elevation based on type for visual distinction
-  const baseByType = parkKey === "closed" ? 50 : parkKey === "open" ? 40 : parkKey === "road" ? 30 : 40;
+  const baseByType = parkKey === "closed" ? 20 : parkKey === "open" ? 15 : parkKey === "road" ? 12 : 15;
 
-  // Kapasiteye göre yükseklik; katsayıyı 0.8'e çektik, sınırı 800m yaptık.
-  const capacityHeight = Math.min(lot.capacity * 0.8, 800);
+  // Kapasiteye göre yükseklik — görsel ölçek için küçültüldü
+  const capacityHeight = Math.min(lot.capacity * 0.15, 80);
 
   return baseByType + capacityHeight;
 }
@@ -80,7 +80,7 @@ export function createIsparkLayers(lots: IsparkLot[], zoom: number): Layer[] {
         id: "ispark-columns",
         data: lots,
         diskResolution: 20,
-        radius: 12,
+        radius: 7,
         radiusUnits: "meters",
         extruded: true,
         stroked: false,
@@ -117,7 +117,7 @@ export function createIsparkLayers(lots: IsparkLot[], zoom: number): Layer[] {
         height: 100,
         anchorY: 50,
       }),
-      getSize: 20,
+      getSize: 14,
       getColor: [255, 255, 255],
       updateTriggers: { getPosition: zoom },
     }),

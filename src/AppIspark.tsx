@@ -1,4 +1,4 @@
-import { useMemo, useState, useCallback, useRef } from "react";
+import { useMemo, useState, useCallback, useRef, useEffect } from "react";
 import { PathLayer } from "@deck.gl/layers";
 import type { Layer } from "deck.gl";
 import { useMapView } from "./hooks/useMapView";
@@ -39,7 +39,7 @@ import { useRailSim } from "./hooks/useRailSim";
 import { createRailSimLayers, getActiveVehicles } from "./layers/railSimLayer";
 import type { ActiveVehicle } from "./layers/railSimLayer";
 import type { TurkeyOverlayFlags } from "./hooks/useTurkeyOverlays";
-import { useEffect } from "react";
+import { getViewportBounds, type Bounds } from "./lib/viewportBounds";
 import type { TurkeyPoiPoint } from "./layers/turkeyOverlayLayers";
 import type { IsparkLot } from "./types";
 
@@ -80,7 +80,7 @@ function AppIspark() {
 
   const [overlayFlags, setOverlayFlags] = useState<TurkeyOverlayFlags>({
     busRoutes: true,
-    railLines: false,
+    railLines: true,
     bikeLanes: false,
     greenAreas: true,
     busStops: false,
@@ -334,6 +334,16 @@ function AppIspark() {
     flyTo(vehicle.position[0], vehicle.position[1], 14);
   }, [flyTo]);
 
+  // Viewport bounds — 20% margin, güncelleme throttle'landı
+  const bounds = useMemo<Bounds>(
+    () => getViewportBounds(viewState, 0.25),
+    // Sadece zoom veya merkez önemli ölçüde değişince yeniden hesapla
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [Math.round(viewState.zoom * 4) / 4,
+     Math.round(viewState.longitude * 100) / 100,
+     Math.round(viewState.latitude * 100) / 100]
+  );
+
   const busSimLayers = useMemo(() => {
     if (!busSimEnabled || !busSim.data) return [];
     return createBusSimLayers(
@@ -343,8 +353,9 @@ function AppIspark() {
       handleBusClick,
       viewState.zoom,
       selectedBus,
+      bounds,
     );
-  }, [busSimEnabled, busSim.data, layerTimeSec, busRoutes, viewState.zoom, handleBusClick, selectedBus]);
+  }, [busSimEnabled, busSim.data, layerTimeSec, busRoutes, viewState.zoom, handleBusClick, selectedBus, bounds]);
 
   // Geom entries for worker — computed once when busRoutes GeoJSON loads
   const geomEntries = useMemo(() => {
@@ -395,20 +406,25 @@ function AppIspark() {
       handleRailClick,
       viewState.zoom,
       selectedVehicle,
+      bounds,
     );
-  }, [railSim.data, layerTimeSec, railFilter, handleRailClick, viewState.zoom, selectedVehicle, metroSimEnabled, marmaraySimEnabled, tramSimEnabled]);
+  }, [railSim.data, layerTimeSec, railFilter, handleRailClick, viewState.zoom, selectedVehicle, bounds, metroSimEnabled, marmaraySimEnabled, tramSimEnabled]);
 
   const extraLayers = useMemo(
     () => {
-      const lineLayers = turkeyOverlayLayers.filter(
-        (l) => !l.id.endsWith("-icons") && !l.id.endsWith("-3d"),
+      // Rail lines her zaman otobüs hatlarının üstünde render edilir
+      const isRailLine = (l: { id: string }) => l.id === "turkey-rail-lines";
+      const busLineLayers = turkeyOverlayLayers.filter(
+        (l) => !l.id.endsWith("-icons") && !l.id.endsWith("-3d") && !isRailLine(l),
       );
+      const railLineLayers = turkeyOverlayLayers.filter(isRailLine);
       const iconLayers = turkeyOverlayLayers.filter(
         (l) => l.id.endsWith("-icons") || l.id.endsWith("-3d"),
       );
       return [
         ...radiusLayers,
-        ...lineLayers,
+        ...busLineLayers,   // otobüs hatları altta
+        ...railLineLayers,  // raylı hatlar üstte (bus hatlarını örter)
         ...routeLayers,
         ...iconLayers,
         ...(landmarkLayer ? [landmarkLayer] : []),

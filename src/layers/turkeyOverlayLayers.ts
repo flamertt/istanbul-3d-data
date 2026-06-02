@@ -463,14 +463,14 @@ export function createTurkeyOverlayLayers(
         pickable: true,
         getLineColor: (f: unknown) => {
           const p = getFeatureProperties(f);
-          const isSelected = selectedId === normalizeKeyPart(p?.["ID"] || p?.["id"] || p?.["OBJECTID"]);
-          return isSelected ? [255, 255, 255, 255] : [251, 191, 36, 220]; // Parlak altın
+          const isSelected = selectedId !== null && selectedId === normalizeKeyPart(p?.["ID"] || p?.["id"] || p?.["OBJECTID"]);
+          return isSelected ? [255, 255, 255, 255] : [167, 139, 250, 240]; // Violet — otobüs mavisinden ayrışır
         },
         lineWidthMinPixels: 2,
         getLineWidth: (f: unknown) => {
           const p = getFeatureProperties(f);
-          const isSelected = selectedId === normalizeKeyPart(p?.["ID"] || p?.["id"] || p?.["OBJECTID"]);
-          return isSelected ? 12 : 4; // Kalınlık artırıldı
+          const isSelected = selectedId !== null && selectedId === normalizeKeyPart(p?.["ID"] || p?.["id"] || p?.["OBJECTID"]);
+          return isSelected ? 14 : 6;
         },
         updateTriggers: {
           getLineColor: [selectedId],
@@ -506,13 +506,13 @@ export function createTurkeyOverlayLayers(
         pickable: true,
         getLineColor: (f: unknown) => {
           const p = getFeatureProperties(f);
-          const isSelected = selectedId === normalizeKeyPart(p?.["ID"] || p?.["id"] || p?.["OBJECTID"]);
+          const isSelected = selectedId !== null && selectedId === normalizeKeyPart(p?.["ID"] || p?.["id"] || p?.["OBJECTID"]);
           return isSelected ? [255, 255, 255, 255] : [20, 184, 166, 180]; // Turkuaz
         },
         lineWidthMinPixels: 1,
         getLineWidth: (f: unknown) => {
           const p = getFeatureProperties(f);
-          const isSelected = selectedId === normalizeKeyPart(p?.["ID"] || p?.["id"] || p?.["OBJECTID"]);
+          const isSelected = selectedId !== null && selectedId === normalizeKeyPart(p?.["ID"] || p?.["id"] || p?.["OBJECTID"]);
           return isSelected ? 12 : 4; // Kalınlık artırıldı
         },
         updateTriggers: {
@@ -549,13 +549,13 @@ export function createTurkeyOverlayLayers(
         pickable: true,
         getLineColor: (f: unknown) => {
           const p = getFeatureProperties(f);
-          const isSelected = selectedId === normalizeKeyPart(p?.["ID"] || p?.["id"] || p?.["OBJECTID"]);
+          const isSelected = selectedId !== null && selectedId === normalizeKeyPart(p?.["ID"] || p?.["id"] || p?.["OBJECTID"]);
           return isSelected ? [255, 255, 255, 255] : [245, 158, 11, 180]; // Kehribar (Amber)
         },
         lineWidthMinPixels: 1,
         getLineWidth: (f: unknown) => {
           const p = getFeatureProperties(f);
-          const isSelected = selectedId === normalizeKeyPart(p?.["ID"] || p?.["id"] || p?.["OBJECTID"]);
+          const isSelected = selectedId !== null && selectedId === normalizeKeyPart(p?.["ID"] || p?.["id"] || p?.["OBJECTID"]);
           return isSelected ? 12 : 4; // Kalınlık artırıldı
         },
         updateTriggers: {

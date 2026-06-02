@@ -1,7 +1,8 @@
 import { IconLayer } from "@deck.gl/layers";
 import type { Layer } from "deck.gl";
 import type { BusTrip } from "../hooks/useBusSim";
-import { buildCircleIcon, ICON_PATHS } from "../lib/iconBuilder";
+import { buildCircleIcon, buildArrowIcon, computeHeading, ICON_PATHS } from "../lib/iconBuilder";
+import { type Bounds, inBounds } from "../lib/viewportBounds";
 
 type Coord = [number, number];
 
@@ -14,6 +15,7 @@ export interface ActiveBus {
   endTimeSec: number;
   progress: number;  // 0-1
   timestamps: number[];
+  heading: number;   // degrees clockwise from north
 }
 
 // ── Icon builder — circle style matching landmark icons ────────────────────────
@@ -211,6 +213,7 @@ function computeActiveBuses(
       if (!fallback) continue;
       pos = fallback;
     }
+    const heading = geom ? computeHeading(progress, geom) : 0;
     active.push({
       position: pos,
       route: trip.route,
@@ -220,6 +223,7 @@ function computeActiveBuses(
       endTimeSec: trip.timestamps[trip.timestamps.length - 1],
       progress,
       timestamps: trip.timestamps,
+      heading,
     });
   }
   return active;
@@ -245,17 +249,23 @@ export function createBusSimLayers(
   onBusClick?: (bus: ActiveBus) => void,
   zoom = 12,
   selectedBus?: ActiveBus | null,
+  bounds?: Bounds,
 ): Layer[] {
   if (busRoutesGeojson !== cachedGeojsonRef) {
     cachedGeojsonRef = busRoutesGeojson;
     cachedRouteGeomMap = buildRouteGeomMap(busRoutesGeojson);
   }
   const geomMap = cachedRouteGeomMap ?? newRouteGeomMap();
-  const active = computeActiveBuses(trips, currentTimeSec, geomMap);
+  const allActive = computeActiveBuses(trips, currentTimeSec, geomMap);
+  const active = bounds
+    ? allActive.filter((b) => inBounds(b.position[0], b.position[1], bounds))
+    : allActive;
 
   const selectedKey = selectedBus ? `${selectedBus.route}|${selectedBus.headsign}` : null;
   const isSelected = (d: ActiveBus) => selectedKey === `${d.route}|${d.headsign}`;
   const baseAlpha = zoom < 9 ? 0 : Math.round(40 + Math.max(0, Math.min(1, (zoom - 10) / 4)) * 215);
+
+  const arrowUrl = buildArrowIcon("#2563eb");
 
   return [
     new IconLayer<ActiveBus>({
@@ -281,6 +291,25 @@ export function createBusSimLayers(
       updateTriggers: {
         getPosition: currentTimeSec,
         data: currentTimeSec,
+        getColor: [zoom, selectedKey],
+        getSize: selectedKey,
+      },
+    }),
+    // Direction arrow layer
+    new IconLayer<ActiveBus>({
+      id: "bus-sim-arrows",
+      data: active,
+      pickable: false,
+      sizeUnits: "pixels",
+      getPosition: (d) => d.position,
+      getIcon: () => ({ url: arrowUrl, width: 40, height: 40, anchorY: 40 }),
+      getSize: (d) => isSelected(d) ? 28 : 18,
+      getAngle: (d) => -d.heading, // deck.gl rotates counter-clockwise
+      getColor: (d) => [255, 255, 255, isSelected(d) ? 255 : Math.min(255, baseAlpha + 40)],
+      updateTriggers: {
+        getPosition: currentTimeSec,
+        data: currentTimeSec,
+        getAngle: currentTimeSec,
         getColor: [zoom, selectedKey],
         getSize: selectedKey,
       },

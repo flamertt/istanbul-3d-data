@@ -1,7 +1,8 @@
 import { IconLayer } from "@deck.gl/layers";
 import type { Layer } from "deck.gl";
 import type { RailRoute, RailSimData } from "../hooks/useRailSim";
-import { buildCircleIcon, ICON_PATHS } from "../lib/iconBuilder";
+import { buildCircleIcon, buildArrowIcon, computeHeading, ICON_PATHS } from "../lib/iconBuilder";
+import { type Bounds, inBounds } from "../lib/viewportBounds";
 
 type Coord = [number, number];
 
@@ -15,6 +16,7 @@ export interface ActiveVehicle {
   progress: number;
   t0: number;
   endSec: number;
+  heading: number; // degrees clockwise from north
 }
 
 // ── Icons — circle style matching landmark icons ───────────────────────────────
@@ -85,6 +87,7 @@ export function getActiveVehicles(
   for (const [rk, { progress, t0 }] of best) {
     const route = routes[rk];
     const pos = snapToRoute(progress, route.path);
+    const heading = computeHeading(progress, route.path);
     active.push({
       position: pos,
       routeKey: rk,
@@ -95,6 +98,7 @@ export function getActiveVehicles(
       progress,
       t0,
       endSec: t0 + route.duration_secs,
+      heading,
     });
   }
 
@@ -109,12 +113,21 @@ export function createRailSimLayers(
   onVehicleClick?: (v: ActiveVehicle) => void,
   zoom = 12,
   selectedVehicle?: ActiveVehicle | null,
+  bounds?: Bounds,
 ): Layer[] {
-  const active = getActiveVehicles(data, currentTimeSec, filter);
+  const allActive = getActiveVehicles(data, currentTimeSec, filter);
+  const active = bounds
+    ? allActive.filter((v) => inBounds(v.position[0], v.position[1], bounds))
+    : allActive;
   if (active.length === 0) return [];
 
   const selectedKey = selectedVehicle?.routeKey ?? null;
   const baseAlpha = zoom < 9 ? 0 : Math.round(40 + Math.max(0, Math.min(1, (zoom - 10) / 4)) * 215);
+
+  // Kind-specific arrow colors
+  const kindColor: Record<string, string> = {
+    metro: "#eab308", marmaray: "#dc2626", tram: "#0891b2", funicular: "#7c3aed"
+  };
 
   return [
     new IconLayer<ActiveVehicle>({
@@ -140,6 +153,28 @@ export function createRailSimLayers(
       updateTriggers: {
         getPosition: currentTimeSec,
         data: currentTimeSec,
+        getColor: [zoom, selectedKey],
+        getSize: selectedKey,
+      },
+    }),
+    // Direction arrow layer
+    new IconLayer<ActiveVehicle>({
+      id: "rail-sim-arrows",
+      data: active,
+      pickable: false,
+      sizeUnits: "pixels",
+      getPosition: (d) => d.position,
+      getIcon: (d) => {
+        const col = kindColor[d.kind] ?? "#ffffff";
+        return { url: buildArrowIcon(col), width: 40, height: 40, anchorY: 40 };
+      },
+      getSize: (d) => d.routeKey === selectedKey ? 30 : 20,
+      getAngle: (d) => -d.heading,
+      getColor: (d) => [255, 255, 255, d.routeKey === selectedKey ? 255 : Math.min(255, baseAlpha + 40)],
+      updateTriggers: {
+        getPosition: currentTimeSec,
+        data: currentTimeSec,
+        getAngle: currentTimeSec,
         getColor: [zoom, selectedKey],
         getSize: selectedKey,
       },
