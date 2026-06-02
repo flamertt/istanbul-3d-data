@@ -1,7 +1,7 @@
 import { useState, useCallback, useEffect, useRef } from "react";
 import type { TimeSlot } from "../types";
 
-const DEFAULT_SPEED = 125; // ms per step (4x)
+const DEFAULT_SPEED = 500; // ms per step (1x)
 
 export function useTimeSlot(initialSlot?: TimeSlot) {
   const [timeSlot, setTimeSlot] = useState<TimeSlot>(

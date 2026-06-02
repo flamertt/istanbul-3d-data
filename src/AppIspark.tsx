@@ -106,7 +106,7 @@ function AppIspark() {
   const getInitialBusSec = () => (Math.floor(Date.now() / 1000) + 3 * 3600) % 86400;
   const [busTimeSec, setBusTimeSec] = useState(getInitialBusSec);
   const [busPlaying, setBusPlaying] = useState(true);
-  const [busSpeed, setBusSpeed] = useState(5); // 1x/5x/15x/30x
+  const [busSpeed, setBusSpeed] = useState(1); // 1x/5x/15x/30x
   const [selectedBus, setSelectedBus] = useState<ActiveBus | null>(null);
 
   // Smooth animation: 50ms tick — daha akıcı hareket

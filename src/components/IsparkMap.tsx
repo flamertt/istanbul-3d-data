@@ -101,8 +101,8 @@ export function IsparkMap({
       minzoom: 3,
       paint: {
         "fill-extrusion-color": isLight ? "#c8c0b8" : "#2a2a3a",
-        "fill-extrusion-height": ["*", ["coalesce", ["get", "render_height"], 10], 2],
-        "fill-extrusion-base": ["*", ["coalesce", ["get", "render_min_height"], 0], 2],
+        "fill-extrusion-height": ["*", ["coalesce", ["get", "render_height"], 10], 5],
+        "fill-extrusion-base": ["*", ["coalesce", ["get", "render_min_height"], 0], 5],
         "fill-extrusion-opacity": 1.0,
       },
     });
