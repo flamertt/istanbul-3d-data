@@ -1,1 +1,7180 @@
-../../datas/Şehir Tuvaletleri Veri Seti
+{
+	"type" : "FeatureCollection",
+	"name" : "sehir_tuvaletleri_verisi",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0707136601, 40.8793991057 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "BURGAZ ADA",
+				"ILCE" : "ADALAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 29.070713660149135,
+				"Y" : 40.87939910569092
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0900645813, 40.9846703136 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "GÖZTEPE KAVŞAĞI - KOZYATAĞI ARASI YAN REFÜJLER",
+				"ILCE" : "ATAŞEHİR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.09006458132327,
+				"Y" : 40.984670313570554
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0949379998, 40.9996229996 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "DEPREM PARKI",
+				"ILCE" : "ATAŞEHİR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.094937999829988,
+				"Y" : 40.99962299959403
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0996935625, 40.975955898 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M8 KOZYATAĞI",
+				"ILCE" : "ATAŞEHİR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.09969356249776,
+				"Y" : 40.97595589803876
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1119001955, 40.9790263447 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M8 KÜÇÜKBAKKALKÖY",
+				"ILCE" : "ATAŞEHİR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.111900195482274,
+				"Y" : 40.9790263446964
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1379983276, 40.9851265796 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M8 KAYIŞDAĞI",
+				"ILCE" : "ATAŞEHİR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.13799832757103,
+				"Y" : 40.985126579641765
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1533332443, 40.9923738106 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M8 MEVLANA",
+				"ILCE" : "ATAŞEHİR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.15333324433215,
+				"Y" : 40.99237381061228
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0875899996, 41.107006 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "DEDEOĞLU PARKI",
+				"ILCE" : "BEYKOZ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.08758999962228,
+				"Y" : 41.10700600000852
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0686159997, 41.0794989994 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KÜÇÜKSU ÇAYIRI",
+				"ILCE" : "BEYKOZ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 29.06861599965647,
+				"Y" : 41.07949899944936
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0780619995, 41.0891009996 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "MUHTAR HAYRULLAH ERSAYIN PARKI",
+				"ILCE" : "BEYKOZ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.07806199946776,
+				"Y" : 41.089100999585305
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0873810992, 41.1142727044 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "BURUNBAHÇE MESİRE ALANI - 1",
+				"ILCE" : "BEYKOZ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Konteyner",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 29.087381099186963,
+				"Y" : 41.11427270442996
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0970779997, 41.1332930001 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "BEYKOZ KORUSU",
+				"ILCE" : "BEYKOZ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Koru",
+				"X" : 29.09707799968046,
+				"Y" : 41.13329300007498
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0762989999, 41.1036190006 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "HİDİV KORUSU",
+				"ILCE" : "BEYKOZ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Koru",
+				"X" : 29.076298999896938,
+				"Y" : 41.10361900056415
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0853540008, 41.1416339994 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "BEYKOZ ÇAYIRI",
+				"ILCE" : "BEYKOZ",
+				"TUVALET_DURUM" : "Pasif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Koru",
+				"X" : 29.08535400084905,
+				"Y" : 41.14163399940715
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.096281, 41.0949680001 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KAVACIK AKTARMA NOKTASI",
+				"ILCE" : "BEYKOZ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Meydan",
+				"X" : 29.0962810000309,
+				"Y" : 41.094968000108224
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.2996054012, 41.0002701899 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "AYRILIKÇEŞME MARMARAY DURAKLARI ÇEVRESİ",
+				"ILCE" : "KADIKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.299605401203163,
+				"Y" : 41.000270189925786
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.076702, 40.9625020003 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "BAĞDAT CADDESİ YAN REFÜJ",
+				"ILCE" : "KADIKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Ulaşım",
+				"X" : 29.07670200000926,
+				"Y" : 40.96250200025988
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0727750004, 40.9581870002 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ŞEHİT KADİR YILDIRIM PARKI (CADDEBOSTAN KARA VE SAHİL PARKI)",
+				"ILCE" : "KADIKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 29.07277500044164,
+				"Y" : 40.958187000225315
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0866530006, 40.9551879999 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ŞEHİT KADİR YILDIRIM PARKI (CADDEBOSTAN KARA VE SAHİL PARKI)",
+				"ILCE" : "KADIKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 29.086653000618014,
+				"Y" : 40.95518799990434
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0799209784, 40.9552388465 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ŞEHİT KADİR YILDIRIM PARKI (CADDEBOSTAN KARA VE SAHİL PARKI)",
+				"ILCE" : "KADIKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 29.079920978363184,
+				"Y" : 40.955238846453305
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0589750002, 40.9638939996 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "DALYAN PARKI",
+				"ILCE" : "KADIKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 29.058975000160977,
+				"Y" : 40.96389399959738
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0511080008, 40.9686739996 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "DALYAN PARKI",
+				"ILCE" : "KADIKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 29.051108000776452,
+				"Y" : 40.96867399959925
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0456870008, 41.0016010004 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "HAREM - UZUNÇAYIR KAVŞAĞI ARASI YAN REFÜJLER",
+				"ILCE" : "KADIKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.045687000838825,
+				"Y" : 41.00160100041903
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0209299995, 40.9911099997 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KADIKÖY MEYDANI",
+				"ILCE" : "KADIKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.02092999949573,
+				"Y" : 40.99110999969068
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.2451061692, 40.9936574086 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KADIKÖY MEYDANI",
+				"ILCE" : "KADIKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Meydan",
+				"X" : 29.24510616916963,
+				"Y" : 40.993657408627826
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0995720002, 40.9754989995 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KOZYATAĞI KAVŞAĞI - BOSTANCI KAVŞAĞI ARASI ORTA VE YAN REFÜJLER",
+				"ILCE" : "KADIKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.099572000236382,
+				"Y" : 40.97549899953518
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0279249992, 40.9798299997 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KURBAĞALIDERE PARKI",
+				"ILCE" : "KADIKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 29.02792499919108,
+				"Y" : 40.97982999965719
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0181046512, 40.9909872674 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "MODA İNCİBURNU PARKI",
+				"ILCE" : "KADIKÖY",
+				"TUVALET_DURUM" : "Dönemlik",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 29.018104651205064,
+				"Y" : 40.99098726740844
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0488887174, 40.9966555074 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "SALI PAZARI MEYDANI",
+				"ILCE" : "KADIKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Alışveriş",
+				"X" : 29.04888871739539,
+				"Y" : 40.99665550744102
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0506325436, 40.998310929 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "SALI PAZARI MEYDANI",
+				"ILCE" : "KADIKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Alışveriş",
+				"X" : 29.050632543615773,
+				"Y" : 40.99831092902864
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0513864265, 40.9982449236 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "SALI PAZARI MEYDANI",
+				"ILCE" : "KADIKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Alışveriş",
+				"X" : 29.051386426513872,
+				"Y" : 40.99824492360806
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0513437752, 40.9977682526 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "SALI PAZARI MEYDANI",
+				"ILCE" : "KADIKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Alışveriş",
+				"X" : 29.05134377520096,
+				"Y" : 40.997768252624525
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0553469992, 40.9984889994 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "UZUNÇAYIR KAVŞAĞI",
+				"ILCE" : "KADIKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Metrobüs",
+				"X" : 29.055346999219026,
+				"Y" : 40.99848899941791
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0575210006, 40.9992529995 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "UZUNÇAYIR KAVŞAĞI",
+				"ILCE" : "KADIKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metrobüs",
+				"X" : 29.057521000602655,
+				"Y" : 40.99925299948692
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0934709995, 40.9605560007 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M8 EMİN ALİ PAŞA",
+				"ILCE" : "KADIKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.09347099952501,
+				"Y" : 40.96055600070579
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0861390257, 40.9674881955 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M8 AYŞEKADIN",
+				"ILCE" : "KADIKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.08613902568464,
+				"Y" : 40.96748819548243
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1876859993, 40.8881 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ÇEÇENİSTAN PARKI VE MEYDANI",
+				"ILCE" : "KARTAL",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.187685999262627,
+				"Y" : 40.888100000014745
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1688330004, 40.8939560001 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "İBB SOSYAL TESİSLER - KARTAL İDO ARASI KARA VE SAHİL PARKI",
+				"ILCE" : "KARTAL",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 29.16883300041685,
+				"Y" : 40.89395600013526
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1722239999, 40.8919510004 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "İBB SOSYAL TESİSLER - KARTAL İDO ARASI KARA VE SAHİL PARKI",
+				"ILCE" : "KARTAL",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 29.17222399985117,
+				"Y" : 40.891951000418935
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1528329993, 40.9015050007 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "İBB SOSYAL TESİSLER - KARTAL İDO ARASI KARA VE SAHİL PARKI",
+				"ILCE" : "KARTAL",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 29.15283299929564,
+				"Y" : 40.9015050006911
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1831969995, 40.8867199999 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KARTAL ÖZGÜRLÜK PARKI",
+				"ILCE" : "KARTAL",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.18319699949344,
+				"Y" : 40.88671999994725
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.2110098902, 40.9066369782 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KARTAL KAVŞAĞI",
+				"ILCE" : "KARTAL",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.211009890178737,
+				"Y" : 40.90663697822763
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.2277171109, 40.8959396216 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M4 YAKACIK",
+				"ILCE" : "KARTAL",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.227717110920146,
+				"Y" : 40.89593962160552
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1938619999, 40.8862999994 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KARTAL İETT",
+				"ILCE" : "KARTAL",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Ulaşım",
+				"X" : 29.1938619998749,
+				"Y" : 40.886299999383105
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1058929998, 40.9442120007 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "BOSTANCI - KÜÇÜKYALI ARASI KARA VE SAHİL PARKI",
+				"ILCE" : "MALTEPE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 29.105892999834587,
+				"Y" : 40.94421200066041
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1820342051, 40.9152961664 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "CEVİZLİ KAVŞAĞI - KARTAL KAVŞAĞI ARASI YAN REFÜJLER",
+				"ILCE" : "MALTEPE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.182034205098066,
+				"Y" : 40.91529616639069
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1550199998, 40.9237599993 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "GÜLSUYU KAVŞAĞI",
+				"ILCE" : "MALTEPE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.15501999984988,
+				"Y" : 40.92375999926344
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1340199994, 40.9111479998 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "İDEALTEPE - DRAGOS ARASI KARA VE SAHİL PARKI",
+				"ILCE" : "MALTEPE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 29.1340199993639,
+				"Y" : 40.91114799979021
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1305720004, 40.9164769998 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "İDEALTEPE - DRAGOS ARASI KARA VE SAHİL PARKI",
+				"ILCE" : "MALTEPE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.130572000374745,
+				"Y" : 40.91647699980309
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1316077411, 40.9395003772 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "MALTEPE ALTAYÇESME PARKI",
+				"ILCE" : "MALTEPE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.131607741142336,
+				"Y" : 40.9395003772443
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1397407139, 40.935896381 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "MALTEPE KAVŞAĞI",
+				"ILCE" : "MALTEPE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.139740713939588,
+				"Y" : 40.93589638099713
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1459250429, 40.9297689786 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ZÜMRÜTEVLER KAVŞAĞI",
+				"ILCE" : "MALTEPE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.1459250429014,
+				"Y" : 40.92976897858897
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1127640004, 40.9331459998 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ORHANGAZİ ŞEHİR PARKI/BATI 1",
+				"ILCE" : "MALTEPE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.112764000394023,
+				"Y" : 40.9331459997723
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1096520005, 40.9401770002 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ORHANGAZİ ŞEHİR PARKI/BATI 2",
+				"ILCE" : "MALTEPE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.109652000493366,
+				"Y" : 40.94017700020061
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1237999999, 40.924209 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ORHANGAZİ ŞEHİR PARKI/DOĞU 1",
+				"ILCE" : "MALTEPE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.12379999992045,
+				"Y" : 40.924208999955425
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1245399998, 40.9222259996 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ORHANGAZİ ŞEHİR PARKI/DOĞU 1",
+				"ILCE" : "MALTEPE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.124539999796465,
+				"Y" : 40.9222259996027
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.7936178575, 40.9691513053 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "FLORYA SAHİL PARKI",
+				"ILCE" : "BAKIRKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 28.793617857521216,
+				"Y" : 40.96915130533429
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.7937280004, 40.969153 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "FLORYA SAHİL PARKI",
+				"ILCE" : "BAKIRKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 28.793728000381098,
+				"Y" : 40.96915300001795
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8057439996, 40.961108 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "İBB FLORYA SOSYAL TESİSLERİ BAHÇESİ",
+				"ILCE" : "BAKIRKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 28.80574399963692,
+				"Y" : 40.96110799998633
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8139869468, 40.9567355647 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ŞEHİT GÜLŞEN BAHADIR PARKI",
+				"ILCE" : "BAKIRKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 28.813986946820844,
+				"Y" : 40.95673556466939
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.832341001, 40.9563570004 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ŞEHİT GÜLŞEN BAHADIR PARKI",
+				"ILCE" : "BAKIRKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 28.832341000975966,
+				"Y" : 40.95635700035888
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8113969992, 40.9584819997 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ŞEHİT GÜLŞEN BAHADIR PARKI",
+				"ILCE" : "BAKIRKÖY",
+				"TUVALET_DURUM" : "Dönemlik",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 28.811396999249254,
+				"Y" : 40.95848199972012
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.7897389996, 40.9777440002 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "FLORYA ATATÜRK ORMANI VE İPA YERLEŞKESİ",
+				"ILCE" : "BAKIRKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Orman",
+				"X" : 28.789738999559106,
+				"Y" : 40.977744000183655
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.7849390003, 40.9799449995 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "FLORYA ATATÜRK ORMANI VE İPA YERLEŞKESİ",
+				"ILCE" : "BAKIRKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Orman",
+				"X" : 28.78493900027327,
+				"Y" : 40.97994499950703
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.7860210006, 40.9780990003 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "FLORYA ATATÜRK ORMANI VE İPA YERLEŞKESİ",
+				"ILCE" : "BAKIRKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Orman",
+				"X" : 28.786021000647754,
+				"Y" : 40.97809900034798
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8241549992, 40.9570499998 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "YEŞİLKÖY MARİNA",
+				"ILCE" : "BAKIRKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 28.82415499916181,
+				"Y" : 40.95704999977349
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8412266587, 40.9823035871 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "AYAMAMA YAŞAM VADİSİ",
+				"ILCE" : "BAKIRKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.841226658726487,
+				"Y" : 40.98230358707685
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.6478480007, 41.094473 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "HOŞDERE MİLLET PARKI",
+				"ILCE" : "BAŞAKŞEHİR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Millet Bahçesi",
+				"X" : 28.64784800066696,
+				"Y" : 41.0944730000229
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8012065266, 41.1076376299 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "METROKENT METRO İSTASYONU",
+				"ILCE" : "BAŞAKŞEHİR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.801206526641455,
+				"Y" : 41.10763762985903
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.7684511382, 41.0793361885 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "OLİMPİYAT KÖYÜ VE ÇEVRESİ",
+				"ILCE" : "BAŞAKŞEHİR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.768451138220982,
+				"Y" : 41.07933618845676
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.7867567254, 41.0744545722 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ZİYA GÖKALP METRO İSTASYONU",
+				"ILCE" : "BAŞAKŞEHİR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.786756725359513,
+				"Y" : 41.07445457223823
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8035937392, 41.0714135965 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M3 İKİTELLİ SANAYİ",
+				"ILCE" : "BAŞAKŞEHİR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.803593739165564,
+				"Y" : 41.071413596533866
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.7972401875, 41.0808998287 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M3 TURGUT ÖZAL",
+				"ILCE" : "BAŞAKŞEHİR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.797240187538428,
+				"Y" : 41.08089982874386
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.7911902633, 41.1135375861 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M3 ONURKENT",
+				"ILCE" : "BAŞAKŞEHİR",
+				"TUVALET_DURUM" : "Pasif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.791190263267602,
+				"Y" : 41.113537586064815
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.7771177657, 41.1028462419 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M3 ŞEHİR HASTANESİ",
+				"ILCE" : "BAŞAKŞEHİR",
+				"TUVALET_DURUM" : "Pasif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.777117765706347,
+				"Y" : 41.10284624194194
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.7662636428, 41.1183127499 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M3 KAYAŞEHİR MERKEZ",
+				"ILCE" : "BAŞAKŞEHİR",
+				"TUVALET_DURUM" : "Pasif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.76626364276643,
+				"Y" : 41.11831274985663
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0437453929, 41.0767658087 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "TÜRKAN SABANCI BEBEK PARKI",
+				"ILCE" : "BEŞİKTAŞ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 29.043745392892266,
+				"Y" : 41.07676580868227
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0085400479, 41.0414767102 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "BEŞİKTAŞ SAHİL - DOLMABAHÇE ARASI ORTA VE YAN REFÜJLER",
+				"ILCE" : "BEŞİKTAŞ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Meydan",
+				"X" : 29.008540047924654,
+				"Y" : 41.04147671022806
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9933760004, 41.0439980004 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "MAÇKA DEMOKRASİ PARKI",
+				"ILCE" : "BEŞİKTAŞ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.993376000384764,
+				"Y" : 41.04399800044032
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9897300002, 41.042584 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "MAÇKA DEMOKRASİ PARKI",
+				"ILCE" : "BEŞİKTAŞ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.989730000243533,
+				"Y" : 41.0425839999984
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0092730001, 41.049005 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "YAHYA KEMAL PARKI",
+				"ILCE" : "BEŞİKTAŞ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.009273000075215,
+				"Y" : 41.04900500004203
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0138249993, 41.0662870004 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ZİNCİRLİKUYU KAVŞAĞI",
+				"ILCE" : "BEŞİKTAŞ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Metrobüs",
+				"X" : 29.013824999315982,
+				"Y" : 41.0662870003835
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0121010005, 41.0659120003 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ZİNCİRLİKUYU KAVŞAĞI",
+				"ILCE" : "BEŞİKTAŞ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Metrobüs",
+				"X" : 29.012101000540472,
+				"Y" : 41.06591200025439
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0167639999, 41.0508139993 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "YILDIZ KORUSU",
+				"ILCE" : "BEŞİKTAŞ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Koru",
+				"X" : 29.016763999891857,
+				"Y" : 41.050813999323545
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0152579995, 41.0471659994 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "YILDIZ KORUSU",
+				"ILCE" : "BEŞİKTAŞ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Koru",
+				"X" : 29.015257999496058,
+				"Y" : 41.047165999439606
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0138930001, 41.0480689995 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "YILDIZ KORUSU",
+				"ILCE" : "BEŞİKTAŞ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Koru",
+				"X" : 29.013893000108183,
+				"Y" : 41.04806899954584
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0137170005, 41.0780940005 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M2 LEVENT",
+				"ILCE" : "BEŞİKTAŞ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.01371700050463,
+				"Y" : 41.07809400048856
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0071779999, 41.0869889995 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M2 4. LEVENT",
+				"ILCE" : "BEŞİKTAŞ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.00717799992512,
+				"Y" : 41.08698899946497
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9936158135, 41.0348583049 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KABATAŞ İSKELE",
+				"ILCE" : "BEŞİKTAŞ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 28.99361581350102,
+				"Y" : 41.034858304853046
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.6446900007, 40.9963590003 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "BEYLİKDÜZÜ OSMANLI BAHÇESİ PARKI",
+				"ILCE" : "BEYLİKDÜZÜ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.644690000727262,
+				"Y" : 40.99635900027402
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.6237929997, 41.0224379993 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "GÜRPINAR KAVŞAĞI - M.SİNAN KAVŞAĞI ARASI (S RAMPASI)",
+				"ILCE" : "BEYLİKDÜZÜ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Metrobüs",
+				"X" : 28.623792999715118,
+				"Y" : 41.02243799934064
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.6689220003, 41.003826 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "YAKUPLU B TİPİ MESİRE ALANI",
+				"ILCE" : "BEYLİKDÜZÜ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Kent Ormanı",
+				"X" : 28.668922000342796,
+				"Y" : 41.00382599998098
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.6683890001, 41.0055760001 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "YAKUPLU B TİPİ MESİRE ALANI",
+				"ILCE" : "BEYLİKDÜZÜ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Kent Ormanı",
+				"X" : 28.668389000076345,
+				"Y" : 41.00557600009729
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.5988770006, 40.9780759994 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "GÜRPINAR PİRİ REİS SAHİL PARKI",
+				"ILCE" : "BEYLİKDÜZÜ",
+				"TUVALET_DURUM" : "Pasif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.5988770005628,
+				"Y" : 40.978075999405746
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9724359999, 41.0434609998 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "BEYOĞLU HACIAHMET PARKI",
+				"ILCE" : "BEYOĞLU",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.972435999902686,
+				"Y" : 41.04346099981884
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9673564031, 41.0298395864 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "CEZAYİRLİ HASAN PAŞA PARKI",
+				"ILCE" : "BEYOĞLU",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.967356403146205,
+				"Y" : 41.02983958638626
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9699700004, 41.0231850001 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KARAKÖY SAHİL PARKI",
+				"ILCE" : "BEYOĞLU",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 28.969970000379345,
+				"Y" : 41.023185000119085
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9663689995, 41.0448339998 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "PİYALEPAŞA CAMİ BAHÇESİ",
+				"ILCE" : "BEYOĞLU",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Cami",
+				"X" : 28.966368999549523,
+				"Y" : 41.04483399976384
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9709506, 41.0367355998 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "SURURİ PARKI",
+				"ILCE" : "BEYOĞLU",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.97095059999252,
+				"Y" : 41.036735599791406
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9499280001, 41.0415339994 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ŞEHİT ŞEYHMUZ DEMİR PARKI",
+				"ILCE" : "BEYOĞLU",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.94992800012904,
+				"Y" : 41.0415339994442
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9458590004, 41.0543709997 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "NURİ KİLLİGİL PARKI",
+				"ILCE" : "BEYOĞLU",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.945859000447243,
+				"Y" : 41.054370999748826
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9490340002, 41.0549609999 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "NURİ KİLLİGİL PARKI",
+				"ILCE" : "BEYOĞLU",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.9490340001792,
+				"Y" : 41.05496099991567
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9753534275, 41.0229736775 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KARAKÖY YER ALTI GEÇİDİ",
+				"ILCE" : "BEYOĞLU",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Ulaşım",
+				"X" : 28.975353427477746,
+				"Y" : 41.022973677543774
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9807140003, 41.035291 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "HÜSEYİN AĞA CAMİİ",
+				"ILCE" : "BEYOĞLU",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Cami",
+				"X" : 28.980714000254448,
+				"Y" : 41.03529099999877
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9768480006, 41.0223360006 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KARAKÖY YER ALTI CAMİİ",
+				"ILCE" : "BEYOĞLU",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Cami",
+				"X" : 28.976848000647244,
+				"Y" : 41.02233600055645
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9857790004, 41.0369800002 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M2 TAKSİM",
+				"ILCE" : "BEYOĞLU",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.98577900037337,
+				"Y" : 41.036980000233626
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9808310003, 41.0262089998 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "NUSRETİYE CAMİİ",
+				"ILCE" : "BEYOĞLU",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Cami",
+				"X" : 28.980831000294074,
+				"Y" : 41.026208999836406
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.5999951131, 41.0099166587 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KORDON BOYU SAHİL PARKI",
+				"ILCE" : "BÜYÜKÇEKMECE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.599995113055407,
+				"Y" : 41.009916658657694
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.5949460007, 41.0145679999 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "BÜYÜKÇEKMECE KORDONBOYU PLAJ",
+				"ILCE" : "BÜYÜKÇEKMECE",
+				"TUVALET_DURUM" : "Pasif",
+				"TUVALET_TIP" : "Konteyner",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 28.594946000689955,
+				"Y" : 41.014567999942614
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.5910990002, 41.0163120003 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "BÜYÜKÇEKMECE SOSYAL TESİSLER PLAJ",
+				"ILCE" : "BÜYÜKÇEKMECE",
+				"TUVALET_DURUM" : "Pasif",
+				"TUVALET_TIP" : "Konteyner",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 28.59109900024613,
+				"Y" : 41.01631200027652
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.4027291442, 41.1809861505 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ÇATALCA İNCEĞİZ C TİPİ MESİRE ALANI",
+				"ILCE" : "ÇATALCA",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Millet Bahçesi",
+				"X" : 28.40272914415138,
+				"Y" : 41.180986150516
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.294662736, 41.4869657001 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "YALIKÖY PLAJI 2",
+				"ILCE" : "ÇATALCA",
+				"TUVALET_DURUM" : "Dönemlik",
+				"TUVALET_TIP" : "Konteyner",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Plaj",
+				"X" : 28.29466273596414,
+				"Y" : 41.48696570006087
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1889902923, 41.0147000887 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KEMERDERE KAVŞAĞI - SARIGAZİ KAVŞAĞI ARASI ORTA VE YAN REFÜJLER",
+				"ILCE" : "ÇEKMEKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.18899029229399,
+				"Y" : 41.014700088673486
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1865159998, 41.0359959998 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "RAHMİ DEMİR KENT ORMANI",
+				"ILCE" : "ÇEKMEKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Kent Ormanı",
+				"X" : 29.186515999819115,
+				"Y" : 41.03599599977125
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1940029997, 41.0276630008 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ÇEKMEKÖY DOĞA PARK",
+				"ILCE" : "ÇEKMEKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.194002999688742,
+				"Y" : 41.0276630007949
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1751730001, 41.0348439997 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ŞEHİT ÖMER AKTUĞ PARKI",
+				"ILCE" : "ÇEKMEKÖY",
+				"TUVALET_DURUM" : "Pasif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.17517300007195,
+				"Y" : 41.03484399965752
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8932063064, 41.039204347 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "AKSARAY METRO İSTASYONU VE ÇEVRESİ",
+				"ILCE" : "ESENLER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Otogar",
+				"X" : 28.893206306431427,
+				"Y" : 41.039204347017105
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8933255051, 41.0391033087 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "15 TEMMUZ DEMOKRASİ OTOGARI ORTA VE YAN REFÜJLER",
+				"ILCE" : "ESENLER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Otogar",
+				"X" : 28.893325505127834,
+				"Y" : 41.03910330873186
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8943078765, 41.0417370924 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "15 TEMMUZ DEMOKRASİ OTOGARI ORTA VE YAN REFÜJLER",
+				"ILCE" : "ESENLER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Otogar",
+				"X" : 28.89430787649818,
+				"Y" : 41.041737092443086
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8933255051, 41.0391033087 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "15 TEMMUZ DEMOKRASİ OTOGARI ORTA VE YAN REFÜJLER",
+				"ILCE" : "ESENLER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Otogar",
+				"X" : 28.893325505127834,
+				"Y" : 41.03910330873186
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8953949993, 41.0389300002 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "15 TEMMUZ DEMOKRASİ OTOGARI ORTA VE YAN REFÜJLER",
+				"ILCE" : "ESENLER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Otogar",
+				"X" : 28.895394999286818,
+				"Y" : 41.03893000024957
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8954184582, 41.0389058801 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "15 TEMMUZ DEMOKRASİ OTOGARI ORTA VE YAN REFÜJLER",
+				"ILCE" : "ESENLER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Otogar",
+				"X" : 28.895418458216813,
+				"Y" : 41.03890588007214
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8946216812, 41.0403334994 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "15 TEMMUZ DEMOKRASİ OTOGARI ORTA VE YAN REFÜJLER",
+				"ILCE" : "ESENLER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Otogar",
+				"X" : 28.894621681209227,
+				"Y" : 41.04033349940294
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8943078765, 41.0417370924 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "15 TEMMUZ DEMOKRASİ OTOGARI ORTA VE YAN REFÜJLER",
+				"ILCE" : "ESENLER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Otogar",
+				"X" : 28.89430787649818,
+				"Y" : 41.041737092443086
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8925299886, 41.0389942749 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "15 TEMMUZ DEMOKRASİ OTOGARI ORTA VE YAN REFÜJLER",
+				"ILCE" : "ESENLER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Cami",
+				"X" : 28.89252998859132,
+				"Y" : 41.03899427486106
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8952697885, 41.0404293011 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "15 TEMMUZ DEMOKRASİ OTOGARI ORTA VE YAN REFÜJLER",
+				"ILCE" : "ESENLER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Otogar",
+				"X" : 28.89526978847693,
+				"Y" : 41.04042930114039
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8953756024, 41.0407545725 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "15 TEMMUZ DEMOKRASİ OTOGARI ORTA VE YAN REFÜJLER",
+				"ILCE" : "ESENLER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Otogar",
+				"X" : 28.89537560239239,
+				"Y" : 41.040754572494876
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9366270005, 41.0472089997 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "8 MAYIS PARKI",
+				"ILCE" : "EYÜPSULTAN",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Cami",
+				"X" : 28.93662700046197,
+				"Y" : 41.0472089996877
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9486712167, 41.0791730599 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ALİBEYKÖY MERKEZ PARKI",
+				"ILCE" : "EYÜPSULTAN",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.948671216716615,
+				"Y" : 41.07917305992805
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9295653389, 41.0796907695 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "EYÜPSULTAN ATATÜRK BULVARI",
+				"ILCE" : "EYÜPSULTAN",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.929565338898513,
+				"Y" : 41.07969076946252
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9420715883, 41.0409496162 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "CEMİL MERİÇ PARKI",
+				"ILCE" : "EYÜPSULTAN",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 28.942071588336578,
+				"Y" : 41.04094961617483
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9437500006, 41.070892 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "İGDAŞ PARKI",
+				"ILCE" : "EYÜPSULTAN",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.94375000064626,
+				"Y" : 41.07089200001652
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9563710001, 41.0284239995 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ŞAİR NEDİM PARKI",
+				"ILCE" : "EYÜPSULTAN",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sosyal Tesis",
+				"X" : 28.95637100009747,
+				"Y" : 41.0284239994971
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9414590002, 41.0566289995 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "TEKKE PARKI",
+				"ILCE" : "EYÜPSULTAN",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 28.941459000199604,
+				"Y" : 41.05662899951655
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8917260001, 41.161178 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "15 TEMMUZ KENT ORMANI 1. ETAP",
+				"ILCE" : "EYÜPSULTAN",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Kent Ormanı",
+				"X" : 28.89172600012265,
+				"Y" : 41.161177999953836
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8908959998, 41.1588979996 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "15 TEMMUZ KENT ORMANI 1. ETAP",
+				"ILCE" : "EYÜPSULTAN",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Kent Ormanı",
+				"X" : 28.89089599982138,
+				"Y" : 41.15889799959957
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8826079995, 41.1621650007 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "15 TEMMUZ KENT ORMANI 1. ETAP",
+				"ILCE" : "EYÜPSULTAN",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Kent Ormanı",
+				"X" : 28.882607999532972,
+				"Y" : 41.16216500068985
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8848467004, 41.1610930003 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "15 TEMMUZ KENT ORMANI 1. ETAP",
+				"ILCE" : "EYÜPSULTAN",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Kent Ormanı",
+				"X" : 28.884846700351137,
+				"Y" : 41.16109300029404
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8828260001, 41.1615110002 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "15 TEMMUZ KENT ORMANI 1. ETAP",
+				"ILCE" : "EYÜPSULTAN",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Kent Ormanı",
+				"X" : 28.882826000124957,
+				"Y" : 41.1615110002004
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8892210006, 41.1552990007 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "15 TEMMUZ KENT ORMANI 1. ETAP",
+				"ILCE" : "EYÜPSULTAN",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Konteyner",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Kent Ormanı",
+				"X" : 28.889221000580925,
+				"Y" : 41.15529900070391
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8735063276, 41.1623283359 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "15 TEMMUZ KENT ORMANI 1. ETAP",
+				"ILCE" : "EYÜPSULTAN",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Kent Ormanı",
+				"X" : 28.873506327611413,
+				"Y" : 41.162328335890116
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8939953003, 41.1540860004 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "15 TEMMUZ KENT ORMANI 1. ETAP",
+				"ILCE" : "EYÜPSULTAN",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Kent Ormanı",
+				"X" : 28.89399530027048,
+				"Y" : 41.154086000417834
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8893739998, 41.1600110001 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "15 TEMMUZ KENT ORMANI 1. ETAP",
+				"ILCE" : "EYÜPSULTAN",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Kent Ormanı",
+				"X" : 28.889373999817693,
+				"Y" : 41.16001100009244
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8981180002, 41.1445809997 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "15 TEMMUZ KENT ORMANI 2. ETAP",
+				"ILCE" : "EYÜPSULTAN",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Kent Ormanı",
+				"X" : 28.89811800016788,
+				"Y" : 41.14458099969233
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8940145171, 41.144773662 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "15 TEMMUZ KENT ORMANI 2. ETAP",
+				"ILCE" : "EYÜPSULTAN",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Konteyner",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Kent Ormanı",
+				"X" : 28.89401451706856,
+				"Y" : 41.14477366196232
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8737760006, 41.1596950001 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "15 TEMMUZ KENT ORMANI 3. ETAP",
+				"ILCE" : "EYÜPSULTAN",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Kent Ormanı",
+				"X" : 28.873776000573496,
+				"Y" : 41.15969500007527
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9443544944, 41.0878454093 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ALİBEYKÖY CEP OTOGARI",
+				"ILCE" : "EYÜPSULTAN",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Ulaşım",
+				"X" : 28.944354494423628,
+				"Y" : 41.087845409318675
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9440647118, 41.0878406414 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ALİBEYKÖY CEP OTOGARI MODÜLER",
+				"ILCE" : "EYÜPSULTAN",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Ulaşım",
+				"X" : 28.944064711817,
+				"Y" : 41.0878406414256
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9467813629, 41.0876911682 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ALİBEYKÖY CEP OTOGARI MODÜL 2",
+				"ILCE" : "EYÜPSULTAN",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Otogar",
+				"X" : 28.946781362908165,
+				"Y" : 41.08769116822284
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9352254935, 41.080021393 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M7 YEŞİLPINAR",
+				"ILCE" : "EYÜPSULTAN",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.935225493522566,
+				"Y" : 41.080021392981784
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9748904358, 41.0218062596 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "SALI PAZARI - KARAKÖY MEYDANI",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Ulaşım",
+				"X" : 28.974890435809705,
+				"Y" : 41.021806259605455
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9785526909, 41.0116516384 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "GÜLHANE KORUSU",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Koru",
+				"X" : 28.978552690862962,
+				"Y" : 41.011651638402824
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9823996138, 41.0144311025 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "GÜLHANE KORUSU",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Koru",
+				"X" : 28.982399613795902,
+				"Y" : 41.01443110254356
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9364146558, 41.0298333701 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ŞEHİT MEHMET HÜSEYİN BALTA PARKI",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.93641465582715,
+				"Y" : 41.02983337008501
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9566300002, 41.0139789999 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ŞEHZADEBAŞI CAMİ BAHÇESİ",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Cami",
+				"X" : 28.956630000151954,
+				"Y" : 41.01397899989825
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9517828569, 41.0051393083 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "YENİKAPI MARMARAY METRO İSTASYONU",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.951782856936507,
+				"Y" : 41.00513930833355
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9489419991, 41.0112650004 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "AKSARAY METRO İSTASYONU VE ÇEVRESİ",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Ulaşım",
+				"X" : 28.948941999132824,
+				"Y" : 41.01126500044581
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9657271293, 41.0103407398 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "BEYAZIT MEYDANI",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Cami",
+				"X" : 28.965727129308156,
+				"Y" : 41.01034073984959
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9758210002, 41.0067419999 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "SULTANAHMET MEYDANI CAMİ BAHÇESİ VE ÇEVRESİ",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Meydan",
+				"X" : 28.975821000217874,
+				"Y" : 41.006741999866385
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9774338002, 41.0076505003 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "SULTANAHMET MEYDANI CAMİ BAHÇESİ VE ÇEVRESİ",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Meydan",
+				"X" : 28.97743380015779,
+				"Y" : 41.00765050028534
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9766302902, 41.0063158846 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "SULTANAHMET MEYDANI CAMİ BAHÇESİ VE ÇEVRESİ",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Cami",
+				"X" : 28.97663029024621,
+				"Y" : 41.006315884640124
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9487938539, 41.001092945 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "DR. MİMAR KADİR TOPBAŞ MEYDANI",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Dönemlik",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Meydan",
+				"X" : 28.9487938538929,
+				"Y" : 41.00109294498144
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9484171687, 41.0009372046 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "DR. MİMAR KADİR TOPBAŞ MEYDANI",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Dönemlik",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Meydan",
+				"X" : 28.948417168676812,
+				"Y" : 41.000937204567244
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.96506, 41.1877500006 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "NEŞET SUYU MESİRE ALANI",
+				"ILCE" : "SARIYER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Orman",
+				"X" : 28.965060000024597,
+				"Y" : 41.18775000064137
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9624831239, 41.2057637974 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KÖMÜRCÜ BENT MESİRE ALANI",
+				"ILCE" : "SARIYER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Orman",
+				"X" : 28.962483123903,
+				"Y" : 41.20576379737221
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0307108948, 41.1538363624 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "BÜYÜKDERE FİDANLIĞI",
+				"ILCE" : "SARIYER",
+				"TUVALET_DURUM" : "Pasif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.03071089477334,
+				"Y" : 41.15383636241336
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0510229997, 41.0882229996 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "DUATEPE PARKI",
+				"ILCE" : "SARIYER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.05102299970997,
+				"Y" : 41.08822299960883
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.049106941, 41.1632268271 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "SARIYER LİSELİLER PARKI",
+				"ILCE" : "SARIYER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.049106940998026,
+				"Y" : 41.163226827108666
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1189620993, 40.9265109993 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ORHANGAZİ ŞEHİR PARKI/DOĞU 2",
+				"ILCE" : "MALTEPE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.118962099307215,
+				"Y" : 40.926510999267606
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1187469995, 40.9287470004 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ORHANGAZİ ŞEHİR PARKI/DOĞU 2",
+				"ILCE" : "MALTEPE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.11874699953435,
+				"Y" : 40.92874700035897
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1190230002, 40.9264370002 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ORHANGAZİ ŞEHİR PARKI/DOĞU 2",
+				"ILCE" : "MALTEPE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.119023000207665,
+				"Y" : 40.92643700016
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1191850004, 40.926221 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ORHANGAZİ ŞEHİR PARKI/DOĞU 2",
+				"ILCE" : "MALTEPE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.119185000434456,
+				"Y" : 40.926221000038595
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1228288071, 40.9484379739 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M4 KÜÇÜKYALI",
+				"ILCE" : "MALTEPE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.122828807089746,
+				"Y" : 40.94843797392903
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1760299996, 40.9170899997 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M4 HASTANE",
+				"ILCE" : "MALTEPE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.176029999622653,
+				"Y" : 40.91708999971332
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1934319987, 40.9118314633 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M4 SOĞANLIK",
+				"ILCE" : "MALTEPE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.193431998720843,
+				"Y" : 40.91183146330865
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0972406677, 40.9513174482 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M8 BOSTANCI",
+				"ILCE" : "MALTEPE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.09724066772529,
+				"Y" : 40.95131744817212
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.3125159993, 40.9397000001 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "DEDEPAŞA CADDESİ PARKI",
+				"ILCE" : "PENDİK",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.312515999310584,
+				"Y" : 40.93970000009724
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.2639749993, 40.8848609999 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KAYNARCA BÖLGE PARKI",
+				"ILCE" : "PENDİK",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.263974999292987,
+				"Y" : 40.88486099985421
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.2529910005, 40.87028 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KAYNARCA SAHİL PARKI",
+				"ILCE" : "PENDİK",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.252991000451537,
+				"Y" : 40.87028000000735
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.2938210005, 40.9246369995 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "OSMANGAZİ PARKI",
+				"ILCE" : "PENDİK",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.293821000458067,
+				"Y" : 40.92463699952965
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.2340682999, 40.8757438003 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "TOPRAK DEDE HAYRETTİN KARACA PARKI",
+				"ILCE" : "PENDİK",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Meydan",
+				"X" : 29.234068299890804,
+				"Y" : 40.87574380025748
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.2343210007, 40.875677 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "TOPRAK DEDE HAYRETTİN KARACA PARKI",
+				"ILCE" : "PENDİK",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Meydan",
+				"X" : 29.234321000657147,
+				"Y" : 40.87567699996012
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.2215390002, 40.8776540001 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ŞEHİTLER PARKI",
+				"ILCE" : "PENDİK",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.221539000222414,
+				"Y" : 40.8776540001348
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.2109660001, 40.9388580001 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KARTAL TAVŞANTEPE VADİSİ PARKI",
+				"ILCE" : "PENDİK",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.21096600010742,
+				"Y" : 40.93885800012157
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.2388838495, 40.8884468537 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "PENDİK KAVŞAĞI",
+				"ILCE" : "PENDİK",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.238883849507904,
+				"Y" : 40.88844685370465
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.2466167, 40.8825617001 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M4 TAVŞANTEPE",
+				"ILCE" : "PENDİK",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.24661669995728,
+				"Y" : 40.88256170007459
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.2971959999, 40.9130320008 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "PENDİK ERSOY HASTANESİ",
+				"ILCE" : "PENDİK",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.297195999898513,
+				"Y" : 40.91303200078606
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.2628244418, 40.8886647462 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M4 FEVZİ ÇAKMAK - HASTANE",
+				"ILCE" : "PENDİK",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.262824441819344,
+				"Y" : 40.888664746206196
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.2973819778, 40.9105239108 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M4 KURTKÖY",
+				"ILCE" : "PENDİK",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.29738197775157,
+				"Y" : 40.91052391078057
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.3122404089, 40.907098234 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M4 SABİHA GÖKÇEN",
+				"ILCE" : "PENDİK",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.312240408921443,
+				"Y" : 40.907098234044845
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.2762520007, 40.953056 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "SULTANBEYLİ GÖLET PARKI",
+				"ILCE" : "SULTANBEYLİ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.276252000710002,
+				"Y" : 40.95305599999048
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.2763060002, 40.9531060003 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "SULTANBEYLİ GÖLET PARKI",
+				"ILCE" : "SULTANBEYLİ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.276306000161785,
+				"Y" : 40.95310600025777
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.6084857932, 41.1719340297 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ŞİLE TERMİNAL",
+				"ILCE" : "ŞİLE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Ulaşım",
+				"X" : 29.60848579323627,
+				"Y" : 41.17193402972711
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.279391, 40.8316650003 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KAMİL ABDUŞ LAGÜN PARKI",
+				"ILCE" : "TUZLA",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.27939099997385,
+				"Y" : 40.83166500032573
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.2794569995, 40.8316690001 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KAMİL ABDUŞ LAGÜN PARKI",
+				"ILCE" : "TUZLA",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.27945699946243,
+				"Y" : 40.83166900007554
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.3030259997, 40.814835 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ŞEHİT ÖMER ÖNER PARKI",
+				"ILCE" : "TUZLA",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Ulaşım",
+				"X" : 29.303025999685744,
+				"Y" : 40.81483499999841
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1397520003, 41.0167499995 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ALTINŞEHİR METRO ÇIKIŞI",
+				"ILCE" : "ÜMRANİYE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.139752000252038,
+				"Y" : 41.01674999954788
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1060169999, 41.0118959998 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ŞEHİTLİK PARKI",
+				"ILCE" : "ÜMRANİYE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.106016999910445,
+				"Y" : 41.01189599980865
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0966309995, 41.0260479994 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ÇARŞI METRO İSTASYONU",
+				"ILCE" : "ÜMRANİYE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.09663099953164,
+				"Y" : 41.02604799935396
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0847939998, 41.0247750002 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ÜMRANİYE METRO İSTASYONU",
+				"ILCE" : "ÜMRANİYE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.084793999796148,
+				"Y" : 41.024775000188406
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0961490001, 41.0235770003 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ÜMRANİYE SÜTÇÜ İMAM CADDESİ",
+				"ILCE" : "ÜMRANİYE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Meydan",
+				"X" : 29.096149000072494,
+				"Y" : 41.023577000256076
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1633789999, 41.0155939997 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M5 DUDULLU",
+				"ILCE" : "ÜMRANİYE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.163378999900054,
+				"Y" : 41.01559399972264
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1789669996, 41.0161720006 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M5 NECİP FAZIL",
+				"ILCE" : "ÜMRANİYE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.178966999607077,
+				"Y" : 41.01617200060299
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1160919995, 41.0401089996 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ÜMRANİYE MESİRE ALANI 2",
+				"ILCE" : "ÜMRANİYE",
+				"TUVALET_DURUM" : "Dönemlik",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Orman",
+				"X" : 29.116091999484166,
+				"Y" : 41.04010899960859
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1616569995, 41.0074409999 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M8 MODOKO",
+				"ILCE" : "ÜMRANİYE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.161656999535694,
+				"Y" : 41.00744099991764
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1594443983, 41.0222792819 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M8 HUZUR",
+				"ILCE" : "ÜMRANİYE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.159444398295477,
+				"Y" : 41.02227928187543
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0710830001, 40.9937889993 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "GÖZTEPE KAVŞAĞI",
+				"ILCE" : "ÜSKÜDAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.071083000089036,
+				"Y" : 40.9937889993231
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0597779996, 40.9972819994 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "UZUNÇAYIR KAVŞAĞI - GÖZTEPE KAVŞAĞI ARASI YAN REFÜJLER",
+				"ILCE" : "ÜSKÜDAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.059777999610496,
+				"Y" : 40.997281999434485
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9529650818, 40.9994592452 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "DR. MİMAR KADİR TOPBAŞ MEYDANI",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Dönemlik",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Meydan",
+				"X" : 28.952965081849538,
+				"Y" : 40.999459245208584
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9474699529, 41.0007610118 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "DR. MİMAR KADİR TOPBAŞ MEYDANI",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Dönemlik",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Meydan",
+				"X" : 28.947469952874147,
+				"Y" : 41.000761011765746
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9450482897, 41.0001484987 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "DR. MİMAR KADİR TOPBAŞ MEYDANI",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Dönemlik",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Meydan",
+				"X" : 28.945048289733993,
+				"Y" : 41.00014849867004
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9844336545, 41.0166376811 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "SARAYBURNU PARKI - ÇATLADIKAPI PARKI ARASI ORTA VE YAN REFÜJLER",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Pasif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 28.984433654530807,
+				"Y" : 41.016637681065994
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9678920309, 41.010548147 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KAPALIÇARŞI",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Alışveriş",
+				"X" : 28.967892030880076,
+				"Y" : 41.010548146991205
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9528158913, 41.0090288233 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "AKSARAY YERALTI ÇARŞISI",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Alışveriş",
+				"X" : 28.952815891294602,
+				"Y" : 41.009028823308014
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.927482, 41.0207750005 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "TOPKAPI KALEİÇİ",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Ulaşım",
+				"X" : 28.92748200001584,
+				"Y" : 41.02077500046202
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9525763541, 41.0085324262 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ÇUKURPAZAR AVM",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Alışveriş",
+				"X" : 28.952576354057822,
+				"Y" : 41.008532426167086
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9488940006, 41.0197079996 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "FATİH CAMİİ",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Cami",
+				"X" : 28.948894000609652,
+				"Y" : 41.0197079996263
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.952315, 41.0102340001 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "AKSARAY VALİDE SULTAN CAMİİ",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Cami",
+				"X" : 28.952314999980132,
+				"Y" : 41.01023400009643
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9560123271, 41.0103702295 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "LALELİ CAMİİ",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Cami",
+				"X" : 28.956012327146365,
+				"Y" : 41.01037022953514
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9411434267, 41.0219040495 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "FATİH HIRKA-İ ŞERİF CAMİİ",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Cami",
+				"X" : 28.941143426687997,
+				"Y" : 41.02190404954228
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9229076036, 41.0061653936 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "HADIM İBRAHİM PAŞA CAMİİ",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Cami",
+				"X" : 28.922907603553583,
+				"Y" : 41.006165393608036
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9280489998, 41.0033459994 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "SÜMBÜL EFENDİ CAMİİ",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Cami",
+				"X" : 28.928048999807693,
+				"Y" : 41.00334599937024
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9759735066, 41.0078895935 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "FİRUZAĞA CAMİİ",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Cami",
+				"X" : 28.975973506560617,
+				"Y" : 41.00788959347051
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9486569995, 41.0010439995 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "DR. MİMAR KADİR TOPBAŞ MEYDANI",
+				"ILCE" : "GAZİOSMANPAŞA",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Meydan",
+				"X" : 28.948656999486072,
+				"Y" : 41.001043999450154
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9091654977, 41.0851260506 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KAZIM KARABEKİR METRO ÇIKIŞI",
+				"ILCE" : "GAZİOSMANPAŞA",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.909165497704095,
+				"Y" : 41.085126050588855
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.893382776, 41.0836639537 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "YENİ MAHALLE METRO ÇIKIŞI",
+				"ILCE" : "GAZİOSMANPAŞA",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.893382776026723,
+				"Y" : 41.08366395372258
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9074200008, 41.0697240003 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KÜÇÜKKÖY MEYDAN",
+				"ILCE" : "GAZİOSMANPAŞA",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Meydan",
+				"X" : 28.90742000075601,
+				"Y" : 41.0697240003131
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9624093789, 41.0677069861 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "SADABAT MESİRE ALANI - 1",
+				"ILCE" : "KAĞITHANE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.962409378933163,
+				"Y" : 41.06770698612945
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9628646331, 41.0794786648 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "NURTEPE ACİL METRO ÇIKIŞI",
+				"ILCE" : "KAĞITHANE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.962864633092877,
+				"Y" : 41.079478664812505
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9791826094, 41.0711743777 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M7 ÇAĞLAYAN BATI",
+				"ILCE" : "KAĞITHANE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.979182609353597,
+				"Y" : 41.07117437774145
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.7661296249, 40.9996768561 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KÜÇÜKÇEKMECE KANARYA GÖL PARKI",
+				"ILCE" : "KÜÇÜKÇEKMECE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sosyal Tesis",
+				"X" : 28.76612962488215,
+				"Y" : 40.99967685611201
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.7660211073, 40.999638492 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KÜÇÜKÇEKMECE KANARYA GÖL PARKI",
+				"ILCE" : "KÜÇÜKÇEKMECE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sosyal Tesis",
+				"X" : 28.766021107301935,
+				"Y" : 40.99963849200629
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.7693405504, 41.0371331659 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "MENEKŞE DERESİ PARKI",
+				"ILCE" : "KÜÇÜKÇEKMECE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.769340550448995,
+				"Y" : 41.03713316587665
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.777260881, 40.9976487629 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KÜÇÜKÇEKMECE TEPE ÜSTÜ MEYDAN",
+				"ILCE" : "KÜÇÜKÇEKMECE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Meydan",
+				"X" : 28.777260881046274,
+				"Y" : 40.997648762938226
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0483911159, 41.1079870108 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "EMİRGAN KORUSU",
+				"ILCE" : "SARIYER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Koru",
+				"X" : 29.048391115948075,
+				"Y" : 41.10798701083101
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0537116047, 41.1072346918 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "EMİRGAN KORUSU",
+				"ILCE" : "SARIYER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Koru",
+				"X" : 29.053711604719126,
+				"Y" : 41.107234691782956
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0555825408, 41.1110356765 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "EMİRGAN KORUSU",
+				"ILCE" : "SARIYER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Koru",
+				"X" : 29.05558254077772,
+				"Y" : 41.111035676469506
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0521021174, 41.1093138933 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "EMİRGAN KORUSU",
+				"ILCE" : "SARIYER",
+				"TUVALET_DURUM" : "Pasif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Koru",
+				"X" : 29.0521021173578,
+				"Y" : 41.109313893292494
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0552391915, 41.1087737556 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "EMİRGAN KORUSU",
+				"ILCE" : "SARIYER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Koru",
+				"X" : 29.055239191524706,
+				"Y" : 41.10877375561651
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0555825408, 41.1110356765 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "EMİRGAN KORUSU",
+				"ILCE" : "SARIYER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Koru",
+				"X" : 29.05558254077772,
+				"Y" : 41.111035676469506
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8829839936, 41.0038450049 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ORGENERAL ABDURRAHMAN NAFİZ GÜRMAN PARKI",
+				"ILCE" : "SARIYER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.882983993573983,
+				"Y" : 41.003845004854576
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9886595455, 41.185300047 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "BENTLER MESİRE ALANI",
+				"ILCE" : "SARIYER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Orman",
+				"X" : 28.98865954548768,
+				"Y" : 41.18530004696794
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9876520005, 41.1897520002 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "BENTLER MESİRE ALANI",
+				"ILCE" : "SARIYER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Orman",
+				"X" : 28.987652000451874,
+				"Y" : 41.18975200016974
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9437403711, 41.1691507071 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "FATİH ÇEŞMESİ MESİRE ALANI",
+				"ILCE" : "SARIYER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Orman",
+				"X" : 28.943740371130794,
+				"Y" : 41.16915070714514
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9442926073, 41.1692450666 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "FATİH ÇEŞMESİ MESİRE ALANI",
+				"ILCE" : "SARIYER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Orman",
+				"X" : 28.94429260734855,
+				"Y" : 41.169245066607374
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9679557081, 41.1866365192 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "NEŞET SUYU MESİRE ALANI",
+				"ILCE" : "SARIYER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Orman",
+				"X" : 28.967955708075213,
+				"Y" : 41.18663651924402
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.96506, 41.1877500006 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "NEŞET SUYU MESİRE ALANI",
+				"ILCE" : "SARIYER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Orman",
+				"X" : 28.965060000024597,
+				"Y" : 41.18775000064137
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0451000003, 41.022492 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "BAĞLARBAŞI - KAPİTOL - ALTUNİZADE ARASI ORTA VE YAN REFÜJLER",
+				"ILCE" : "ÜSKÜDAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.04510000027655,
+				"Y" : 41.02249199999998
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0679449996, 41.0307440004 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "İSTANBUL KENT ÜNİVERSİTESİ MESUT YILMAZ HATIRA ORMANI",
+				"ILCE" : "ÜSKÜDAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.067944999629265,
+				"Y" : 41.030744000376416
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0694339996, 41.0355900003 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "BÜYÜK ÇAMLICA CAMİ YAKIN ÇEVRESİ",
+				"ILCE" : "ÜSKÜDAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Cami",
+				"X" : 29.069433999601635,
+				"Y" : 41.03559000032543
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0287519995, 41.0282220004 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "FISTIK AĞACI METRO İSTASYONU",
+				"ILCE" : "ÜSKÜDAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.02875199947521,
+				"Y" : 41.02822200040717
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0732412009, 41.0230835154 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "HAREM - ÜSKÜDAR ARASI SAHİL PARKLARI",
+				"ILCE" : "ÜSKÜDAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 29.073241200934106,
+				"Y" : 41.02308351540657
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0113269999, 41.0147159996 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "HAREM - ÜSKÜDAR ARASI SAHİL PARKLARI",
+				"ILCE" : "ÜSKÜDAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 29.01132699987755,
+				"Y" : 41.01471599962567
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0633969991, 41.0228529997 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KISIKLI MEHMET AKİF ERSOY PARKI",
+				"ILCE" : "ÜSKÜDAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.063396999062704,
+				"Y" : 41.02285299969928
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0557359998, 41.0233460005 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "MİLLET PARKI",
+				"ILCE" : "ÜSKÜDAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.055735999794088,
+				"Y" : 41.02334600045434
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0144691141, 41.0249557132 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "VALİDE-İ CEDİD CAMİ BAHÇESİ",
+				"ILCE" : "ÜSKÜDAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Cami",
+				"X" : 29.014469114109698,
+				"Y" : 41.02495571319569
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.057136001, 41.0689489992 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "VANİKÖY PARKI",
+				"ILCE" : "ÜSKÜDAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 29.057136000983544,
+				"Y" : 41.06894899923595
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0680840002, 41.0264140001 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "BÜYÜK ÇAMLICA KORUSU",
+				"ILCE" : "ÜSKÜDAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Koru",
+				"X" : 29.068084000188254,
+				"Y" : 41.026414000131524
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0271329996, 41.0324780004 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "FETHİPAŞA KORUSU",
+				"ILCE" : "ÜSKÜDAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Koru",
+				"X" : 29.02713299962772,
+				"Y" : 41.032478000371654
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0671880003, 41.0199829998 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KÜÇÜK ÇAMLICA KORUSU",
+				"ILCE" : "ÜSKÜDAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Koru",
+				"X" : 29.067188000310313,
+				"Y" : 41.019982999821764
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.036237, 41.023955 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "BAĞLARBAŞI PARKI",
+				"ILCE" : "ÜSKÜDAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Meydan",
+				"X" : 29.03623700001603,
+				"Y" : 41.02395500004602
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1647188063, 41.0277770177 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ÜSKÜDAR MEYDAN",
+				"ILCE" : "ÜSKÜDAR",
+				"TUVALET_DURUM" : "Pasif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Meydan",
+				"X" : 29.16471880634062,
+				"Y" : 41.027777017728766
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0164459996, 41.0276099995 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M5 ÜSKÜDAR",
+				"ILCE" : "ÜSKÜDAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.01644599963643,
+				"Y" : 41.02760999948657
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0157800003, 41.0265800004 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ÜSKÜDAR MİHRİMAH SULTAN CAMİİ",
+				"ILCE" : "ÜSKÜDAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Cami",
+				"X" : 29.015780000283108,
+				"Y" : 41.02658000037685
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0237263064, 41.0191188796 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ÜSKÜDAR VALİDE-İ ATİK CAMİİ",
+				"ILCE" : "ÜSKÜDAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Cami",
+				"X" : 29.0237263063767,
+				"Y" : 41.01911887955068
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.7169468928, 41.3288696922 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "YENİKÖY HALK PLAJI",
+				"ILCE" : "ARNAVUTKÖY",
+				"TUVALET_DURUM" : "Dönemlik",
+				"TUVALET_TIP" : "Konteyner",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Plaj",
+				"X" : 28.716946892821984,
+				"Y" : 41.32886969218536
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.7232650569, 40.9706945465 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "AVCILAR SAHİL PARKI - 1",
+				"ILCE" : "AVCILAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 28.723265056858622,
+				"Y" : 40.97069454651756
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.7458029999, 40.9761520004 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "AVCILAR SAHİL PARKI - 2",
+				"ILCE" : "AVCILAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 28.745802999876233,
+				"Y" : 40.97615200039085
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.7456009993, 40.9760469995 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "AVCILAR SAHİL PARKI - 2",
+				"ILCE" : "AVCILAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 28.74560099927855,
+				"Y" : 40.97604699948637
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.7378730008, 40.9717519997 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "AVCILAR SAHİL PARKI - 2",
+				"ILCE" : "AVCILAR",
+				"TUVALET_DURUM" : "Dönemlik",
+				"TUVALET_TIP" : "Konteyner",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Plaj",
+				"X" : 28.737873000842413,
+				"Y" : 40.97175199971368
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.7244166996, 40.9848740008 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "AVCILAR VATAN HASTANESİ KAVŞAĞI - AVCILAR KAVŞAĞI ARASI",
+				"ILCE" : "AVCILAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Metrobüs",
+				"X" : 28.72441669961187,
+				"Y" : 40.98487400076399
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8260709191, 41.0648062809 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "İSTOÇ METRO İSTASYONU",
+				"ILCE" : "BAĞCILAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.82607091908818,
+				"Y" : 41.06480628089218
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8558320624, 41.063649373 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ORUÇ REİS METRO ÇIKIŞI (DOĞU-BATI)",
+				"ILCE" : "BAĞCILAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.855832062429435,
+				"Y" : 41.063649372980166
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8545891528, 41.0607165141 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ORUÇ REİS METRO ÇIKIŞI (DOĞU-BATI)",
+				"ILCE" : "BAĞCILAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.85458915275476,
+				"Y" : 41.06071651412665
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8661558088, 41.0701004305 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "TEKSTİLKENT METRO ÇIKIŞI",
+				"ILCE" : "BAĞCILAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.866155808812145,
+				"Y" : 41.07010043045747
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8423589129, 41.0331098992 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KİRAZLI METRO İSTASYONU",
+				"ILCE" : "BAĞCILAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.84235891289228,
+				"Y" : 41.033109899198905
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8305460112, 41.0542261591 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "MAHMUTBEY METRO İSTASYONU",
+				"ILCE" : "BAĞCILAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.83054601117885,
+				"Y" : 41.054226159087406
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8305824524, 41.0543097997 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "MAHMUTBEY METRO İSTASYONU",
+				"ILCE" : "BAĞCILAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.83058245241721,
+				"Y" : 41.05430979968863
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8352660003, 40.9930420006 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ATAKÖY KAVŞAĞI - ÇOBANÇEŞME KAVŞAĞI ARASI ORTA VE YAN REFÜJLER",
+				"ILCE" : "BAHÇELİEVLER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Ulaşım",
+				"X" : 28.83526600034268,
+				"Y" : 40.99304200055764
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8382090002, 40.9905389995 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "İETT YENİBOSNA HAREKET AMİRLİĞİ",
+				"ILCE" : "BAHÇELİEVLER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Ulaşım",
+				"X" : 28.838209000238578,
+				"Y" : 40.990538999455126
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8501785838, 40.9972068799 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ŞİRİNEVLER HALK PAZARI",
+				"ILCE" : "BAHÇELİEVLER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Alışveriş",
+				"X" : 28.850178583841203,
+				"Y" : 40.99720687988575
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8805177438, 40.9757686593 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "AYTEKİN KOTİL PARKI",
+				"ILCE" : "BAKIRKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 28.880517743832186,
+				"Y" : 40.97576865931076
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8881240438, 40.9793107663 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "AYTEKİN KOTİL PARKI",
+				"ILCE" : "BAKIRKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 28.888124043833486,
+				"Y" : 40.979310766285394
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8604549998, 40.9746829996 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "BARUTHANE MİLLET BAHÇESİ PARKI",
+				"ILCE" : "BAKIRKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Millet Bahçesi",
+				"X" : 28.86045499980276,
+				"Y" : 40.974682999591984
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8463139834, 41.0570674304 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "GÖZTEPE METRO ÇIKIŞI",
+				"ILCE" : "BAĞCILAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.846313983407565,
+				"Y" : 41.057067430441634
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8548839999, 41.0435859996 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "AZERBAYCAN DOSTLUK PARKI",
+				"ILCE" : "BAĞCILAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.854883999936686,
+				"Y" : 41.04358599963683
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8358932216, 41.0409962823 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "YENİ MAHALLE METRO İSTASYONU",
+				"ILCE" : "BAĞCILAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.835893221649357,
+				"Y" : 41.04099628232652
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8875430004, 41.0001479995 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ÇIRPICI ŞEHİR PARKI",
+				"ILCE" : "BAKIRKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.887543000436303,
+				"Y" : 41.00014799947619
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.7622300387, 40.9823592777 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KÜÇÜKÇEKMECE MENEKŞE PARKI",
+				"ILCE" : "BAKIRKÖY",
+				"TUVALET_DURUM" : "Pasif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 28.76223003868441,
+				"Y" : 40.98235927770814
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.7897109993, 40.9777770008 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "FLORYA ATATÜRK ORMANI VE İPA YERLEŞKESİ",
+				"ILCE" : "BAKIRKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Orman",
+				"X" : 28.789710999289035,
+				"Y" : 40.97777700081147
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.7909404457, 41.0973199692 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "BAŞAKKONUTLARI METRO İSTASYONU ÇIKIŞI",
+				"ILCE" : "BAŞAKŞEHİR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.7909404456624,
+				"Y" : 41.0973199691897
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.6648029998, 41.10333 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "TATARCIK PARKI",
+				"ILCE" : "BAŞAKŞEHİR",
+				"TUVALET_DURUM" : "Pasif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.66480299977473,
+				"Y" : 41.103329999969326
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.7967123585, 41.0873184586 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M3 SİTELER",
+				"ILCE" : "BAŞAKŞEHİR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.796712358474824,
+				"Y" : 41.08731845856542
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.7678919863, 41.1077157478 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M3 TOPLU KONUTLAR",
+				"ILCE" : "BAŞAKŞEHİR",
+				"TUVALET_DURUM" : "Pasif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.76789198631987,
+				"Y" : 41.10771574781027
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0362909994, 41.0595309996 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KURUÇEŞME PARKI",
+				"ILCE" : "BEŞİKTAŞ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 29.03629099942833,
+				"Y" : 41.059530999642554
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0121899993, 41.0660479995 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ZİNCİRLİKUYU KAVŞAĞI",
+				"ILCE" : "BEŞİKTAŞ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Metrobüs",
+				"X" : 29.01218999934698,
+				"Y" : 41.066047999525985
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0141560001, 41.0662930005 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ZİNCİRLİKUYU KAVŞAĞI",
+				"ILCE" : "BEŞİKTAŞ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Metrobüs",
+				"X" : 29.014156000118327,
+				"Y" : 41.066293000509496
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0107219983, 41.0689239998 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M2 GAYRETTEPE",
+				"ILCE" : "BEŞİKTAŞ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.010721998259683,
+				"Y" : 41.068923999775606
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0268750001, 41.0476399997 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ORTAKÖY CAMİİ",
+				"ILCE" : "BEŞİKTAŞ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Cami",
+				"X" : 29.02687500010601,
+				"Y" : 41.047639999678026
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.6237350002, 41.0226670002 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "GÜRPINAR KAVŞAĞI - M.SİNAN KAVŞAĞI ARASI (S RAMPASI)",
+				"ILCE" : "BEYLİKDÜZÜ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Metrobüs",
+				"X" : 28.623735000165855,
+				"Y" : 41.0226670002429
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.6513299993, 41.0113599999 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "BEYLİKDÜZÜ METROBÜS",
+				"ILCE" : "BEYLİKDÜZÜ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Metrobüs",
+				"X" : 28.651329999312985,
+				"Y" : 41.01135999990773
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9949169997, 41.0365619995 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "DOLMABAHÇE CAMİ BAHÇESİ",
+				"ILCE" : "BEYOĞLU",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Cami",
+				"X" : 28.9949169996945,
+				"Y" : 41.03656199948388
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9873779999, 41.0392470004 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "TAKSİM GEZİ PARKI",
+				"ILCE" : "BEYOĞLU",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.987377999946602,
+				"Y" : 41.03924700042165
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0302980488, 41.1399169851 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M2 HACIOSMAN",
+				"ILCE" : "BEYOĞLU",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.030298048805047,
+				"Y" : 41.139916985126284
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9780920005, 41.0334909999 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "GALATASARAY",
+				"ILCE" : "BEYOĞLU",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Meydan",
+				"X" : 28.978092000513637,
+				"Y" : 41.03349099992726
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9808696483, 41.026236344 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KILIÇ ALİ PAŞA CAMİİ",
+				"ILCE" : "BEYOĞLU",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Cami",
+				"X" : 28.98086964829307,
+				"Y" : 41.02623634398203
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.5865502459, 41.0174287856 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "BÜYÜKÇEKMECE SOSYAL TESİSLER",
+				"ILCE" : "BÜYÜKÇEKMECE",
+				"TUVALET_DURUM" : "Pasif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sosyal Tesis",
+				"X" : 28.58655024590085,
+				"Y" : 41.01742878563206
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.3026461012, 41.4836586513 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "YALIKÖY PLAJI 1",
+				"ILCE" : "ÇATALCA",
+				"TUVALET_DURUM" : "Dönemlik",
+				"TUVALET_TIP" : "Konteyner",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Plaj",
+				"X" : 28.302646101157602,
+				"Y" : 41.48365865132944
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1847800004, 41.0387499999 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "RAHMİ DEMİR KENT ORMANI",
+				"ILCE" : "ÇEKMEKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Kent Ormanı",
+				"X" : 29.184780000388834,
+				"Y" : 41.03874999989823
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1832519998, 41.0379219996 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "RAHMİ DEMİR KENT ORMANI",
+				"ILCE" : "ÇEKMEKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Kent Ormanı",
+				"X" : 29.183251999823433,
+				"Y" : 41.03792199955797
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8933255051, 41.0391033087 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "AKSARAY METRO İSTASYONU VE ÇEVRESİ",
+				"ILCE" : "ESENLER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Otogar",
+				"X" : 28.893325505127834,
+				"Y" : 41.03910330873186
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8943078765, 41.0417370924 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "15 TEMMUZ DEMOKRASİ OTOGARI ORTA VE YAN REFÜJLER",
+				"ILCE" : "ESENLER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Otogar",
+				"X" : 28.89430787649818,
+				"Y" : 41.041737092443086
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8946216812, 41.0403334994 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "15 TEMMUZ DEMOKRASİ OTOGARI ORTA VE YAN REFÜJLER",
+				"ILCE" : "ESENLER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Otogar",
+				"X" : 28.894621681209227,
+				"Y" : 41.04033349940294
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.6673155313, 41.0239154281 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ESENYURT GAZİLER PARKI",
+				"ILCE" : "ESENYURT",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.66731553132072,
+				"Y" : 41.0239154280928
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9361139701, 41.0803570208 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "EYÜPSULTAN ATATÜRK BULVARI",
+				"ILCE" : "EYÜPSULTAN",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.93611397011803,
+				"Y" : 41.08035702078796
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9446319996, 41.0625599998 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "SİLAHTARAĞA PARKI",
+				"ILCE" : "EYÜPSULTAN",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.944631999627934,
+				"Y" : 41.0625599998445
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8893750005, 41.1600000004 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "15 TEMMUZ KENT ORMANI 1. ETAP",
+				"ILCE" : "EYÜPSULTAN",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Kent Ormanı",
+				"X" : 28.88937500045923,
+				"Y" : 41.160000000360846
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8819680001, 41.160036 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "15 TEMMUZ KENT ORMANI 1. ETAP",
+				"ILCE" : "EYÜPSULTAN",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Kent Ormanı",
+				"X" : 28.88196800008688,
+				"Y" : 41.16003599997343
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.874114, 41.1623760004 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "15 TEMMUZ KENT ORMANI 1. ETAP",
+				"ILCE" : "EYÜPSULTAN",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Kent Ormanı",
+				"X" : 28.87411400000099,
+				"Y" : 41.16237600039115
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8985270007, 41.144662 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "15 TEMMUZ KENT ORMANI 2. ETAP",
+				"ILCE" : "EYÜPSULTAN",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Kent Ormanı",
+				"X" : 28.8985270007369,
+				"Y" : 41.144662000033065
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8730390001, 41.1579049998 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "15 TEMMUZ KENT ORMANI 3. ETAP",
+				"ILCE" : "EYÜPSULTAN",
+				"TUVALET_DURUM" : "Pasif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Kent Ormanı",
+				"X" : 28.873039000114982,
+				"Y" : 41.15790499981953
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9321219358, 41.0478014005 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "EYÜPSULTAN CAMİİ",
+				"ILCE" : "EYÜPSULTAN",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Cami",
+				"X" : 28.93212193579494,
+				"Y" : 41.04780140046176
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9529811405, 41.0149117572 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ARKEOLOJİ PARKI",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.952981140466893,
+				"Y" : 41.01491175719935
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9515268969, 41.0272800851 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "YAVUZ SULTAN SELİM CAMİ KÜLLİYESİ BAHÇESİ",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Cami",
+				"X" : 28.95152689688419,
+				"Y" : 41.027280085057306
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9270325298, 40.9915631712 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KOCA MUSTAFA PAŞA SAHİL PARKI",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Pasif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 28.927032529757323,
+				"Y" : 40.991563171211645
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9648419996, 41.0150749998 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "SÜLEYMANİYE CAMİ BAHÇESİ",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Cami",
+				"X" : 28.964841999626078,
+				"Y" : 41.01507499981469
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.939897081, 41.0001720507 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "DR. MİMAR KADİR TOPBAŞ MEYDANI",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Meydan",
+				"X" : 28.939897081045565,
+				"Y" : 41.000172050726604
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.939786, 41.0003580004 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "DR. MİMAR KADİR TOPBAŞ MEYDANI",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 28.939785999957188,
+				"Y" : 41.000358000352016
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9721517997, 41.0180305256 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "GALATA KÖPRÜSÜ EMİNÖNÜ",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Ulaşım",
+				"X" : 28.97215179969174,
+				"Y" : 41.01803052561435
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9763976475, 41.0152032381 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "MARMARAY SİRKECİ",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.97639764754517,
+				"Y" : 41.01520323810096
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9352160352, 41.0294086609 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "EDİRNEKAPI MİHRİMAH SULTAN CAMİİ",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Cami",
+				"X" : 28.935216035192884,
+				"Y" : 41.02940866092807
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9701846313, 41.0100253052 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "NURUOSMANİYE CAMİİ",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Cami",
+				"X" : 28.97018463130223,
+				"Y" : 41.01002530518794
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8750240004, 41.0812500002 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KARADENİZ MAHALLESİ METRO ÇIKIŞLARI",
+				"ILCE" : "GAZİOSMANPAŞA",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.875024000358867,
+				"Y" : 41.081250000244
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.5558998887, 41.0100690841 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "100. YIL PARKI",
+				"ILCE" : "BÜYÜKÇEKMECE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Konteyner",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 28.555899888677807,
+				"Y" : 41.010069084128176
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9615330872, 41.0537453984 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "MAHMUT ŞEVKET PAŞA PARKI",
+				"ILCE" : "ŞİŞLİ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.961533087222122,
+				"Y" : 41.05374539838528
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0302723565, 41.1387347487 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "HACIOSMAN ATATÜRK KENT ORMANI VE DERBENT BÖLÜMÜ",
+				"ILCE" : "SARIYER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Kent Ormanı",
+				"X" : 29.03027235654958,
+				"Y" : 41.13873474874787
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0335055011, 41.13070598 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "HACIOSMAN ATATÜRK KENT ORMANI VE DERBENT BÖLÜMÜ",
+				"ILCE" : "SARIYER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Kent Ormanı",
+				"X" : 29.033505501135465,
+				"Y" : 41.13070598002721
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0259706162, 41.135828346 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "HACIOSMAN ATATÜRK KENT ORMANI VE DERBENT BÖLÜMÜ",
+				"ILCE" : "SARIYER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Kent Ormanı",
+				"X" : 29.025970616172117,
+				"Y" : 41.13582834599178
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9702200139, 41.2531221537 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KISIRKAYA PLAJI",
+				"ILCE" : "SARIYER",
+				"TUVALET_DURUM" : "Dönemlik",
+				"TUVALET_TIP" : "Konteyner",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Plaj",
+				"X" : 28.970220013880667,
+				"Y" : 41.25312215368025
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.250587001, 41.0785549998 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "SİLİVRİ BOĞLUCA PARKI",
+				"ILCE" : "SİLİVRİ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 28.250587000951487,
+				"Y" : 41.07855499978191
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.2374247941, 41.0780738107 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "SİLİVRİ MESCİT",
+				"ILCE" : "SİLİVRİ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Meydan",
+				"X" : 28.23742479408678,
+				"Y" : 41.07807381072198
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.2374247941, 41.0780738107 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "SİLİVRİ",
+				"ILCE" : "SİLİVRİ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Meydan",
+				"X" : 28.23742479408678,
+				"Y" : 41.07807381072198
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.1636884665, 41.0725447513 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "SİLİVRİ SEMİZKUM PLAJI",
+				"ILCE" : "SİLİVRİ",
+				"TUVALET_DURUM" : "Dönemlik",
+				"TUVALET_TIP" : "Konteyner",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Plaj",
+				"X" : 28.163688466480643,
+				"Y" : 41.072544751290685
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.2315066865, 41.0781728913 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "SİLİVRİ PLAJ",
+				"ILCE" : "SİLİVRİ",
+				"TUVALET_DURUM" : "Dönemlik",
+				"TUVALET_TIP" : "Konteyner",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Plaj",
+				"X" : 28.23150668649843,
+				"Y" : 41.078172891335036
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.3845959996, 41.0505640003 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "SELİMPAŞA PLAJ",
+				"ILCE" : "SİLİVRİ",
+				"TUVALET_DURUM" : "Dönemlik",
+				"TUVALET_TIP" : "Konteyner",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Plaj",
+				"X" : 28.38459599962065,
+				"Y" : 41.05056400026703
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8763198793, 41.1028584414 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "CEBECİ PARKI",
+				"ILCE" : "SULTANGAZİ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.876319879292694,
+				"Y" : 41.102858441423294
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8794235388, 41.0886623418 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ŞEHİT VEDAT BARCEĞCİ PARKI",
+				"ILCE" : "SULTANGAZİ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.879423538798825,
+				"Y" : 41.088662341803804
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9010842906, 41.0957069148 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "GAZİ PARKI",
+				"ILCE" : "SULTANGAZİ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.901084290586304,
+				"Y" : 41.09570691475865
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9158840003, 41.1014419998 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "SULTANGAZİ ALİBEY BARAJ ÜSTÜ PARKI",
+				"ILCE" : "SULTANGAZİ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.915884000296646,
+				"Y" : 41.101441999834606
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9917569995, 41.0455199998 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "MAÇKA DEMOKRASİ PARKI",
+				"ILCE" : "ŞİŞLİ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.99175699952403,
+				"Y" : 41.04551999982514
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.979878094, 41.0566318037 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "TAKSİM GEZİ PARKI",
+				"ILCE" : "ŞİŞLİ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Alışveriş",
+				"X" : 28.979878093968455,
+				"Y" : 41.056631803722645
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9967231094, 41.0655833419 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ŞİŞLİ MECİDİYEKÖY METRO İSTASYONU",
+				"ILCE" : "ŞİŞLİ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.996723109388324,
+				"Y" : 41.0655833418917
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9942159888, 41.0663103186 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "MECİDİYEKÖY MEYDAN",
+				"ILCE" : "ŞİŞLİ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Meydan",
+				"X" : 28.9942159887733,
+				"Y" : 41.06631031859939
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9871204207, 41.0541478416 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M2 OSMANBEY",
+				"ILCE" : "ŞİŞLİ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.98712042073576,
+				"Y" : 41.05414784158296
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9946021963, 41.0661212672 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M7 MECİDİYEKÖY BATI",
+				"ILCE" : "ŞİŞLİ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.994602196324934,
+				"Y" : 41.066121267217156
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8904510004, 40.999126 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ÇIRPICI ŞEHİR PARKI",
+				"ILCE" : "ZEYTİNBURNU",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.890451000360443,
+				"Y" : 40.999126000001326
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8930979038, 41.0003924576 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ÇIRPICI ŞEHİR PARKI",
+				"ILCE" : "ZEYTİNBURNU",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.893097903786384,
+				"Y" : 41.000392457578286
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9205653785, 41.0203256688 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "TOPKAPI DEPREM PARKI",
+				"ILCE" : "ZEYTİNBURNU",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.92056537847744,
+				"Y" : 41.0203256688082
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9182860239, 40.9919762173 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "MARMARAY KAZLIÇEŞME",
+				"ILCE" : "ZEYTİNBURNU",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.91828602386012,
+				"Y" : 40.9919762172822
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9182860239, 40.9919762173 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KAZLIÇEŞME OTOPARK",
+				"ILCE" : "ZEYTİNBURNU",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Ulaşım",
+				"X" : 28.91828602386012,
+				"Y" : 40.9919762172822
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8990328272, 40.9793852518 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ZEYTİNBURNU SAHİL(BÜYÜKYALI)",
+				"ILCE" : "ZEYTİNBURNU",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 28.899032827174945,
+				"Y" : 40.97938525179708
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.8754935654, 41.0799812049 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M7 KARADENİZ MAHALLESİ BATI",
+				"ILCE" : "GAZİOSMANPAŞA",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 28.875493565375166,
+				"Y" : 41.07998120488514
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.7709790515, 40.979775302 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KÜÇÜKÇEKMECE GÖLAĞZI PARKI",
+				"ILCE" : "KÜÇÜKÇEKMECE",
+				"TUVALET_DURUM" : "Dönemlik",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Plaj",
+				"X" : 28.770979051462902,
+				"Y" : 40.97977530203272
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0521622266, 41.1094944819 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "EMİRGAN KORUSU",
+				"ILCE" : "SARIYER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Koru",
+				"X" : 29.05216222661915,
+				"Y" : 41.10949448185286
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0537116047, 41.1072346918 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "EMİRGAN KORUSU",
+				"ILCE" : "SARIYER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Koru",
+				"X" : 29.053711604719126,
+				"Y" : 41.107234691782956
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9876197771, 41.1894265573 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "BENTLER MESİRE ALANI",
+				"ILCE" : "SARIYER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Orman",
+				"X" : 28.987619777144108,
+				"Y" : 41.18942655726138
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9465999999, 41.1693100003 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "FATİH ÇEŞMESİ MESİRE ALANI",
+				"ILCE" : "SARIYER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Orman",
+				"X" : 28.946599999938,
+				"Y" : 41.16931000026202
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9635899997, 41.2069900003 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KÖMÜRCÜ BENT MESİRE ALANI",
+				"ILCE" : "SARIYER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Orman",
+				"X" : 28.9635899996536,
+				"Y" : 41.206990000264746
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0443042186, 41.1496984133 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "SARIYER NADİR NADİ PARKI",
+				"ILCE" : "SARIYER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.044304218620358,
+				"Y" : 41.14969841332736
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.9821017534, 41.0143422379 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "GÜLHANE KORUSU",
+				"ILCE" : "FATİH",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Koru",
+				"X" : 28.98210175341461,
+				"Y" : 41.014342237949194
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.6673155313, 41.0239154281 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ESENYURT CUMHURİYET MEYDANI",
+				"ILCE" : "ESENYURT",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Meydan",
+				"X" : 28.66731553132072,
+				"Y" : 41.0239154280928
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.5550896127, 41.0296513511 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "BÜYÜKÇEKMECE YAŞAM VADİSİ",
+				"ILCE" : "BÜYÜKÇEKMECE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Orman",
+				"X" : 28.555089612651027,
+				"Y" : 41.02965135106621
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0274248149, 41.155205777 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "BÜYÜKDERE FİDANLIĞI",
+				"ILCE" : "SARIYER",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Orman",
+				"X" : 29.027424814931248,
+				"Y" : 41.155205777043214
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0917830004, 41.1340160001 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "BEYKOZ MERKEZ PARKI",
+				"ILCE" : "BEYKOZ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Meydan",
+				"X" : 29.091783000449684,
+				"Y" : 41.13401600011207
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1561669998, 41.0002600001 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M8 İMES",
+				"ILCE" : "ÜMRANİYE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.156166999786794,
+				"Y" : 41.00026000012552
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.7657446697, 40.9936979377 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KÜÇÜKÇEKMECE KANARYA GÖL PARKI",
+				"ILCE" : "KÜÇÜKÇEKMECE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 28.765744669698204,
+				"Y" : 40.99369793773118
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.7705295838, 41.0035433634 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KÜÇÜKÇEKMECE KANARYA GÖL PARKI",
+				"ILCE" : "KÜÇÜKÇEKMECE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 28.770529583752722,
+				"Y" : 41.00354336336671
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1528193109, 41.0314292176 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M8 PARSELLER",
+				"ILCE" : "ÜMRANİYE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.152819310901073,
+				"Y" : 41.031429217574136
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0997385635, 40.8792525103 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "HEYBELİ ADA",
+				"ILCE" : "ADALAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 29.099738563470908,
+				"Y" : 40.87925251030238
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1262152352, 40.9790913036 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M8 İÇERENKÖY",
+				"ILCE" : "ATAŞEHİR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.126215235174065,
+				"Y" : 40.9790913035502
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0657499996, 41.0995240008 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "BEYKOZ KANLICA PARKI",
+				"ILCE" : "BEYKOZ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Meydan",
+				"X" : 29.0657499995895,
+				"Y" : 41.0995240007748
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0994300003, 41.1240209999 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "SULTANİYE PARKI",
+				"ILCE" : "BEYKOZ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.099430000329093,
+				"Y" : 41.12402099989945
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0947599995, 41.131394 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "BEYKOZ KORUSU",
+				"ILCE" : "BEYKOZ",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Koru",
+				"X" : 29.094759999496837,
+				"Y" : 41.13139400001789
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1913660001, 41.0385359996 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "RAHMİ DEMİR KENT ORMANI",
+				"ILCE" : "ÇEKMEKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Kent Ormanı",
+				"X" : 29.191366000142416,
+				"Y" : 41.03853599960991
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1048010002, 40.9646820003 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "BOSTANCI KAVŞAĞI",
+				"ILCE" : "KADIKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.104801000194545,
+				"Y" : 40.96468200034819
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0641599992, 40.9634159996 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "DALYAN PARKI",
+				"ILCE" : "KADIKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 29.064159999246403,
+				"Y" : 40.96341599959565
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0599459994, 40.9708559998 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "GÖZTEPE 60. YIL PARKI",
+				"ILCE" : "KADIKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.05994599939615,
+				"Y" : 40.970855999774145
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.2356754937, 40.995060105 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KADIKÖY MEYDANI",
+				"ILCE" : "KADIKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Meydan",
+				"X" : 29.23567549367378,
+				"Y" : 40.99506010501663
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0208550004, 40.9862660002 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "MODA İNCİBURNU PARKI",
+				"ILCE" : "KADIKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.020855000350178,
+				"Y" : 40.986266000158594
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0504745277, 40.9980094006 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "SALI PAZARI MEYDANI",
+				"ILCE" : "KADIKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Alışveriş",
+				"X" : 29.050474527655343,
+				"Y" : 40.99800940060854
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.048815002, 40.9966186274 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "SALI PAZARI MEYDANI",
+				"ILCE" : "KADIKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Alışveriş",
+				"X" : 29.04881500203027,
+				"Y" : 40.996618627372584
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0340420002, 40.986728 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "YOĞURTÇU PARKI",
+				"ILCE" : "KADIKÖY",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.03404200015748,
+				"Y" : 40.98672799995299
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1646339993, 40.8962770007 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "İBB SOSYAL TESİSLER - KARTAL İDO ARASI KARA VE SAHİL PARKI",
+				"ILCE" : "KARTAL",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 29.16463399925172,
+				"Y" : 40.89627700067
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1986069994, 40.8838560001 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KARTAL İDO - KARTAL KUMCULAR ARASI KARA VE SAHİL PARKI",
+				"ILCE" : "KARTAL",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 29.198606999367755,
+				"Y" : 40.88385600009608
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0989729997, 40.9492120001 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ACIBADEM CADDESİ ORTA REFÜJ",
+				"ILCE" : "MALTEPE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.098972999673066,
+				"Y" : 40.949212000088345
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1226350001, 40.9413020002 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "İDEALTEPE 50. YIL KORUSU",
+				"ILCE" : "MALTEPE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Koru",
+				"X" : 29.12263500005131,
+				"Y" : 40.94130200024096
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1324120006, 40.9137049999 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "İDEALTEPE - DRAGOS ARASI KARA VE SAHİL PARKI",
+				"ILCE" : "MALTEPE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 29.132412000621827,
+				"Y" : 40.91370499989059
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.115851452, 40.9332046248 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ORHANGAZİ ŞEHİR PARKI/BATI 1",
+				"ILCE" : "MALTEPE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 29.115851452038015,
+				"Y" : 40.93320462476696
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1244250004, 40.9224410002 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ORHANGAZİ ŞEHİR PARKI/DOĞU 1",
+				"ILCE" : "MALTEPE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.124425000365132,
+				"Y" : 40.92244100016625
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1191430002, 40.9262799997 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ORHANGAZİ ŞEHİR PARKI/DOĞU 2",
+				"ILCE" : "MALTEPE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.11914300021849,
+				"Y" : 40.926279999690195
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1658491251, 40.9204107455 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M4 ESENKENT",
+				"ILCE" : "MALTEPE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.165849125094514,
+				"Y" : 40.92041074548579
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1636329999, 40.9167629998 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "CUMHURİYET PARKI",
+				"ILCE" : "MALTEPE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.163632999918146,
+				"Y" : 40.91676299977629
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.2530990003, 40.8926769996 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "GÖZDAĞI KORUSU",
+				"ILCE" : "PENDİK",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.25309900033712,
+				"Y" : 40.892676999615674
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.2267020004, 40.8729540006 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "TOPRAK DEDE HAYRETTİN KARACA PARKI",
+				"ILCE" : "PENDİK",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.22670200040544,
+				"Y" : 40.8729540005841
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.2884889995, 40.9345269998 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "YAŞAM KORUSU",
+				"ILCE" : "PENDİK",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.288488999549006,
+				"Y" : 40.93452699975948
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.2367610004, 40.8753520007 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "PENDİK BELTUR",
+				"ILCE" : "PENDİK",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 29.236761000419712,
+				"Y" : 40.87535200071558
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.2763232907, 40.9042050963 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M4 YAYALAR - ŞEYHLİ",
+				"ILCE" : "PENDİK",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.276323290677837,
+				"Y" : 40.90420509631701
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.2546609997, 41.0134120001 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "SAFA TEPESİ PARKI",
+				"ILCE" : "SANCAKTEPE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.25466099972173,
+				"Y" : 41.01341200008365
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.6068160002, 41.18152 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ŞİLE LİMAN GİRİŞ ORTA VE YAN REFÜJLER",
+				"ILCE" : "ŞİLE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 29.60681600016804,
+				"Y" : 41.181520000000525
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.3078140002, 40.8136539999 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ŞEHİT ÖMER ÖNER PARKI",
+				"ILCE" : "TUZLA",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 29.30781400020261,
+				"Y" : 40.81365399989501
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0973349997, 41.0259410004 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ÇARŞI METRO İSTASYONU",
+				"ILCE" : "ÜMRANİYE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.09733499972737,
+				"Y" : 41.02594100038045
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1519159993, 41.0159439997 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "İMAM HATİP LİSESİ METRO İSTASYONU",
+				"ILCE" : "ÜMRANİYE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.151915999297014,
+				"Y" : 41.01594399968548
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.1160539998, 41.0401540004 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "ÜMRANİYE MESİRE ALANI 1",
+				"ILCE" : "ÜMRANİYE",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Orman",
+				"X" : 29.116053999756335,
+				"Y" : 41.04015400039655
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0128289997, 41.0190689998 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "DOĞANCILAR PARKI",
+				"ILCE" : "ÜSKÜDAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.012828999673477,
+				"Y" : 41.019068999797774
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0148559998, 41.0261900001 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "HAREM - ÜSKÜDAR ARASI SAHİL PARKLARI",
+				"ILCE" : "ÜSKÜDAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.014855999848763,
+				"Y" : 41.02619000013135
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0557087876, 41.0235271456 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "MİLLET PARKI",
+				"ILCE" : "ÜSKÜDAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Park",
+				"X" : 29.05570878757211,
+				"Y" : 41.02352714557546
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0680789991, 41.0265400001 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "BÜYÜK ÇAMLICA KORUSU",
+				"ILCE" : "ÜSKÜDAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Koru",
+				"X" : 29.06807899905429,
+				"Y" : 41.026540000061594
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0635540001, 41.0193160003 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "KÜÇÜK ÇAMLICA KORUSU",
+				"ILCE" : "ÜSKÜDAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Koru",
+				"X" : 29.063554000090278,
+				"Y" : 41.019316000337625
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.0374784524, 41.0214407636 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "M5 BAĞLARBAŞI",
+				"ILCE" : "ÜSKÜDAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Metro",
+				"X" : 29.037478452404294,
+				"Y" : 41.021440763601674
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 29.025692768, 41.0340860908 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "PAŞALİMANI",
+				"ILCE" : "ÜSKÜDAR",
+				"TUVALET_DURUM" : "Pasif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 29.025692768027483,
+				"Y" : 41.03408609081612
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.7205234615, 40.9706277925 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "AVCILAR SAHİL PARKI - 1",
+				"ILCE" : "AVCILAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Sabit",
+				"BAKIM_ODASI" : "Yok",
+				"HIZMET_YERI" : "Sahil",
+				"X" : 28.72052346153554,
+				"Y" : 40.97062779246778
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 28.7456324705, 40.9760788014 ]
+			},
+			"properties" : {
+				"MAHAL_ADI" : "AVCILAR SAHİL PARKI - 2",
+				"ILCE" : "AVCILAR",
+				"TUVALET_DURUM" : "Aktif",
+				"TUVALET_TIP" : "Modüler",
+				"BAKIM_ODASI" : "Var",
+				"HIZMET_YERI" : "Sosyal Tesis",
+				"X" : 28.745632470534666,
+				"Y" : 40.976078801417515
+			}
+		}
+	]
+}

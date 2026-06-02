@@ -169,31 +169,15 @@ export function IsparkMap({
   const onPoiClickRef = useRef(onPoiClick);
   useEffect(() => { onPoiClickRef.current = onPoiClick; }, [onPoiClick]);
 
-  const [cursorCoord, setCursorCoord] = React.useState<[number,number] | null>(null);
-
   return (
     <div className="w-full h-full" onContextMenu={(e) => e.preventDefault()}>
-      {cursorCoord && (
-        <div
-          className="absolute bottom-28 left-1/2 -translate-x-1/2 z-50 pointer-events-none"
-          style={{ background: "rgba(0,0,0,0.75)", color: "#fff", padding: "4px 10px", borderRadius: 8, fontSize: 11, fontFamily: "monospace", letterSpacing: "0.02em" }}
-        >
-          {cursorCoord[1].toFixed(5)}, {cursorCoord[0].toFixed(5)}
-        </div>
-      )}
       <DeckGL
         viewState={viewState}
         onViewStateChange={({ viewState: vs }) => onViewStateChange(vs as MapViewState)}
         layers={layers}
         onClick={(info, e) => {
-          if (info.coordinate) {
-            const [lng, lat] = info.coordinate;
-            console.log(`📍 Koordinat: lat=${lat.toFixed(5)}, lng=${lng.toFixed(5)}`);
-            console.log(`{ lat: ${lat.toFixed(5)}, lng: ${lng.toFixed(5)} }`);
-          }
           handleClick(info, e);
         }}
-        onHover={({ coordinate }) => setCursorCoord(coordinate ? [coordinate[0], coordinate[1]] : null)}
         getTooltip={({ object, layer }: { object: unknown; layer: { id: string } | null }) => {
           if (!layer?.id?.startsWith("bridge")) return null;
           const d = object as { name?: string; variant?: string };

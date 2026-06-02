@@ -173,7 +173,8 @@ export function BlockDetailPanel({ block, timeSlot, onClose, comparing, referenc
             ))}
           </div>
         </div>
-      </div>
+        </div>
+      </ScrollArea>
 
       {/* Best/worst times */}
       <div className="px-4 py-3 border-t border-gray-800/30">
