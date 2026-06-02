@@ -38,6 +38,7 @@ import { BusListPanel } from "./components/BusListPanel";
 import type { ActiveBus } from "./layers/busSimLayer";
 import { useRailSim } from "./hooks/useRailSim";
 import { createRailSimLayers, createFerryRouteLayers, createRailSelectedRouteLayers, getActiveVehicles } from "./layers/railSimLayer";
+import { createBridgeScenegraphLayers } from "./layers/scenegraphBridges";
 import type { ActiveVehicle } from "./layers/railSimLayer";
 import type { TurkeyOverlayFlags } from "./hooks/useTurkeyOverlays";
 import { getViewportBounds, type Bounds } from "./lib/viewportBounds";
@@ -476,7 +477,8 @@ function AppIspark() {
         ...routeLayers,
         ...iconLayers,
         ...(landmarkLayer ? [landmarkLayer] : []),
-        ...selectedBusRouteLayers,  // seçili otobüs hattı
+        ...createBridgeScenegraphLayers(true),
+        ...selectedBusRouteLayers,
         ...busSimLayers,
         ...railSimLayers,
       ];

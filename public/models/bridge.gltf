@@ -1,0 +1,128 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v5.1.19",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "Bridge"
+    }
+  ],
+  "materials": [
+    {
+      "name": "BridgeRed",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.863,
+          0.149,
+          0.149,
+          1.0
+        ],
+        "metallicFactor": 0.1,
+        "roughnessFactor": 0.6
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "bridge",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "textures": [],
+  "images": [],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 639,
+      "max": [
+        8.856023788452148,
+        27.78108787536621,
+        57.23285675048828
+      ],
+      "min": [
+        -9.807208061218262,
+        0.00478363037109375,
+        -62.76710891723633
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 639,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 639,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 1104,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 7668,
+      "byteOffset": 0,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 7668,
+      "byteOffset": 7668,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 5112,
+      "byteOffset": 15336,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 2208,
+      "byteOffset": 20448,
+      "target": 34963
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 22656,
+      "uri": "bridge.bin"
+    }
+  ]
+}
