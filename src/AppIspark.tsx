@@ -101,6 +101,7 @@ function AppIspark() {
   const [metroSimEnabled, setMetroSimEnabled] = useState(true);
   const [marmaraySimEnabled, setMarmaraySimEnabled] = useState(true);
   const [tramSimEnabled, setTramSimEnabled] = useState(false);
+  const [ferrySimEnabled, setFerrySimEnabled] = useState(true);
   const busSim = useBusSim();
   const railSim = useRailSim();
 
@@ -394,8 +395,9 @@ function AppIspark() {
     if (kind === "metro" || kind === "funicular") return metroSimEnabled;
     if (kind === "marmaray") return marmaraySimEnabled;
     if (kind === "tram") return tramSimEnabled;
+    if (kind === "ferry") return ferrySimEnabled;
     return false;
-  }, [metroSimEnabled, marmaraySimEnabled, tramSimEnabled]);
+  }, [metroSimEnabled, marmaraySimEnabled, tramSimEnabled, ferrySimEnabled]);
 
   const activeRailVehicles = useMemo((): ActiveVehicle[] => {
     if (!railSim.data) return [];
@@ -404,7 +406,7 @@ function AppIspark() {
 
   const railSimLayers = useMemo(() => {
     if (!railSim.data) return [];
-    const anyEnabled = metroSimEnabled || marmaraySimEnabled || tramSimEnabled;
+    const anyEnabled = metroSimEnabled || marmaraySimEnabled || tramSimEnabled || ferrySimEnabled;
     if (!anyEnabled) return [];
     return createRailSimLayers(
       railSim.data,
@@ -415,7 +417,7 @@ function AppIspark() {
       selectedVehicle,
       bounds,
     );
-  }, [railSim.data, layerTimeSec, railFilter, handleRailClick, viewState.zoom, selectedVehicle, bounds, metroSimEnabled, marmaraySimEnabled, tramSimEnabled]);
+  }, [railSim.data, layerTimeSec, railFilter, handleRailClick, viewState.zoom, selectedVehicle, bounds, metroSimEnabled, marmaraySimEnabled, tramSimEnabled, ferrySimEnabled]);
 
   const extraLayers = useMemo(
     () => {
@@ -514,6 +516,8 @@ function AppIspark() {
           setMarmaraySimEnabled={setMarmaraySimEnabled}
           tramSimEnabled={tramSimEnabled}
           setTramSimEnabled={setTramSimEnabled}
+          ferrySimEnabled={ferrySimEnabled}
+          setFerrySimEnabled={setFerrySimEnabled}
           railSimLoading={railSim.loading}
         />
         </div>

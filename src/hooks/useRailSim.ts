@@ -9,7 +9,7 @@ export interface RailRoute {
   name: string;
   headsign: string;
   color: [number, number, number];
-  kind: "metro" | "marmaray" | "tram" | "funicular";
+  kind: "metro" | "marmaray" | "tram" | "funicular" | "ferry";
   path: [number, number][];
   duration_secs: number;
   stops?: RailStop[];

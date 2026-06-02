@@ -1,4 +1,4 @@
-import { Clock, Navigation, TrainFront, Train, Cable, MapPin } from "lucide-react";
+import { Clock, Navigation, TrainFront, Train, Cable, MapPin, Ship } from "lucide-react";
 import { SidePanel, StatGrid, StatCard, SectionLabel } from "./SidePanel";
 import type { ActiveVehicle } from "../layers/railSimLayer";
 import type { RailRoute } from "../hooks/useRailSim";
@@ -17,6 +17,7 @@ const KIND_META: Record<ActiveVehicle["kind"], { label: string; Icon: React.Elem
   marmaray:  { label: "Marmaray", Icon: Train,      color: "#dc2626" },
   tram:      { label: "Tramvay",  Icon: Cable,      color: "#0891b2" },
   funicular: { label: "Füniküler",Icon: Cable,      color: "#7c3aed" },
+  ferry:     { label: "Vapur",    Icon: Ship,       color: "#0e7490" },
 };
 
 export function RailDetailPanel({ vehicle, route, currentTimeSec, onClose }: {

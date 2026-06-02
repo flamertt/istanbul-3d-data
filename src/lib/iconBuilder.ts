@@ -78,6 +78,7 @@ export const ICON_PATHS = {
   taxi:       `<path d="M5 17H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1l2-3h8l2 3h1a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2"/><circle cx="8" cy="17" r="2" fill="white"/><circle cx="16" cy="17" r="2" fill="white"/><path d="M9 9h6"/>`,
   minibus:    `<rect x="2" y="7" width="20" height="11" rx="2"/><path d="M16 18h2a1 1 0 0 0 1-1v-1H5v1a1 1 0 0 0 1 1h2"/><circle cx="8.5" cy="18" r="1.5" fill="white"/><circle cx="15.5" cy="18" r="1.5" fill="white"/><path d="M2 11h20M12 7v4"/>`,
   seaStation: `<path d="M3 17h18M3 17c1-2 3-3 5-3h8c2 0 4 1 5 3"/><path d="M12 6v8M9 9l3-3 3 3"/><path d="M5 17l1 3H6M19 17l-1 3H18"/>`,
+  ferry:      `<path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2c1.3 0 1.9.5 2.5 1"/><path d="M19.38 20A11.6 11.6 0 0 0 21 14l-9-4-9 4c0 2.15.86 4.37 2.62 6"/><path d="M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6"/><path d="M12 3v4"/>`,
   fork:       `<path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/>`,
   heart:      `<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>`,
   trees:      `<path d="M17 14h.01M12 2l4.5 8H16l1 3H7l1-3h-.5L12 2zM7 17h10v4H7z"/>`,

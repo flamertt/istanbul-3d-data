@@ -13,7 +13,7 @@ DATAS  = os.path.join(os.path.dirname(__file__), '..', 'public', 'datas')
 OUT    = os.path.join(os.path.dirname(__file__), '..', 'public', 'data', 'rail_sim.json')
 OVL    = os.path.join(os.path.dirname(__file__), '..', 'public', 'data', 'turkey_overlays')
 
-RAIL_TYPES = {'0', '1', '7'}  # tram, metro/suburban, funicular
+RAIL_TYPES = {'0', '1', '4', '7'}  # tram, metro/suburban, ferry, funicular
 
 ROUTE_COLORS = {
     'M1A': [230,0,18], 'M1B': [230,0,18],
@@ -41,6 +41,8 @@ DEFAULT_HEADWAYS = {
     'T1':120,'T3':300,'T4':180,
     'F1':300,'F2':300,'F3':300,
     'Marmaray':480,'Marmaray1':480,'Marmaray2':480,
+    # Vapurlar — saatte 1-4 sefer
+    '_ferry_default': 1800,  # 30 dk varsayılan
 }
 
 def fix_str(s):
@@ -49,7 +51,10 @@ def fix_str(s):
     # Doğru okuma: ham baytları iso-8859-9 ile decode et.
     return s  # artık doğrudan okuyoruz, encode sonrası fix gerekmez
 
-def get_kind(short):
+FERRY_COLOR = [14, 116, 144]   # cyan-700
+
+def get_kind(short, route_type='1'):
+    if route_type == '4': return 'ferry'
     if 'Marmaray' in short: return 'marmaray'
     if short.startswith('M'):  return 'metro'
     if short.startswith('T'):  return 'tram'
@@ -68,14 +73,20 @@ with open(f'{BASE}/routes.csv', encoding='iso-8859-9') as f:
     for r in csv.DictReader(f):
         if r.get('route_type') not in RAIL_TYPES: continue
         rid   = r['route_id']
+        rtype = r.get('route_type','1')
         short = fix_str(r.get('route_short_name','').strip())
-        color = ROUTE_COLORS.get(short, [100,100,100])
-        gc    = r.get('route_color','').strip()
-        if gc and len(gc) == 6:
-            try: color = [int(gc[i:i+2],16) for i in (0,2,4)]
-            except: pass
+        kind  = get_kind(short, rtype)
+        # Ferry rengi sabit cyan, diğerleri harita veya varsayılan
+        if kind == 'ferry':
+            color = FERRY_COLOR
+        else:
+            color = ROUTE_COLORS.get(short, [100,100,100])
+            gc = r.get('route_color','').strip()
+            if gc and len(gc) == 6:
+                try: color = [int(gc[i:i+2],16) for i in (0,2,4)]
+                except: pass
         rail_routes[rid] = dict(short=short, long=fix_str(r.get('route_long_name','').strip()),
-                                color=color, kind=get_kind(short))
+                                color=color, kind=kind)
 print(f"  {len(rail_routes)} rail routes")
 
 # ── 2. Trips — one representative per route+direction ─────────────────────────
@@ -180,7 +191,10 @@ for tid, info in selected.items():
     if t1 <= t0: continue
     duration = t1 - t0
 
-    headway = trip_headway.get(tid, DEFAULT_HEADWAYS.get(short, 300))
+    kind = route['kind']
+    default_hw = DEFAULT_HEADWAYS.get(short,
+                 DEFAULT_HEADWAYS['_ferry_default'] if kind=='ferry' else 300)
+    headway = trip_headway.get(tid, default_hw)
 
     # Durak listesi: [{name, elapsed_secs}] — t0'dan itibaren geçen süre
     stop_list = [

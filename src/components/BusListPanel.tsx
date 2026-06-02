@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight, ChevronDown, ChevronUp, Bus, TrainFront, Train } from "lucide-react";
+import { ChevronLeft, ChevronRight, ChevronDown, ChevronUp, Bus, TrainFront, Train, Ship } from "lucide-react";
 import type { ActiveBus } from "../layers/busSimLayer";
 import type { ActiveVehicle } from "../layers/railSimLayer";
 
@@ -10,12 +10,13 @@ function fmtTime(sec: number) {
   return `${String(Math.floor(s / 3600)).padStart(2, "0")}:${String(Math.floor((s % 3600) / 60)).padStart(2, "0")}`;
 }
 
-type Tab = "bus" | "metro" | "marmaray";
+type Tab = "bus" | "metro" | "marmaray" | "ferry";
 
 const TAB_META: Record<Tab, { label: string; color: string; Icon: React.ElementType }> = {
   bus:      { label: "Otobüs",   color: "#2563eb", Icon: Bus },
   metro:    { label: "Metro",    color: "#eab308", Icon: TrainFront },
   marmaray: { label: "Marmaray", color: "#dc2626", Icon: Train },
+  ferry:    { label: "Vapur",    color: "#0e7490", Icon: Ship },
 };
 
 interface BusListPanelProps {
@@ -36,16 +37,16 @@ export function BusListPanel({
 
   const metro    = railVehicles.filter((v) => v.kind === "metro" || v.kind === "funicular");
   const marmaray = railVehicles.filter((v) => v.kind === "marmaray");
+  const ferry    = railVehicles.filter((v) => v.kind === "ferry");
 
-  const hasAny = buses.length > 0 || metro.length > 0 || marmaray.length > 0;
+  const hasAny = buses.length > 0 || metro.length > 0 || marmaray.length > 0 || ferry.length > 0;
 
-  const availableTabs: Tab[] = (["bus", "metro", "marmaray"] as Tab[]).filter((t) =>
-    t === "bus" ? buses.length > 0 : t === "metro" ? metro.length > 0 : marmaray.length > 0
-  );
+  const counts = { bus: buses.length, metro: metro.length, marmaray: marmaray.length, ferry: ferry.length };
+  const availableTabs: Tab[] = (["bus", "metro", "marmaray", "ferry"] as Tab[]).filter((t) => counts[t] > 0);
 
   const effectiveTab: Tab = availableTabs.includes(tab) ? tab : (availableTabs[0] ?? "bus");
 
-  useEffect(() => { setPage(0); }, [effectiveTab, buses.length, metro.length, marmaray.length]);
+  useEffect(() => { setPage(0); }, [effectiveTab, buses.length, metro.length, marmaray.length, ferry.length]);
 
   if (!hasAny) return null;
 
@@ -69,14 +70,16 @@ export function BusListPanel({
       ? [...metro]
           .sort((a, b) => a.name.localeCompare(b.name, "tr", { numeric: true }))
           .map((v) => ({ key: v.routeKey, color: v.color, name: v.name, headsign: v.headsign, timeSec: v.t0, progress: v.progress, rail: v }))
-      : [...marmaray]
+      : effectiveTab === "marmaray"
+      ? [...marmaray]
+          .sort((a, b) => a.name.localeCompare(b.name, "tr", { numeric: true }))
+          .map((v) => ({ key: v.routeKey, color: v.color, name: v.name, headsign: v.headsign, timeSec: v.t0, progress: v.progress, rail: v }))
+      : [...ferry]
           .sort((a, b) => a.name.localeCompare(b.name, "tr", { numeric: true }))
           .map((v) => ({ key: v.routeKey, color: v.color, name: v.name, headsign: v.headsign, timeSec: v.t0, progress: v.progress, rail: v }));
 
   const totalPages = Math.ceil(items.length / PAGE_SIZE);
   const pageItems  = items.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE);
-
-  const counts = { bus: buses.length, metro: metro.length, marmaray: marmaray.length };
   const meta = TAB_META[effectiveTab];
 
   return (

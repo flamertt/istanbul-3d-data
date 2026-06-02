@@ -44,6 +44,8 @@ interface LayerControlProps {
   setMarmaraySimEnabled?: (val: boolean | ((s: boolean) => boolean)) => void;
   tramSimEnabled?: boolean;
   setTramSimEnabled?: (val: boolean | ((s: boolean) => boolean)) => void;
+  ferrySimEnabled?: boolean;
+  setFerrySimEnabled?: (val: boolean | ((s: boolean) => boolean)) => void;
   railSimLoading?: boolean;
   className?: string;
 }
@@ -64,6 +66,8 @@ export const LayerControl: React.FC<LayerControlProps> = ({
   setMarmaraySimEnabled,
   tramSimEnabled = false,
   setTramSimEnabled,
+  ferrySimEnabled = false,
+  setFerrySimEnabled,
   railSimLoading = false,
   className
 }) => {
@@ -88,7 +92,7 @@ export const LayerControl: React.FC<LayerControlProps> = ({
         [scrollbar-width:thin]
         [scrollbar-color:rgba(156,163,175,0.2)_transparent]"
       >
-        <Accordion type="multiple" defaultValue={["transit", "road", "urban"]}>
+        <Accordion type="multiple" defaultValue={["transit", "road", "urban", "landmarks"]}>
           {/* Toplu Taşıma */}
           <AccordionItem value="transit" className="border-gray-800/50 px-2">
             <AccordionTrigger className="text-[11px] uppercase tracking-wider text-gray-400 hover:no-underline py-3">
@@ -108,6 +112,9 @@ export const LayerControl: React.FC<LayerControlProps> = ({
               )}
               {setTramSimEnabled && (
                 <LayerItem icon={<Cable size={16} />} label={railSimLoading ? "Yükleniyor…" : "Tramvay & Füniküler"} checked={tramSimEnabled} onCheckedChange={() => setTramSimEnabled(s => !s)} color="cyan" />
+              )}
+              {setFerrySimEnabled && (
+                <LayerItem icon={<Ship size={16} />} label={railSimLoading ? "Yükleniyor…" : "Vapur"} checked={ferrySimEnabled} onCheckedChange={() => setFerrySimEnabled(s => !s)} color="cyan" />
               )}
               <div className="h-px bg-gray-800/60 my-1" />
               <LayerItem icon={<Train size={16} />} label="Raylı Hatlar" checked={overlayFlags.railLines} onCheckedChange={() => toggleFlag("railLines")} color="amber" />

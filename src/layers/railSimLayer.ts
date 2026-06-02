@@ -12,7 +12,7 @@ export interface ActiveVehicle {
   name: string;
   headsign: string;
   color: [number, number, number];
-  kind: "metro" | "marmaray" | "tram" | "funicular";
+  kind: "metro" | "marmaray" | "tram" | "funicular" | "ferry";
   progress: number;
   t0: number;
   endSec: number;
@@ -26,6 +26,7 @@ const RAIL_ICONS: Record<string, string> = {
   marmaray:  buildCircleIcon(ICON_PATHS.marmaray, "#dc2626", 2.4), // kırmızı
   tram:      buildCircleIcon(ICON_PATHS.tram,     "#0891b2", 2.4), // cyan
   funicular: buildCircleIcon(ICON_PATHS.tram,     "#7c3aed", 2.4), // mor
+  ferry:     buildCircleIcon(ICON_PATHS.ferry,    "#0e7490", 2.4), // deniz mavisi
 };
 
 function getIcon(kind: string, _color: [number, number, number]): string {
@@ -126,7 +127,7 @@ export function createRailSimLayers(
 
   // Kind-specific arrow colors
   const kindColor: Record<string, string> = {
-    metro: "#eab308", marmaray: "#dc2626", tram: "#0891b2", funicular: "#7c3aed"
+    metro: "#eab308", marmaray: "#dc2626", tram: "#0891b2", funicular: "#7c3aed", ferry: "#0e7490"
   };
 
   return [
