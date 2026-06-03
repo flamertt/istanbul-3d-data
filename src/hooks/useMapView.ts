@@ -35,10 +35,11 @@ export function useMapView(initialOverrides?: Partial<MapViewState>) {
 
   const prevTierRef = useRef<ZoomTier>(getZoomTier(viewState.zoom));
   const userInteractedRef = useRef(false);
+  // flyTo animasyonu süresince tier/pitch değişiminin animasyonu kesmesini engeller
   const flyingRef = useRef(false);
+  const flyingTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // rAF batching: birden fazla onViewStateChange aynı frame içinde gelirse
-  // sadece bir React render tetiklenir → hızlı kamera hareketinde lag yok
+  // rAF batching
   const rafRef = useRef<number | null>(null);
   const pendingRef = useRef<MapViewState | null>(null);
 
@@ -55,6 +56,9 @@ export function useMapView(initialOverrides?: Partial<MapViewState>) {
     const targetPitch = getZoomTier(targetZoom) !== "heatmap" ? 45 : 0;
     userInteractedRef.current = false;
     flyingRef.current = true;
+    // Animasyon 1800ms — 2200ms sonra güvenle sıfırla
+    if (flyingTimerRef.current) clearTimeout(flyingTimerRef.current);
+    flyingTimerRef.current = setTimeout(() => { flyingRef.current = false; }, 2200);
     setViewState((prev) => ({
       ...prev,
       longitude,
@@ -92,8 +96,7 @@ export function useMapView(initialOverrides?: Partial<MapViewState>) {
 
     prevTierRef.current = newTier;
 
-    // Tier değişimi veya pitch/bearing değişimi → hemen güncelle (kritik)
-    // Ama flyTo animasyonu devam ediyorsa kesme
+    // Tier/pitch değişimi → hemen güncelle — ama flyTo animasyonu sırasında kesme
     const tierChanged = newTier !== prevTier;
     const orientationChanged = nextViewState.pitch !== viewState.pitch ||
                                nextViewState.bearing !== viewState.bearing;
@@ -107,12 +110,7 @@ export function useMapView(initialOverrides?: Partial<MapViewState>) {
       return;
     }
 
-    // Animasyon bitti mi? (kullanıcı hareket ettirdi veya zoom sabitlendi)
-    if (flyingRef.current && vs.transitionDuration === undefined) {
-      flyingRef.current = false;
-    }
-
-    // Sadece pan/zoom → rAF ile batch et (birden fazla frame event'i → tek render)
+    // Pan/zoom → rAF ile batch et
     pendingRef.current = nextViewState;
     if (rafRef.current === null) {
       rafRef.current = requestAnimationFrame(flushViewState);
