@@ -61,8 +61,6 @@ function AppIspark() {
 
   const onViewStateChange = useCallback((vs: typeof viewState) => {
     if (cameraLocked) return;
-    // Kullanıcı elle haritayı hareket ettirirse takibi durdur
-    if (trackingRef.current) trackingRef.current = null;
     if (bearingLocked) _onViewStateChange({ ...vs, bearing: lockedBearing });
     else _onViewStateChange(vs);
   }, [cameraLocked, bearingLocked, lockedBearing, _onViewStateChange]);

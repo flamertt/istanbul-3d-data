@@ -35,28 +35,16 @@ export function useMapView(initialOverrides?: Partial<MapViewState>) {
 
   const prevTierRef = useRef<ZoomTier>(getZoomTier(viewState.zoom));
   const userInteractedRef = useRef(false);
-  // flyTo animasyonu süresince tier/pitch değişiminin animasyonu kesmesini engeller
+  // flyTo sırasında true — onViewStateChange setViewState çağırmasın, animasyonu öldürmesin
   const flyingRef = useRef(false);
   const flyingTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-
-  // rAF batching
-  const rafRef = useRef<number | null>(null);
-  const pendingRef = useRef<MapViewState | null>(null);
-
-  const flushViewState = useCallback(() => {
-    rafRef.current = null;
-    if (pendingRef.current) {
-      setViewState(pendingRef.current);
-      pendingRef.current = null;
-    }
-  }, []);
 
   const flyTo = useCallback((longitude: number, latitude: number, zoom?: number) => {
     const targetZoom = zoom ?? 15;
     const targetPitch = getZoomTier(targetZoom) !== "heatmap" ? 45 : 0;
     userInteractedRef.current = false;
     flyingRef.current = true;
-    // Animasyon 1800ms — 2200ms sonra güvenle sıfırla
+    prevTierRef.current = getZoomTier(targetZoom);
     if (flyingTimerRef.current) clearTimeout(flyingTimerRef.current);
     flyingTimerRef.current = setTimeout(() => { flyingRef.current = false; }, 2200);
     setViewState((prev) => ({
@@ -72,15 +60,19 @@ export function useMapView(initialOverrides?: Partial<MapViewState>) {
 
   // Araç takibi için — her tick'te çağrılır, animasyon yok, sadece merkezi kaydır
   const panTo = useCallback((longitude: number, latitude: number) => {
+    if (flyingRef.current) return; // flyTo animasyonu varsa panTo'yu atla
     setViewState((prev) => ({ ...prev, longitude, latitude }));
   }, []);
 
   const onViewStateChange = useCallback((vs: MapViewState) => {
+    // flyTo animasyonu devam ediyorsa DeckGL'e bırak, React state'i güncelleme
+    if (flyingRef.current) return;
+
     const newTier = getZoomTier(vs.zoom);
     const prevTier = prevTierRef.current;
 
     if (vs.pitch !== viewState.pitch || vs.bearing !== viewState.bearing) {
-      if (!flyingRef.current) userInteractedRef.current = true;
+      userInteractedRef.current = true;
     }
 
     let nextViewState = vs;
@@ -96,26 +88,17 @@ export function useMapView(initialOverrides?: Partial<MapViewState>) {
 
     prevTierRef.current = newTier;
 
-    // Tier/pitch değişimi → hemen güncelle — ama flyTo animasyonu sırasında kesme
     const tierChanged = newTier !== prevTier;
     const orientationChanged = nextViewState.pitch !== viewState.pitch ||
                                nextViewState.bearing !== viewState.bearing;
 
-    if ((tierChanged || orientationChanged) && !flyingRef.current) {
-      if (rafRef.current !== null) {
-        cancelAnimationFrame(rafRef.current);
-        rafRef.current = null;
-      }
+    if (tierChanged || orientationChanged) {
       setViewState(nextViewState);
       return;
     }
 
-    // Pan/zoom → rAF ile batch et
-    pendingRef.current = nextViewState;
-    if (rafRef.current === null) {
-      rafRef.current = requestAnimationFrame(flushViewState);
-    }
-  }, [viewState, flushViewState]);
+    setViewState(nextViewState);
+  }, [viewState]);
 
   return {
     viewState,
