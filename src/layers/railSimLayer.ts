@@ -71,7 +71,9 @@ export function getActiveVehicles(
 
   // One vehicle per route_key at the position closest to 50% progress
   // (shows the "representative" train — avoids overwhelming the screen)
-  type Best = { progress: number; t0: number };
+  // Ferry'lerde her iki yön (|0 ve |1) ayrı araç olarak görünmesin,
+  // route adına göre grupla (örn. "BSK-HLC" için tek vapur)
+  type Best = { progress: number; t0: number; rk: string };
   const best = new Map<string, Best>();
 
   for (const trip of trips) {
@@ -82,13 +84,15 @@ export function getActiveVehicles(
     const adjTime = (trip.t0 > 75600 && currentTimeSec < 10800) ? currentTimeSec + 86400 : currentTimeSec;
     if (adjTime < trip.t0 || adjTime > end) continue;
     const progress = (adjTime - trip.t0) / route.duration_secs;
-    const prev = best.get(trip.rk);
+    // Ferry'lerde yön suffix'ini kaldır: "BSK-HLC|0" → "BSK-HLC"
+    const groupKey = route.kind === 'ferry' ? route.name : trip.rk;
+    const prev = best.get(groupKey);
     if (!prev || Math.abs(progress - 0.5) < Math.abs(prev.progress - 0.5)) {
-      best.set(trip.rk, { progress, t0: trip.t0 });
+      best.set(groupKey, { progress, t0: trip.t0, rk: trip.rk });
     }
   }
 
-  for (const [rk, { progress, t0 }] of best) {
+  for (const [, { progress, t0, rk }] of best) {
     const route = routes[rk];
     const pos = snapToRoute(progress, route.path);
     const heading = computeHeading(progress, route.path);

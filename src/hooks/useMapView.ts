@@ -35,6 +35,7 @@ export function useMapView(initialOverrides?: Partial<MapViewState>) {
 
   const prevTierRef = useRef<ZoomTier>(getZoomTier(viewState.zoom));
   const userInteractedRef = useRef(false);
+  const flyingRef = useRef(false);
 
   // rAF batching: birden fazla onViewStateChange aynı frame içinde gelirse
   // sadece bir React render tetiklenir → hızlı kamera hareketinde lag yok
@@ -50,15 +51,24 @@ export function useMapView(initialOverrides?: Partial<MapViewState>) {
   }, []);
 
   const flyTo = useCallback((longitude: number, latitude: number, zoom?: number) => {
+    const targetZoom = zoom ?? 15;
+    const targetPitch = getZoomTier(targetZoom) !== "heatmap" ? 45 : 0;
     userInteractedRef.current = false;
+    flyingRef.current = true;
     setViewState((prev) => ({
       ...prev,
       longitude,
       latitude,
-      zoom: zoom ?? Math.max(prev.zoom, 15),
-      transitionDuration: 1000,
-      transitionInterpolator: new FlyToInterpolator(),
+      zoom: targetZoom,
+      pitch: targetPitch,
+      transitionDuration: 1800,
+      transitionInterpolator: new FlyToInterpolator({ speed: 1.5 }),
     }));
+  }, []);
+
+  // Araç takibi için — her tick'te çağrılır, animasyon yok, sadece merkezi kaydır
+  const panTo = useCallback((longitude: number, latitude: number) => {
+    setViewState((prev) => ({ ...prev, longitude, latitude }));
   }, []);
 
   const onViewStateChange = useCallback((vs: MapViewState) => {
@@ -66,7 +76,7 @@ export function useMapView(initialOverrides?: Partial<MapViewState>) {
     const prevTier = prevTierRef.current;
 
     if (vs.pitch !== viewState.pitch || vs.bearing !== viewState.bearing) {
-      userInteractedRef.current = true;
+      if (!flyingRef.current) userInteractedRef.current = true;
     }
 
     let nextViewState = vs;
@@ -83,17 +93,23 @@ export function useMapView(initialOverrides?: Partial<MapViewState>) {
     prevTierRef.current = newTier;
 
     // Tier değişimi veya pitch/bearing değişimi → hemen güncelle (kritik)
+    // Ama flyTo animasyonu devam ediyorsa kesme
     const tierChanged = newTier !== prevTier;
     const orientationChanged = nextViewState.pitch !== viewState.pitch ||
                                nextViewState.bearing !== viewState.bearing;
 
-    if (tierChanged || orientationChanged) {
+    if ((tierChanged || orientationChanged) && !flyingRef.current) {
       if (rafRef.current !== null) {
         cancelAnimationFrame(rafRef.current);
         rafRef.current = null;
       }
       setViewState(nextViewState);
       return;
+    }
+
+    // Animasyon bitti mi? (kullanıcı hareket ettirdi veya zoom sabitlendi)
+    if (flyingRef.current && vs.transitionDuration === undefined) {
+      flyingRef.current = false;
     }
 
     // Sadece pan/zoom → rAF ile batch et (birden fazla frame event'i → tek render)
@@ -108,5 +124,6 @@ export function useMapView(initialOverrides?: Partial<MapViewState>) {
     setViewState,
     onViewStateChange,
     flyTo,
+    panTo,
   };
 }

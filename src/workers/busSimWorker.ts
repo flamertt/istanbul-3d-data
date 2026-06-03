@@ -138,7 +138,7 @@ function computeActive(currentTimeSec: number): ActiveBus[] {
     if (adjTime < t0 || adjTime > t1) continue;
     if (t1 - t0 < 900) continue;
     const progress = tripProgress(timestamps, adjTime);
-    const key = `${trip.route}|${trip.headsign}`;
+    const key = trip.route;
     const existing = best.get(key);
     if (!existing || Math.abs(progress - 0.5) < Math.abs(existing.progress - 0.5)) {
       best.set(key, { progress, trip });

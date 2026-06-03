@@ -46,7 +46,7 @@ import type { TurkeyPoiPoint } from "./layers/turkeyOverlayLayers";
 import type { IsparkLot } from "./types";
 
 function AppIspark() {
-  const { viewState, onViewStateChange: _onViewStateChange, flyTo } = useMapView();
+  const { viewState, onViewStateChange: _onViewStateChange, flyTo, panTo } = useMapView();
   const ispark = useIsparkLots();
   const search = useGeoSearch();
   const { route, getDirections, clearRoute } = useRoute();
@@ -61,6 +61,8 @@ function AppIspark() {
 
   const onViewStateChange = useCallback((vs: typeof viewState) => {
     if (cameraLocked) return;
+    // Kullanıcı elle haritayı hareket ettirirse takibi durdur
+    if (trackingRef.current) trackingRef.current = null;
     if (bearingLocked) _onViewStateChange({ ...vs, bearing: lockedBearing });
     else _onViewStateChange(vs);
   }, [cameraLocked, bearingLocked, lockedBearing, _onViewStateChange]);
@@ -124,6 +126,8 @@ function AppIspark() {
   const [busSpeed, setBusSpeed] = useState(1); // 1x/5x/15x/30x
   const [selectedBus, setSelectedBus] = useState<ActiveBus | null>(null);
   const [selectedVehicle, setSelectedVehicle] = useState<ActiveVehicle | null>(null);
+  // Hangi route'u takip ettiğimizi tut: { type: 'bus' | 'rail', key: string }
+  const trackingRef = useRef<{ type: 'bus' | 'rail'; key: string } | null>(null);
 
   // Smooth animation: 50ms tick — daha akıcı hareket
   useEffect(() => {
@@ -333,7 +337,8 @@ function AppIspark() {
     setSelectedLot(null);
     setSelectedPoi(null);
     setSelectedBusRouteProps({ HAT_KODU: bus.route });
-    flyTo(bus.position[0], bus.position[1], 15);
+    trackingRef.current = { type: 'bus', key: bus.route };
+    flyTo(bus.position[0], bus.position[1], 16.5);
   }, [flyTo]);
 
   const handleRailClick = useCallback((vehicle: ActiveVehicle) => {
@@ -342,7 +347,8 @@ function AppIspark() {
     setSelectedLot(null);
     setSelectedPoi(null);
     setSelectedBusRouteProps(null);
-    flyTo(vehicle.position[0], vehicle.position[1], 14);
+    trackingRef.current = { type: 'rail', key: vehicle.routeKey };
+    flyTo(vehicle.position[0], vehicle.position[1], 15);
   }, [flyTo]);
 
   // Viewport bounds — 20% margin, güncelleme throttle'landı
@@ -427,6 +433,22 @@ function AppIspark() {
     geomEntries,
     busSimEnabled,
   );
+
+  // Araç takip loop — activeBuses veya layerTimeSec her güncellendiğinde kamerayı kaydır
+  useEffect(() => {
+    const t = trackingRef.current;
+    if (!t) return;
+
+    if (t.type === 'bus') {
+      const bus = activeBuses.find(b => b.route === t.key);
+      if (bus) panTo(bus.position[0], bus.position[1]);
+    } else if (t.type === 'rail' && railSim.data) {
+      const vehicles = getActiveVehicles(railSim.data, layerTimeSec, () => true);
+      const v = vehicles.find(v => v.routeKey === t.key);
+      if (v) panTo(v.position[0], v.position[1]);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeBuses, layerTimeSec]);
 
   const railFilter = useCallback((kind: string) => {
     if (kind === "metro" || kind === "funicular") return metroSimEnabled;
@@ -678,7 +700,7 @@ function AppIspark() {
           bus={selectedBus}
           currentTimeSec={busTimeSec}
           stops={busSim.data?.stopsByRoute?.[selectedBus.route]}
-          onClose={() => { setSelectedBus(null); setSelectedBusRouteProps(null); }}
+          onClose={() => { setSelectedBus(null); setSelectedBusRouteProps(null); trackingRef.current = null; }}
         />
       )}
 
@@ -687,7 +709,7 @@ function AppIspark() {
           vehicle={selectedVehicle}
           route={railSim.data?.routes[selectedVehicle.routeKey]}
           currentTimeSec={busTimeSec}
-          onClose={() => setSelectedVehicle(null)}
+          onClose={() => { setSelectedVehicle(null); trackingRef.current = null; }}
         />
       )}
 
