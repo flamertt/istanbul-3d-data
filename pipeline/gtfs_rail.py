@@ -89,26 +89,44 @@ with open(f'{BASE}/routes.csv', encoding='iso-8859-9') as f:
                                 color=color, kind=kind)
 print(f"  {len(rail_routes)} rail routes")
 
-# ── 2. Trips — one representative per route+direction ─────────────────────────
+# ── 2. Calendar — hangi servis hangi gün çalışıyor ─────────────────────────────
+# Simülasyonun tarih kavramı yok; tek bir temsili HAFTA İÇİ günü (Cuma) tarifesini
+# "pişiriyoruz". Böylece sadece o gün sefer yapan hatlar üretiliyor — hafta sonu /
+# sezonluk / tur hatları (örn. Boğaz turları) gereksiz yere aktif görünmüyor.
+TARGET_DAY = 4  # 0=Pzt … 4=Cuma, 6=Paz
+_DAY_COLS = ['monday','tuesday','wednesday','thursday','friday','saturday','sunday']
+print("Reading calendar…")
+service_active = {}  # service_id -> bool (TARGET_DAY'de çalışıyor mu)
+try:
+    with open(f'{BASE}/calendar.csv', encoding='iso-8859-9') as f:
+        for r in csv.DictReader(f):
+            service_active[r['service_id']] = (r.get(_DAY_COLS[TARGET_DAY], '0') == '1')
+except FileNotFoundError:
+    print("  calendar.csv yok — tüm servisler aktif sayılacak")
+def runs_today(sid):
+    # Bilinmeyen service_id → dahil et (veri kaybı olmasın)
+    return service_active.get(sid, True)
+print(f"  {len(service_active)} servis, {sum(service_active.values())} tanesi hedef günde aktif")
+
+# ── 3. Trips — (route, direction) başına TÜM seferler, hedef güne göre filtreli ─
 print("Reading trips…")
-best_trip = {}  # (route_id, direction) -> {trip_id, shape_id, headsign}
+trips_by_key = defaultdict(list)  # (route_id, dir) -> [{trip_id, shape_id, headsign}]
 with open(f'{BASE}/trips.csv', encoding='iso-8859-9') as f:
     for r in csv.DictReader(f):
         rid = r.get('route_id')
         if rid not in rail_routes: continue
-        sid  = r.get('shape_id','').strip()
+        sid = r.get('shape_id','').strip()
         if not sid: continue
-        key  = (rid, r.get('direction_id','0'))
-        if key not in best_trip:
-            best_trip[key] = dict(trip_id=r['trip_id'], shape_id=sid,
-                                  headsign=fix_str(r.get('trip_headsign','').strip()))
-selected = {v['trip_id']: dict(route_id=k[0], direction=k[1], **v)
-            for k, v in best_trip.items()}
-print(f"  {len(selected)} representative trips")
+        if not runs_today(r.get('service_id','')): continue  # bugün çalışmıyorsa atla
+        key = (rid, r.get('direction_id','0'))
+        trips_by_key[key].append(dict(trip_id=r['trip_id'], shape_id=sid,
+                                      headsign=fix_str(r.get('trip_headsign','').strip())))
+needed_trips = {t['trip_id'] for lst in trips_by_key.values() for t in lst}
+print(f"  {len(trips_by_key)} route+yön grubu, {len(needed_trips)} hedef-gün seferi")
 
-# ── 3. Shapes ─────────────────────────────────────────────────────────────────
+# ── 4. Shapes ─────────────────────────────────────────────────────────────────
 print("Reading shapes…")
-needed_shapes = {v['shape_id'] for v in selected.values()}
+needed_shapes = {t['shape_id'] for lst in trips_by_key.values() for t in lst}
 shapes = defaultdict(list)
 with open(f'{BASE}/shapes.csv', encoding='iso-8859-9') as f:
     for r in csv.DictReader(f):
@@ -121,7 +139,7 @@ for sid in shapes:
     shapes[sid] = [[lon,lat] for _,lon,lat in shapes[sid]]
 print(f"  {len(shapes)} shapes loaded")
 
-# ── 3b. Stops (isimler) ────────────────────────────────────────────────────────
+# ── 5. Stops (isimler) ──────────────────────────────────────────────────────────
 print("Reading stops…")
 stop_names = {}  # stop_id -> name
 with open(f'{BASE}/stops.csv', encoding='iso-8859-9') as f:
@@ -129,9 +147,8 @@ with open(f'{BASE}/stops.csv', encoding='iso-8859-9') as f:
         stop_names[r['stop_id']] = fix_str((r.get('stop_name') or '').strip())
 print(f"  {len(stop_names)} stops")
 
-# ── 4. Stop times ─────────────────────────────────────────────────────────────
+# ── 6. Stop times — hedef-gün seferlerinin gerçek kalkış saatleri ──────────────
 print("Reading stop_times…")
-needed_trips = set(selected.keys())
 trip_times = defaultdict(list)  # trip_id -> [(seq, dep_sec, stop_name)]
 with open(f'{BASE}/stop_times.csv', encoding='iso-8859-9') as f:
     for r in csv.DictReader(f):
@@ -139,27 +156,31 @@ with open(f'{BASE}/stop_times.csv', encoding='iso-8859-9') as f:
         if tid not in needed_trips: continue
         dep = parse_time(r.get('departure_time',''))
         if dep < 0: continue
-        sid = r.get('stop_id','')
-        name = stop_names.get(sid, '')
+        name = stop_names.get(r.get('stop_id',''), '')
         trip_times[tid].append((int(r.get('stop_sequence',0)), dep, name))
 for tid in trip_times:
     trip_times[tid].sort()
 print(f"  stop_times for {len(trip_times)} trips")
 
-# ── 5. Frequencies ────────────────────────────────────────────────────────────
+# ── 7. Frequencies — gerçek servis pencereleri (start/end/headway) ─────────────
 print("Reading frequencies…")
-trip_headway = {}  # trip_id -> headway_secs (minimum/peak)
+trip_freq = defaultdict(list)  # trip_id -> [(start_sec, end_sec, headway_secs)]
 with open(f'{BASE}/frequencies.csv', encoding='iso-8859-9') as f:
     for r in csv.DictReader(f):
         tid = r.get('trip_id','')
         if tid not in needed_trips: continue
-        hw  = int(r.get('headway_secs', 0) or 0)
-        if hw > 0:
-            trip_headway[tid] = min(trip_headway.get(tid, 9999), hw)
-print(f"  headways for {len(trip_headway)} trips")
+        st = parse_time(r.get('start_time',''))
+        et = parse_time(r.get('end_time',''))
+        hw = int(r.get('headway_secs', 0) or 0)
+        if hw > 0 and st >= 0 and et > st:
+            trip_freq[tid].append((st, et, hw))
+print(f"  frequency pencereleri: {sum(len(v) for v in trip_freq.values())} satır, {len(trip_freq)} sefer")
 
-# ── 6. Build compact format ───────────────────────────────────────────────────
+# ── 8. Build compact format ───────────────────────────────────────────────────
 # Format: routes store path+duration once; trips store only (route_key, t0)
+# Sefer saatleri ARTIK gerçek tarifeden geliyor:
+#   • frequency penceresi varsa → pencere içinde headway aralıklarla üret
+#   • yoksa → seferin GERÇEK kalkış saatini kullan (tek tek)
 print("Building rail_sim.json (compact format)…")
 route_defs = {}  # route_key -> {name, headsign, color, kind, path, duration_secs}
 trips_out  = []  # [{rk, t0}]
@@ -171,34 +192,29 @@ def downsample(path, max_pts=200):
     step = n / max_pts
     return [path[int(i*step)] for i in range(max_pts)]
 
-for tid, info in selected.items():
-    rid   = info['route_id']
+for (rid, dir_), lst in trips_by_key.items():
     route = rail_routes[rid]
     short = route['short']
     color = route['color']
     kind  = route['kind']
-    sid   = info['shape_id']
-    dir_  = info['direction']
 
-    path = shapes.get(sid, [])
-    if len(path) < 2: continue
+    # Temsili sefer: geçerli shape + en az 2 duraklı ilk sefer
+    rep = None
+    for t in lst:
+        path = shapes.get(t['shape_id'], [])
+        stops = trip_times.get(t['trip_id'], [])
+        if len(path) >= 2 and len(stops) >= 2 and stops[-1][1] > stops[0][1]:
+            rep = t; break
+    if rep is None: continue
 
-    stops = trip_times.get(tid, [])
-    if len(stops) < 2: continue
-
-    t0 = stops[0][1]
-    t1 = stops[-1][1]
-    if t1 <= t0: continue
-    duration = t1 - t0
-
-    kind = route['kind']
-    default_hw = DEFAULT_HEADWAYS.get(short,
-                 DEFAULT_HEADWAYS['_ferry_default'] if kind=='ferry' else 300)
-    headway = trip_headway.get(tid, default_hw)
+    path  = shapes[rep['shape_id']]
+    stops = trip_times[rep['trip_id']]
+    rt0   = stops[0][1]
+    duration = stops[-1][1] - rt0
 
     # Durak listesi: [{name, elapsed_secs}] — t0'dan itibaren geçen süre
     stop_list = [
-        {'name': name, 'elapsed_secs': dep - t0}
+        {'name': name, 'elapsed_secs': dep - rt0}
         for _, dep, name in stops
         if name  # isimsiz durakları atla
     ]
@@ -206,7 +222,7 @@ for tid, info in selected.items():
     rk = f"{short}|{dir_}"
     route_defs[rk] = dict(
         name=short,
-        headsign=info['headsign'],
+        headsign=rep['headsign'],
         color=color,
         kind=kind,
         path=downsample(path, 150),
@@ -214,13 +230,25 @@ for tid, info in selected.items():
         stops=stop_list,
     )
 
-    # Generate start times throughout the day: 05:30 → 24:30
-    day_start = 5*3600 + 30*60
-    day_end   = 24*3600 + 30*60
-    t = day_start
-    while t < day_end:
-        trips_out.append({'rk': rk, 't0': t})
-        t += headway
+    # Kalkış saatleri — gerçek tarifeden
+    freq_windows = [w for t in lst for w in trip_freq.get(t['trip_id'], [])]
+    t0_set = set()
+    if freq_windows:
+        # Frequency tabanlı hat (metro/marmaray/tram vb.): pencere içinde üret
+        for st, et, hw in freq_windows:
+            t = st
+            while t < et:
+                t0_set.add(t)
+                t += hw
+    else:
+        # Tarifeli hat (çoğu vapur): her seferin gerçek kalkış saati
+        for t in lst:
+            stt = trip_times.get(t['trip_id'])
+            if stt:
+                t0_set.add(stt[0][1])
+
+    for t0 in sorted(t0_set):
+        trips_out.append({'rk': rk, 't0': t0})
 
 total_trips = len(trips_out)
 print(f"  {len(route_defs)} route definitions, {total_trips} trips")
@@ -266,7 +294,7 @@ for row in ws.iter_rows(min_row=2, values_only=True):
 out_path = os.path.join(OVL, 'kent_lokantasi.geojson')
 with open(out_path, 'w', encoding='utf-8') as f:
     json.dump({'type':'FeatureCollection','features':features}, f, ensure_ascii=False)
-print(f"  {len(features)} kent lokantaları → {out_path}")
+print(f"  {len(features)} kent lokantalari -> {out_path}")
 
 # ── 8. Sosyal Tesisler (xlsx) ─────────────────────────────────────────────────
 print("Converting sosyal-tesisler…")
@@ -286,6 +314,6 @@ for row in ws.iter_rows(min_row=2, values_only=True):
 out_path = os.path.join(OVL, 'sosyal_tesisler.geojson')
 with open(out_path, 'w', encoding='utf-8') as f:
     json.dump({'type':'FeatureCollection','features':features}, f, ensure_ascii=False)
-print(f"  {len(features)} sosyal tesis → {out_path}")
+print(f"  {len(features)} sosyal tesis -> {out_path}")
 
 print("\nAll done!")
