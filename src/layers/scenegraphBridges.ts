@@ -13,6 +13,8 @@ interface BridgeDef {
   lengthM: number;
   /** Köprü yüksekliği (metre) */
   alt: number;
+  /** Neon renk [r,g,b] */
+  color: [number, number, number];
 }
 
 // Tüm koordinatlar OSM Overpass API'den çekildi ve doğrulandı
@@ -27,6 +29,7 @@ const ISTANBUL_BRIDGES: BridgeDef[] = [
     heading: 321.8,   // KKB yönünde (Anadolu→Avrupa)
     lengthM: 1554,
     alt: 64,
+    color: [25, 50, 160], // lacivert
   },
   {
     id: "b2",
@@ -36,6 +39,7 @@ const ISTANBUL_BRIDGES: BridgeDef[] = [
     heading: 86.5,    // Neredeyse tam doğu
     lengthM: 1158,
     alt: 64,
+    color: [25, 50, 160], // lacivert
   },
   {
     id: "b3",
@@ -45,6 +49,7 @@ const ISTANBUL_BRIDGES: BridgeDef[] = [
     heading: 121.1,   // GDB yönünde
     lengthM: 1975,
     alt: 73,
+    color: [25, 50, 160], // lacivert
   },
   // ── Haliç Köprüleri ───────────────────────────────────────────────────────
   {
@@ -54,6 +59,7 @@ const ISTANBUL_BRIDGES: BridgeDef[] = [
     heading: 208.0,
     lengthM: 530,
     alt: 8,
+    color: [25, 50, 160], // lacivert
   },
   {
     id: "h2",
@@ -62,6 +68,7 @@ const ISTANBUL_BRIDGES: BridgeDef[] = [
     heading: 59.2,
     lengthM: 643,
     alt: 8,
+    color: [25, 50, 160], // lacivert
   },
   {
     id: "h3",
@@ -70,6 +77,7 @@ const ISTANBUL_BRIDGES: BridgeDef[] = [
     heading: 32.1,
     lengthM: 556,
     alt: 10,
+    color: [25, 50, 160], // lacivert
   },
 ];
 
@@ -90,7 +98,7 @@ export function createBridgeScenegraphLayers(enabled: boolean): Layer[] {
       getOrientation: (d) => [0, 180 - d.heading, -90] as [number, number, number],
       sizeScale: b.lengthM / NATIVE_Z,
       getScale: [1, 1, 1],
-      getColor: [255, 60, 60, 255], // parlak açık kırmızı
+      getColor: [...b.color, 255] as [number, number, number, number],
       _lighting: "pbr",
     })
   );

@@ -19,7 +19,7 @@ import { IsparkLotDetailPanel } from "./components/IsparkLotDetailPanel";
 import { PoiDetailPanel } from "./components/PoiDetailPanel";
 import { BusRouteDetailPanel } from "./components/BusRouteDetailPanel";
 import { 
-  Sun, Moon, LocateFixed, ParkingSquare, Bus, Train, TrainFront, Bike, Zap,
+  LocateFixed, ParkingSquare, Bus, Train, TrainFront, Bike, Zap,
   Trees, PersonStanding, Car, Navigation, Ship, MapPin, Waypoints,
   ChevronDown, ChevronUp, Landmark, GraduationCap, School,
   Binoculars, Castle, Building2, Trophy, Library as LibraryIcon,
@@ -484,7 +484,7 @@ function AppIspark() {
     const anyEnabled = metroSimEnabled || marmaraySimEnabled || tramSimEnabled || ferrySimEnabled;
     if (!anyEnabled) return [];
     return [
-      ...createFerryRouteLayers(railSim.data, ferrySimEnabled, selectedVehicle),
+      ...createFerryRouteLayers(railSim.data, ferrySimEnabled, selectedVehicle, layerTimeSec),
       ...createRailSelectedRouteLayers(railSim.data, selectedVehicle),
       ...createRailSimLayers(
         railSim.data,
@@ -527,11 +527,7 @@ function AppIspark() {
 
   const lots = isparkEnabled ? ispark.lots : [];
 
-  const DARK_MATTER_URL = "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json";
-  const LIGHT_ALIDADE_URL = "https://tiles.stadiamaps.com/styles/alidade_smooth.json";
-
-  const [mapTheme, setMapTheme] = useState<"light" | "dark">("dark");
-  const mapStyleUrl = mapTheme === "light" ? LIGHT_ALIDADE_URL : DARK_MATTER_URL;
+  const mapStyleUrl = "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json";
 
   const toggleFlag = (key: keyof TurkeyOverlayFlags) => {
     setOverlayFlags((s) => ({ ...s, [key]: !s[key] }));
@@ -666,14 +662,6 @@ function AppIspark() {
             onResetNorth={() => _onViewStateChange({ ...viewState, bearing: 0 })}
           />
         </div>
-        <button
-          type="button"
-          onClick={() => setMapTheme((t) => (t === "light" ? "dark" : "light"))}
-          className="h-10 w-10 flex items-center justify-center rounded-xl bg-background/80 backdrop-blur-md border border-border/40 shadow-lg text-muted-foreground hover:text-foreground transition-all hover:scale-105 active:scale-95 shrink-0"
-          aria-label="Harita temasını değiştir"
-        >
-          {mapTheme === "light" ? <Moon size={16} /> : <Sun size={16} />}
-        </button>
       </div>
 
       <MapControls 

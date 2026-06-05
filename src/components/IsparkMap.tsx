@@ -111,7 +111,6 @@ export function IsparkMap({
     const map = e.target;
     const style = map.getStyle();
     const source = "openmaptiles" in style.sources ? "openmaptiles" : "carto";
-    const isLight = !mapStyleUrl.includes("dark");
     const firstSymbol = style.layers.find((l) => l.type === "symbol")?.id;
 
     // 1) Yeşil alanlar — veri zaten geldiyse hemen ekle, yoksa boş başlat
@@ -125,7 +124,7 @@ export function IsparkMap({
       source: "green-areas-src",
       paint: {
         "fill-color": "#22c55e",
-        "fill-opacity": isLight ? 0.25 : 0.18,
+        "fill-opacity": 0.18,
       },
     }, firstSymbol); // label'lardan önce → binalardan da önce
 
@@ -137,7 +136,7 @@ export function IsparkMap({
       type: "fill-extrusion",
       minzoom: 3,
       paint: {
-        "fill-extrusion-color": isLight ? "#c8c0b8" : "#2a2a3a",
+        "fill-extrusion-color": "#2a2a3a",
         "fill-extrusion-height": ["*", ["coalesce", ["get", "render_height"], 10], 1.5],
         "fill-extrusion-base": ["*", ["coalesce", ["get", "render_min_height"], 0], 1.5],
         "fill-extrusion-opacity": 1.0,
@@ -163,8 +162,12 @@ export function IsparkMap({
     (map as unknown as { on: (event: string, layer: string, handler: () => void) => void })
       .on("mouseleave", "green-areas-fill", () => { canvas.style.cursor = ""; });
 
-    // Tile yükleme tamamlanınca bina poligonlarını çek — ağaç filtreleme için
-    // Three.js ağaç layer'ı — MapLibre'nin kendi GL context'ini kullanır
+    // Three.js ağaç layer'ı — stil değişiminde önce eskisini temizle
+    if (treeLayerRef.current) {
+      const ml = map as unknown as { getLayer: (id: string) => unknown; removeLayer: (id: string) => void };
+      if (ml.getLayer('green-area-trees-three')) ml.removeLayer('green-area-trees-three');
+      treeLayerRef.current = null;
+    }
     const treeLayer = createGreenTreesThreeLayer(treePointsRef.current);
     treeLayerRef.current = treeLayer;
     (map as unknown as { addLayer: (l: object) => void }).addLayer(treeLayer);
@@ -226,7 +229,6 @@ export function IsparkMap({
   return (
     <div className="w-full h-full" onContextMenu={(e) => e.preventDefault()}>
       <DeckGL
-        key={mapStyleUrl}
         viewState={viewState}
         onViewStateChange={({ viewState: vs }) => onViewStateChange(vs as MapViewState)}
         layers={layers}

@@ -138,6 +138,7 @@ export function createFerryRouteLayers(
   data: RailSimData,
   ferryEnabled: boolean,
   selectedVehicle?: ActiveVehicle | null,
+  currentTimeSec?: number,
 ): Layer[] {
   if (!ferryEnabled) return [];
   const lines = getRouteLines(data, "ferry");
@@ -145,7 +146,15 @@ export function createFerryRouteLayers(
 
   // Seçili vapur varsa sadece onu göster, diğerleri kaybolsun
   const selectedName = selectedVehicle?.kind === "ferry" ? selectedVehicle.name : null;
-  const visible = selectedName ? lines.filter((l) => l.name === selectedName) : lines;
+  let visible = selectedName ? lines.filter((l) => l.name === selectedName) : lines;
+
+  // Seçim yoksa: sadece şu an aktif (seferde olan) vapurların hatlarını göster
+  if (!selectedName && currentTimeSec !== undefined) {
+    const activeNames = new Set(
+      getActiveVehicles(data, currentTimeSec, (k) => k === "ferry").map((v) => v.name)
+    );
+    visible = visible.filter((l) => activeNames.has(l.name));
+  }
   if (!visible.length) return [];
 
   return [
@@ -161,7 +170,7 @@ export function createFerryRouteLayers(
       getDashArray: [8, 5],
       dashJustified: true,
       extensions: [new PathStyleExtension({ dash: true })],
-      updateTriggers: { getColor: selectedName, getWidth: selectedName, data: selectedName },
+      updateTriggers: { getColor: selectedName, getWidth: selectedName, data: `${selectedName}|${visible.map((l) => l.name).join(",")}` },
     }),
   ];
 }
